@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
+#firstdiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(green, yellow, orange, red);
+}
+
+h1 {
+    padding-top: 20%;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Londrina Solid', cursive;
+    animation-name: title;
+    animation-duration: 3s;
+    animation-direction: forwards;
+    /* transform: rotate(-20deg); */
+}
+
+@keyframes title {
+    from {
+        transform: scale(.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* @keyframes titleturn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-20deg)
+    }
+} */

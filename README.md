@@ -1,45 +1,202 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# <u>Milestone Project 2</u>
 
-Welcome USER_NAME,
+![site screenshot]()
+ 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## [Link to live site]()
 
-## Gitpod Reminders
+# Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## - [User Story](#user-story)
+## - [The 5 planes of UX](#the-5-planes-of-ux)
+## - [Early Stages](#early-stages)
+## - [The Website Features](#the-website-features)
+## - [User Interaction](#user-interaction)
+## - [The Coding Languages and Techniques Used](#the-coding-languages-and-techniques-used)
+## - [Method of Deployment](#method-of-deployment)
+## - [Methods of Testing](#methods-of-testing)
+## - [Credits](#credits)
 
-`python3 -m http.server`
+<br>
 
-A blue button should appear to click: _Make Public_,
+# User Story
 
-Another blue button should appear to click: _Open Browser_.
+- User Summary
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Site objectives for new users
+    - 
 
-A blue button should appear to click: _Make Public_,
+- Site objectives for returning users
+    - 
 
-Another blue button should appear to click: _Open Browser_.
+- User Conclusion
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# The 5 planes of UX
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- When thinking on designing this site i took into mind the 5 planes that had been highlighted during the course previously. This made the overall process easier to plan-out.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- ## <u>The strategy</u>
+    
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- ## <u>The Scope</u>
+    
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- ## <u>The Structure</u>
+    
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- ## <u>The Skeleton</u>
+    
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- ## <u>The Surface</u>
+   
+    ---
+# Early Stages
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Wireframes
 
----
+![wireframe collection]()
 
-Happy coding!
+- Above is a summary of the wireframes for this site (The desktop view). The basis of the site is very simple. One main landing page, one structure for the page that will contain the recipes (content will change but the structure remains the same), and one contact form page. Below are the links to the full images and their respective mobile views.
+
+- [Link to landing page desktop view]()
+- [Link to landing page tablet view]()
+- [Link to landing page mobile view]()
+- [Link to recipe page desktop view]()
+- [Link to recipe page tablet view]()
+- [Link to recipe page mobile view]()
+- [Link to contect form page desktop view]()
+- [Link to contact form page tablet view]()
+- [Link to contact form page mobile view]()
+
+![Wireframe_showing_desktop_to_mobile_view]()
+
+
+
+## Colour Schemes
+
+
+
+## Fonts
+
+
+
+    
+
+
+# The Website Features
+
+- ## <u>As Submitted</u>
+   
+
+- ## <u>Features I would include in the future</u>
+    
+
+# User Interaction
+
+- The following elements are selectable:
+    -   The Landing Page:
+       
+    
+    - The Mobile Landing Page:
+        
+
+    - The Recipe Pages:
+       
+
+    - The Contact Form:
+       
+
+# The Coding Languages and Techniques Used
+
+- This site was constructed using:
+    - HTML5
+    - CSS3
+    - Bootstrap 4.2.1
+    - Fontawesome
+   
+
+
+
+# Method of Deployment
+
+- To fully test the site on multiple 'real-world' devices I needed to create a live link to the site that could be accessed universally. To do this, a simple procedure is required. 
+
+    - Step 1: Open Github.com and sign in.
+    - Step 2: Once signed in you should see your repositorys in chronological order.
+    - Step 3: Select the repository you wish to create a link for and once selected click the settings tab on the page.
+    - Step 4: Within the settings page you will be given the option to rename the repository, add an image to customize your social media preview, and many other options to be explored at a later date.
+    - Step 5: Scroll down and you will find the heading for GitHub Pages.
+    - Step 6: At this stage the 'source' field should read 'none' so click on the button and select 'master'
+    - Step 7: Once this is selected, hit save and the page should refresh bringing you back to the top.
+    - Step 8: Scroll back down to the Github pages section and you will now see a message informing the user that the site is ready to be published and a highlighted link. Make a note of the link address for future reference or click the link to access the site direct. 
+
+- From this point on you can type in and access your site on any device with an internet browser which is ideal for testing purposes.
+
+## For those wishing to develop the site further using a repository clone:
+- You must first ensure that you have a current Github account.
+- Be running the most up to date version of Google Chrome with the Gitpod browser extension installed.
+- Login to Github with your own github account.
+- Navigate to the Project Github Repository page.
+- Click the New button, this will trigger a new workspace.
+- Under Create a new Repository select Import a Repository
+- Now, in the Your Old Repository Clone URL field, type in ""
+- Enter in a new relevant repository name and click Begin Import.
+- After a short while you'll recieve a message saying that the new repository is ready with a link to take you to it.
+- From here on, open gipod and continue future developments.  
+
+# Methods of Testing
+
+- Throughout the development stage I used a handful of methods to ensure the site looked and acted appropriately.<br> These included:
+
+    - Chrome Dev Tools - for testing stylings, sizing, and responsiveness
+
+    - Mozilla Dev Tools - for testing stylings, sizing, and responsiveness
+
+    - http://ami.responsivedesign.is/ - again for testing stylings, sizing, and responsiveness.
+
+    - https://coolors.co/ - for picking color schemes and testing contrast colors
+
+    - Github Pages - to access the live site across different devices
+
+    - Google Lighthouse - to test perfomance 
+
+
+## Summary of User Testing
+
+
+
+    ## Bugs and problems I experienced along way
+
+    
+
+# Credits
+
+
+
+
+## Throughout the creation of this project I have referred to the following for assistance and guidance:
+
+- https://codeinstitute.net/
+- https://www.w3schools.com
+- https://stackoverflow.com/
+- https://css-tricks.com/
+
+
+
+# Acknowledgement
+
+- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Gurjot Singh for his advice in completing this project. As a  complete newbie to coding I am so proud that thanks to CI I have the ability to acheive this creation. I look forward to the rest of the course and a new future career.<br>
+
+
+
+# - [Back to top](#contents)
+
+
+
+
+
+
+
+

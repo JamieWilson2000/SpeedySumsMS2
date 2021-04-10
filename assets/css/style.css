@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
 
-#smallgap {
-    height: 100px;
-
+body {
+    width: 100%;
+    text-align: center;
 }
 
-#firstdiv {
+#landingback {
     position: absolute;
     top: 0;
     width: 100%;
@@ -13,8 +14,8 @@
     background: -webkit-linear-gradient(green, yellow, orange, red);
 }
 
-h1 {
-    padding-top: 20%;
+#zoomtitle {
+    padding-top: 10%;
     margin-left: 0, auto;
     margin-right: 0, auto;
     text-align: center;
@@ -23,7 +24,7 @@ h1 {
     animation-name: title;
     animation-duration: 3s;
     animation-direction: forwards;
-    /* transform: rotate(-20deg); */
+
 }
 
 @keyframes title {
@@ -36,13 +37,129 @@ h1 {
     }
 }
 
-#entry {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    padding-top: 20%;
+#title {
+    margin-left: 0, auto;
+    margin-right: 0, auto;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Londrina Solid', cursive;
+}
+
+#entrytitle {
+    margin-top: 60px;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    color: black;
     font-size: 3rem;
     font-family: 'Londrina Solid', cursive;
-    color: black;
+}
+
+#subtitle {
+    margin-top: 2%;
+    display: block;
+    background-color: transparent;
     text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Londrina Solid', cursive;
+}
+
+#instructstyle {
+    margin-top: 2%;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Londrina Solid', cursive;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+#easybtn {
+    margin: 20px 10px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+
+}
+
+#medbtn {
+    margin: 20px 10px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+#hardbtn {
+    margin: 20px 10px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+#genbtn {
+    margin: 20px 10px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        padding-top: 30%;
+    }
 }

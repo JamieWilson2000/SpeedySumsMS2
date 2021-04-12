@@ -20,6 +20,7 @@ body {
 
 #start-button {
     width: 50%;
+    border: 1px solid black;
     border-radius: 10px;
     margin-top: 100px;
     margin-left: auto;
@@ -30,7 +31,7 @@ body {
 }
 
 #high-score {
-    margin-top: 175px;
+    margin-top: 130px;
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
     font-size: 2.5rem;
@@ -40,6 +41,11 @@ body {
     margin-top: 10px;
     font-family: 'Londrina Solid', cursive;
     font-size: 2rem;
+}
+
+ol {
+    padding-left: 50px;
+    margin: 0;
 }
 
 /*************** Landing Page ***************/
@@ -232,6 +238,32 @@ a:hover {
     width: 100%;
     height: 100%;
     background: red;
+}
+
+/********************* High Scores Page ******************/
+
+#easy-scores {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: rgb(68, 245, 68);
+}
+
+#medium-scores {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: yellow;
+}
+
+#hard-scores {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: orange;
+}
+
+#genius-scores {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: red;
 }
 
 @media (max-width: 576px) {

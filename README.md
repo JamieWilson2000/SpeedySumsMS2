@@ -167,7 +167,10 @@
 
 
 
-    ## Bugs and problems I experienced along way
+    ## Problems and bugs experienced along the way
+
+- Problem: Subtitle on easylevel.html stuck to left side of page
+    - Solution: Adjusted styling width to 100%
 
     
 

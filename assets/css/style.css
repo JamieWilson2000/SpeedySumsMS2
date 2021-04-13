@@ -19,6 +19,7 @@ body {
 }
 
 #start-button {
+
     width: 50%;
     border: 1px solid black;
     border-radius: 10px;
@@ -264,6 +265,44 @@ a:hover {
     font-family: 'Londrina Solid', cursive;
     font-size: 2rem;
     background-color: red;
+}
+
+/******************** Game Elements ****************/
+
+#number1 {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: (green);
+}
+
+#rand-operator {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: (green);
+}
+
+#number2 {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: (green);
 }
 
 @media (max-width: 576px) {

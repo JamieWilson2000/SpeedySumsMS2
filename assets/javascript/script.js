@@ -1,5 +1,10 @@
+// Hide the Start Button
+$("#start-button").click(function () {
+    $("#start-button").hide('slow');
+});
+
 // Random Number Generator
-function myFunction() {
+function randNumGen() {
     var x = Math.floor((Math.random() * 10) + 1);
     var y = Math.floor((Math.random() * 10) + 1);
     document.getElementById("topnum").innerHTML = x;
@@ -7,6 +12,7 @@ function myFunction() {
 }
 
 // Countdown Timer
+
 var timeleft = 10;
 var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {

@@ -53,6 +53,11 @@ ol {
     margin: 0;
 }
 
+#countdown {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 3rem;
+}
+
 /*************** Landing Page ***************/
 #landing-back {
     position: absolute;

@@ -175,8 +175,11 @@
     
 
 # Credits
-- For the title animation on the landing page I refered to here:
+- For instruction on how to create the title animation on the landing page I refered to here:
 - Credit 1 - https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/83c6c94d55f44c79a3646810d80ce7a3/
+
+- For instruction on how to create a countdown timer I referred to here:
+- Credit - https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 
 
 

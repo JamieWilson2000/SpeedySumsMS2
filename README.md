@@ -171,6 +171,7 @@
 
 - Problem: Subtitle on easylevel.html stuck to left side of page
     - Solution: Adjusted styling width to 100%
+- Problem: Trying to have timer and first question appear when start button is pressed.
 
     
 

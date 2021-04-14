@@ -8,7 +8,9 @@ function randNumGen() {
     var x = Math.floor((Math.random() * 10) + 1);
     var y = Math.floor((Math.random() * 10) + 1);
     document.getElementById("topnum").innerHTML = x;
+    // document.getElementById("rand-operator").innerHTML = o;
     document.getElementById("botnum").innerHTML = y;
+
 }
 
 // Countdown Timer

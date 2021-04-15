@@ -23,11 +23,10 @@ h4 {
 }
 
 #start-button {
-
     width: 50%;
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Londrina Solid', cursive;
@@ -54,8 +53,20 @@ ol {
 }
 
 #countdown {
+    width: 10%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(green, yellow, orange, red);
     font-family: 'Londrina Solid', cursive;
     font-size: 3rem;
+}
+
+#hide {
+    /* display: none; */
+    border: 1px solid red;
 }
 
 /*************** Landing Page ***************/
@@ -279,7 +290,7 @@ a:hover {
 /******************** Game Elements ****************/
 
 #number1 {
-    width: 50%;
+    width: 10%;
     height: 50px;
     border: 1px solid black;
     border-radius: 10px;
@@ -292,7 +303,8 @@ a:hover {
 }
 
 #rand-operator {
-    width: 50%;
+    width: 10%;
+    height: 50px;
     border: 1px solid black;
     border-radius: 10px;
     margin-top: 10px;
@@ -304,7 +316,8 @@ a:hover {
 }
 
 #number2 {
-    width: 50%;
+    width: 10%;
+    height: 50px;
     border: 1px solid black;
     border-radius: 10px;
     margin-top: 10px;

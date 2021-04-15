@@ -16,8 +16,6 @@
 </head>
 
 <body>
-
-
     <section id="easy-back">
         <div>
             <h1 id="title">Speedy Sums</h1>
@@ -26,27 +24,31 @@
         <div>
             <span id="level-title">Easy Level!!</span>
         </div>
-        <!--------- Timer Code -------->
 
-        <div id="countdown"></div>
 
-        <!-- ------Start Button Code --------->
+        <!-- ------Start Button --------->
 
-        <button id="start-button" onclick="randNumGen(number1, operator, number2)">Start</button>
-
-        <!------------- Question Boxes Code -------------->
-
-        <div id="number1">
-            <h4 id="topnum"></h4>
+        <div>
+            <button id="countdown" onclick="randNumGen(number1, operator, number2)">Start</button>
         </div>
+        <div id="hide">
+            <!--------- Countdown Timer -------->
 
-        <div id="number2">
-            <h4 id="botnum"></h4>
-        </div>
-        <div id="operator">
-            <h4 id="rand-operator"></h4>
-        </div>
+            <div id="countdown">Start</div>
 
+            <!------------- Question Boxes -------------->
+
+            <div id="number1">
+                <h4 id="topnum"></h4>
+            </div>
+            <div id="operator">
+                <h4 id="rand-operator">+</h4>
+            </div>
+            <div id="number2">
+                <h4 id="botnum"></h4>
+            </div>
+
+        </div>
 
         <div id="high-score">
             High Score: <span>0</span>

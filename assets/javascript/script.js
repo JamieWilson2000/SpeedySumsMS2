@@ -3,6 +3,8 @@ $("#start-button").click(function () {
     $("#start-button").hide('slow');
 });
 
+// Function for starting game
+
 // Random Number Generator
 function randNumGen() {
     var x = Math.floor((Math.random() * 10) + 1);
@@ -15,7 +17,7 @@ function randNumGen() {
     var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
-            document.getElementById("countdown").innerHTML = "Too Late!!";
+            document.getElementById("countdown").innerHTML = "Fail!";
         } else {
             document.getElementById("countdown").innerHTML = timeleft;
         }

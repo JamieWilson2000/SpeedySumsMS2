@@ -39,6 +39,26 @@ function startGame() {
 
     let topnum = parseInt(document.getElementById("topnum").innerText);
     let botnum = parseInt(document.getElementById("botnum").innerText);
+    let mathOperator = document.getElementById("rand-operator").innerText;
+
+    //     if (rand - operator === "+") {
+    //         return [topnum + botnum];
+    //     } else {
+    //         if (rand - operator === "-") {
+    //             return [topnum - botnum];
+    //         } else {
+    //             if (rand - operator === "x") {
+    //                 return [topnum * botnum];
+    //             } else {
+    //                 if rand - operator === "/") {
+    //                 return [topnum / botnum]
+    //             } else {
+    //                 alert(`Unimplemented operator`);
+    //                 throw `Unimplemented operator`;
+    //             }
+    //         }
+    //     }
+    // }
 
 }
 

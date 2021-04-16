@@ -22,7 +22,7 @@ h4 {
     font-family: 'Londrina Solid', cursive;
 }
 
-#start-button {
+/* #start-button {
     width: 50%;
     border: 1px solid black;
     border-radius: 10px;
@@ -32,7 +32,7 @@ h4 {
     font-family: 'Londrina Solid', cursive;
     font-size: 4rem;
     background: -webkit-linear-gradient(green, yellow, orange, red);
-}
+} */
 
 #high-score {
     margin-top: 130px;
@@ -53,7 +53,7 @@ ol {
 }
 
 #countdown {
-    width: 10%;
+    width: 20%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
@@ -64,10 +64,11 @@ ol {
     font-size: 3rem;
 }
 
+/* 
 #hide {
     /* display: none; */
-    border: 1px solid red;
-}
+/* border: 1px solid red;
+}  */
 
 /*************** Landing Page ***************/
 #landing-back {
@@ -289,8 +290,11 @@ a:hover {
 
 /******************** Game Elements ****************/
 
-#number1 {
-    width: 10%;
+#number1,
+#number2,
+#rand-operator,
+#answer {
+    width: 20%;
     height: 50px;
     border: 1px solid black;
     border-radius: 10px;
@@ -302,7 +306,7 @@ a:hover {
     background-color: (green);
 }
 
-#rand-operator {
+/* #rand-operator {
     width: 10%;
     height: 50px;
     border: 1px solid black;
@@ -311,11 +315,11 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Londrina Solid', cursive;
-    font-size: 2rem;
+    font-size: 4rem;
     background-color: (green);
-}
+} */
 
-#number2 {
+/* #number2 {
     width: 10%;
     height: 50px;
     border: 1px solid black;
@@ -326,7 +330,20 @@ a:hover {
     font-family: 'Londrina Solid', cursive;
     font-size: 2rem;
     background-color: (green);
-}
+} */
+
+/* #answer {
+    width: 10%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+    background-color: (green);
+} */
 
 @media (max-width: 576px) {
     h1 {

@@ -41,6 +41,10 @@ let multiply = mult1 * mult2;
 
 console.log(mult1, mult2, multiply)
 
+let divide1 = (Math.floor(Math.random() * 10) + 1);
+let divide2 = (Math.floor(Math.random() * 10) + 1);
+let divide = divide1 / divide2;
+
 function startGame() {
     // Countdown Timer
 
@@ -55,7 +59,7 @@ function startGame() {
         timeleft -= 1;
     }, 1000);
 
-    let gameType = ["add", "sub", "multiply"];
+    let gameType = ["add", "sub", "multiply", "divide"];
     let game = gameType[(Math.random() * gameType.length) | 0];
     if (game === "add") {
         document.getElementById("topnum").textContent = add1;
@@ -69,6 +73,10 @@ function startGame() {
         document.getElementById("topnum").textContent = mult1;
         document.getElementById("rand-operator").textContent = "*";
         document.getElementById("botnum").textContent = mult2;
+    } else if (game === "divide") {
+        document.getElementById("topnum").textContent = divide1;
+        document.getElementById("rand-operator").textContent = "/";
+        document.getElementById("botnum").textContent = divide2;
     }
 
     console.log(game);

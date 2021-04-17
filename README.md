@@ -173,6 +173,7 @@
     - Solution: Adjusted styling width to 100%
 - Problem: Trying to have timer and first question appear when start button is pressed.
     - Solution: Moved the timer code inside the function targeted by the onclick function.
+- Problem: "Random sums are actually just repeating the sum question instead of generating a new sum.
 
     
 

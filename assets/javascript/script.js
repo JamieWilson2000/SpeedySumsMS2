@@ -10,12 +10,13 @@
 //         }
 
 // Hide the Start Button
-$("#start-button").click(function () {
-    $("#start-button").hide('slow');
-});
+// $("#start-button").click(function () {
+//     $("#start-button").hide('slow');
+// });
+// Countdown Timer
+
 
 // Random Number Generators
-//Easy Level 
 let easyadd1 = (Math.floor(Math.random() * 10) + 1);
 let easyadd2 = (Math.floor(Math.random() * 10) + 1);
 let easyadd = easyadd1 + easyadd2;
@@ -31,7 +32,7 @@ let easymultiply = easymult1 * easymult2;
 let easydivide1 = (Math.floor(Math.random() * 10) + 1);
 let easydivide2 = (Math.floor(Math.random() * 10) + 1);
 let easydivide = easydivide1 / easydivide2;
-//Medium Level
+
 let medadd1 = (Math.floor(Math.random() * 10) + 1);
 let medadd2 = (Math.floor(Math.random() * 100) + 1);
 let medadd = medadd1 + medadd2;
@@ -47,7 +48,7 @@ let medmultiply = medmult1 * medmult2;
 let meddivide1 = (Math.floor(Math.random() * 10) + 1);
 let meddivide2 = (Math.floor(Math.random() * 100) + 1);
 let meddivide = meddivide1 / meddivide2;
-//Hard Level
+
 let hardadd1 = (Math.floor(Math.random() * 100) + 1);
 let hardadd2 = (Math.floor(Math.random() * 1000) + 1);
 let hardadd = hardadd1 + hardadd2;
@@ -63,7 +64,7 @@ let hardmultiply = hardmult1 * hardmult2;
 let harddivide1 = (Math.floor(Math.random() * 100) + 1);
 let harddivide2 = (Math.floor(Math.random() * 1000) + 1);
 let harddivide = harddivide1 / harddivide2;
-// Genius Level
+
 let genadd1 = (Math.floor(Math.random() * 100) + 1);
 let genadd2 = (Math.floor(Math.random() * 10000) + 1);
 let genadd = genadd1 + genadd2;
@@ -80,9 +81,7 @@ let gendivide1 = (Math.floor(Math.random() * 100) + 1);
 let gendivide2 = (Math.floor(Math.random() * 10000) + 1);
 let gendivide = gendivide1 / gendivide2;
 
-function startGame() {
-
-    // Countdown Timer
+function easyLevel() {
     var timeleft = 10;
     var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
@@ -93,81 +92,132 @@ function startGame() {
         }
         timeleft -= 1;
     }, 1000);
-
-    let gameType = ["easyadd", "easysub", "easymultiply", "easydivide",
-        "medadd", "medsub", "medmultiply", "meddivide",
-        "hardadd", "hardsub", "hardmultiply", "harddivide",
-        "genadd", "gensub", "genmultiply", "gendivide"
-    ];
-    let game = gameType[(Math.random() * gameType.length) | 0];
-    if (game === "easyadd") {
-        document.getElementById("easytopnum").textContent = easyadd1;
-        document.getElementById("rand-operator").textContent = "+";
-        document.getElementById("easybotnum").textContent = easyadd2;
-    } else if (game === "medadd") {
-        document.getElementById("medtopnum").textContent = medadd1;
-        document.getElementById("rand-operator").textContent = "+";
-        document.getElementById("medbotnum").textContent = medadd2;
-    } else if (game === "hardadd") {
-        document.getElementById("hardtopnum").textContent = hardadd1;
-        document.getElementById("rand-operator").textContent = "+";
-        document.getElementById("hardbotnum").textContent = hardadd2;
-    } else if (game === "genadd") {
-        document.getElementById("gentopnum").textContent = genadd1;
-        document.getElementById("rand-operator").textContent = "+";
-        document.getElementById("genbotnum").textContent = genadd2;
-    } else if (game === "easysub") {
-        document.getElementById("easytopnum").textContent = easysub1;
-        document.getElementById("rand-operator").textContent = "-";
-        document.getElementById("easybotnum").textContent = easysub2;
-    } else if (game === "medsub") {
-        document.getElementById("medtopnum").textContent = medsub1;
-        document.getElementById("rand-operator").textContent = "-";
-        document.getElementById("medbotnum").textContent = medsub2;
-    } else if (game === "hardsub") {
-        document.getElementById("hardtopnum").textContent = hardsub1;
-        document.getElementById("rand-operator").textContent = "-";
-        document.getElementById("hardbotnum").textContent = hardsub2;
-    } else if (game === "gensub") {
-        document.getElementById("gentopnum").textContent = gensub1;
-        document.getElementById("rand-operator").textContent = "-";
-        document.getElementById("genbotnum").textContent = gensub2;
-    } else if (game === "easymultiply") {
-        document.getElementById("easytopnum").textContent = easymult1;
-        document.getElementById("rand-operator").textContent = "*";
-        document.getElementById("easybotnum").textContent = easymult2;
-    } else if (game === "medmultiply") {
-        document.getElementById("medtopnum").textContent = medmult1;
-        document.getElementById("rand-operator").textContent = "*";
-        document.getElementById("medbotnum").textContent = medmult2;
-    } else if (game === "hardmultiply") {
-        document.getElementById("hardtopnum").textContent = hardmult1;
-        document.getElementById("rand-operator").textContent = "*";
-        document.getElementById("hardbotnum").textContent = hardmult2;
-    } else if (game === "genmultiply") {
-        document.getElementById("gentopnum").textContent = genmult1;
-        document.getElementById("rand-operator").textContent = "*";
-        document.getElementById("genbotnum").textContent = genmult2;
-    } else if (game === "easydivide") {
-        document.getElementById("easytopnum").textContent = easydivide1;
-        document.getElementById("rand-operator").textContent = "/";
-        document.getElementById("easybotnum").textContent = easydivide2;
-    } else if (game === "meddivide") {
-        document.getElementById("medtopnum").textContent = meddivide1;
-        document.getElementById("rand-operator").textContent = "/";
-        document.getElementById("medbotnum").textContent = meddivide2;
-    } else if (game === "harddivide") {
-        document.getElementById("hardtopnum").textContent = harddivide1;
-        document.getElementById("rand-operator").textContent = "/";
-        document.getElementById("hardbotnum").textContent = harddivide2;
-    } else if (game === "gendivide") {
-        document.getElementById("gentopnum").textContent = gendivide1;
-        document.getElementById("rand-operator").textContent = "/";
-        document.getElementById("genbotnum").textContent = gendivide2;
-    }
-
-    console.log(game);
 }
+let easylevel = ["easyadd", "easysub", "easymultiply", "easydivide"];
+let game1 = easylevel[(Math.random() * easylevel.length) | 0];
+
+if (game1 === "easyadd") {
+    document.getElementById("easytopnum").textContent = easyadd1;
+    document.getElementById("rand-operator").textContent = "+";
+    document.getElementById("easybotnum").textContent = easyadd2;
+} else if (game1 === "easysub") {
+    document.getElementById("easytopnum").textContent = easysub1;
+    document.getElementById("rand-operator").textContent = "-";
+    document.getElementById("easybotnum").textContent = easysub2;
+} else if (game1 === "easymultiply") {
+    document.getElementById("easytopnum").textContent = easymult1;
+    document.getElementById("rand-operator").textContent = "*";
+    document.getElementById("easybotnum").textContent = easymult2;
+} else if (game1 === "easydivide") {
+    document.getElementById("easytopnum").textContent = easydivide1;
+    document.getElementById("rand-operator").textContent = "/";
+    document.getElementById("easybotnum").textContent = easydivide2;
+}
+
+
+function mediumLevel() {
+    var timeleft = 10;
+    var downloadTimer = setInterval(function () {
+        if (timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "Fail!";
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft;
+        }
+        timeleft -= 1;
+    }, 1000);
+}
+
+let medlevel = ["medadd", "medsub", "medmultiply", "meddivide"];
+let game2 = medlevel[(Math.random() * medlevel.length) | 0];
+
+if (game2 === "medadd") {
+    document.getElementById("medtopnum").textContent = medadd1;
+    document.getElementById("rand-operator").textContent = "+";
+    document.getElementById("medbotnum").textContent = medadd2;
+} else if (game2 === "medsub") {
+    document.getElementById("medtopnum").textContent = medsub1;
+    document.getElementById("rand-operator").textContent = "-";
+    document.getElementById("medbotnum").textContent = medsub2;
+} else if (game2 === "medmultiply") {
+    document.getElementById("medtopnum").textContent = medmult1;
+    document.getElementById("rand-operator").textContent = "*";
+    document.getElementById("medbotnum").textContent = medmult2;
+} else if (game2 === "meddivide") {
+    document.getElementById("medtopnum").textContent = meddivide1;
+    document.getElementById("rand-operator").textContent = "/";
+    document.getElementById("medbotnum").textContent = meddivide2;
+}
+
+
+// function hardLevel() {
+//     // Countdown Timer
+//     var timeleft = 10;
+//     var downloadTimer = setInterval(function () {
+//         if (timeleft <= 0) {
+//             clearInterval(downloadTimer);
+//             document.getElementById("countdown").innerHTML = "Fail!";
+//         } else {
+//             document.getElementById("countdown").innerHTML = timeleft;
+//         }
+//         timeleft -= 1;
+//     }, 1000);
+// }
+
+
+// if (game === "hardadd") {
+//     document.getElementById("hardtopnum").textContent = hardadd1;
+//     document.getElementById("rand-operator").textContent = "+";
+//     document.getElementById("hardbotnum").textContent = hardadd2;
+// } else if (game === "hardsub") {
+//     document.getElementById("hardtopnum").textContent = hardsub1;
+//     document.getElementById("rand-operator").textContent = "-";
+//     document.getElementById("hardbotnum").textContent = hardsub2;
+// } else if (game === "hardmultiply") {
+//     document.getElementById("hardtopnum").textContent = hardmult1;
+//     document.getElementById("rand-operator").textContent = "*";
+//     document.getElementById("hardbotnum").textContent = hardmult2;
+// } else if (game === "harddivide") {
+//     document.getElementById("hardtopnum").textContent = harddivide1;
+//     document.getElementById("rand-operator").textContent = "/";
+//     document.getElementById("hardbotnum").textContent = harddivide2;
+// }
+
+// function genLevel() {
+//     // Countdown Timer
+//     var timeleft = 10;
+//     var downloadTimer = setInterval(function () {
+//         if (timeleft <= 0) {
+//             clearInterval(downloadTimer);
+//             document.getElementById("countdown").innerHTML = "Fail!";
+//         } else {
+//             document.getElementById("countdown").innerHTML = timeleft;
+//         }
+//         timeleft -= 1;
+//     }, 1000);
+// }
+
+
+// if (game === "genadd") {
+//     document.getElementById("gentopnum").textContent = genadd1;
+//     document.getElementById("rand-operator").textContent = "+";
+//     document.getElementById("genbotnum").textContent = genadd2;
+// } else if (game === "gensub") {
+//     document.getElementById("gentopnum").textContent = gensub1;
+//     document.getElementById("rand-operator").textContent = "-";
+//     document.getElementById("genbotnum").textContent = gensub2;
+// } else if (game === "genmultiply") {
+//     document.getElementById("gentopnum").textContent = genmult1;
+//     document.getElementById("rand-operator").textContent = "*";
+//     document.getElementById("genbotnum").textContent = genmult2;
+// } else if (game === "gendivide") {
+//     document.getElementById("gentopnum").textContent = gendivide1;
+//     document.getElementById("rand-operator").textContent = "/";
+//     document.getElementById("genbotnum").textContent = gendivide2;
+// }
+
+// console.log(game);
+
 
 
 

@@ -1,26 +1,12 @@
+// document.addEventListener("DOMContentLoaded", function {
+//     let buttons = document.getElementsByTagName("button");}
+
 // Hide the Start Button
 $("#start-button").click(function () {
     $("#start-button").hide('slow');
 });
 
-// Function for starting game
 
-
-
-// function startGame() {
-
-// Countdown Timer
-
-// var timeleft = 10;
-// var downloadTimer = setInterval(function () {
-//     if (timeleft <= 0) {
-//         clearInterval(downloadTimer);
-//         document.getElementById("countdown").innerHTML = "Fail!";
-//     } else {
-//         document.getElementById("countdown").innerHTML = timeleft;
-//     }
-//     timeleft -= 1;
-// }, 1000);
 
 // Random Number Generator
 let add1 = (Math.floor(Math.random() * 10000) + 1);
@@ -46,8 +32,8 @@ let divide2 = (Math.floor(Math.random() * 10) + 1);
 let divide = divide1 / divide2;
 
 function startGame() {
-    // Countdown Timer
 
+    // Countdown Timer
     var timeleft = 10;
     var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
@@ -102,7 +88,24 @@ function startGame() {
 
 
 
+// Function for starting game
 
+
+
+// function startGame() {
+
+// Countdown Timer
+
+// var timeleft = 10;
+// var downloadTimer = setInterval(function () {
+//     if (timeleft <= 0) {
+//         clearInterval(downloadTimer);
+//         document.getElementById("countdown").innerHTML = "Fail!";
+//     } else {
+//         document.getElementById("countdown").innerHTML = timeleft;
+//     }
+//     timeleft -= 1;
+// }, 1000);
 // var x = Math.floor((Math.random() * 10) + 1);
 // var y = Math.floor((Math.random() * 10) + 1);
 

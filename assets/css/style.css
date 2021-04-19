@@ -54,11 +54,11 @@ ol {
 
 #countdown {
     width: 20%;
-    height: 70px;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     background: -webkit-linear-gradient(green, yellow, orange, red);
     font-family: 'Londrina Solid', cursive;
     font-size: 3rem;
@@ -149,14 +149,17 @@ a:hover {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
-    background-color: green;
-    border: 1px solid black;
+    background-color: rgb(68, 245, 68);
+    border: 2px solid black;
     border-radius: 10px;
     color: black;
     padding: 10px 24px;
     cursor: pointer;
     float: left;
+}
 
+#easybtn:hover {
+    background-color: rgb(59, 212, 59);
 }
 
 #medbtn {
@@ -164,7 +167,7 @@ a:hover {
     font-family: 'Londrina Solid', cursive;
     text-align: center;
     background-color: yellow;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     color: black;
     padding: 10px 24px;
@@ -172,17 +175,25 @@ a:hover {
     float: left;
 }
 
+#medbtn:hover {
+    background-color: rgb(207, 207, 2);
+}
+
 #hardbtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
     background-color: orange;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     color: black;
     padding: 10px 24px;
     cursor: pointer;
     float: left;
+}
+
+#hardbtn:hover {
+    background-color: rgb(209, 136, 0);
 }
 
 #genbtn {
@@ -198,22 +209,26 @@ a:hover {
     float: left;
 }
 
-.btn-group button:not(:last-child) {
-    border-right: none;
-    /* Prevent double borders */
+#genbtn:hover {
+    background-color: rgb(207, 0, 0);
 }
 
+
+/* .btn-group button:not(:last-child) {
+    border-right: none;
+} */
+
 /* Clear floats (clearfix hack) */
-.btn-group:after {
+/* .btn-group:after {
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 /* Add a background color on hover */
-.btn-group button:hover {
+/* .btn-group button:hover {
     background-color: #3e8e41;
-}
+} */
 
 /********************* Easy Level Page ******************/
 #easy-back {
@@ -233,6 +248,8 @@ a:hover {
     font-size: 3rem;
     font-family: 'Londrina Solid', cursive;
 }
+
+
 
 /********************* Medium Level Page ******************/
 #medium-back {
@@ -292,7 +309,7 @@ a:hover {
 
 #number1,
 #number2,
-#rand-operator,
+
 #answer {
     width: 20%;
     height: 50px;
@@ -306,7 +323,7 @@ a:hover {
     background-color: (green);
 }
 
-/* #rand-operator {
+#rand-operator {
     width: 10%;
     height: 50px;
     border: 1px solid black;
@@ -315,9 +332,9 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Londrina Solid', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     background-color: (green);
-} */
+}
 
 /* #number2 {
     width: 10%;

@@ -174,6 +174,9 @@
 - Problem: Trying to have timer and first question appear when start button is pressed.
     - Solution: Moved the timer code inside the function targeted by the onclick function.
 - Problem: "Random sums are actually just repeating the sum question instead of generating a new sum.
+    - Solution
+- Problem: Getting this error message "script.js:160 Uncaught TypeError: Cannot set property 'textContent' of null
+    at startGame (script.js:160)at HTMLButtonElement.onclick (mediumlevel.html:32)"
 
     
 

@@ -1,12 +1,21 @@
 // document.addEventListener("DOMContentLoaded", function {
-//     let buttons = document.getElementsByTagName("button");}
+//             let buttons = document.getElementsByTagName("button");
+//             for (let button of buttons) {
+//                 button.addEventListener("click", function () {
+//                     if (this.getAttribute("gameType") === "easybtn") {
+//                         alert("you clicked easy level");
+//                     }
+//                 })
+//             }
+//         }
+
+
+
 
 // Hide the Start Button
 $("#start-button").click(function () {
     $("#start-button").hide('slow');
 });
-
-
 
 // Random Number Generator
 let add1 = (Math.floor(Math.random() * 10000) + 1);

@@ -6,9 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "submit") {
                 alert("You clicked Submit")
             } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
+                let startGame = this.getAttribute("data-type");
+                runGame(gameType);
             }
         });
     }
+    runGame("easyLevel");
 });
+
+function runGame(gameType) {
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+}

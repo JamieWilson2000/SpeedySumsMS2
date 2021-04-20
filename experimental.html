@@ -29,7 +29,7 @@
         <!-- ------Start Button --------->
 
         <div>
-            <button id="countdown" onclick="startGame()">Start</button>
+            <button id="countdown" onclick="easyLevel()">Start</button>
         </div>
         <div id="hide">
             <!--------- Countdown Timer -------->
@@ -39,30 +39,37 @@
             <!------------- Question Boxes -------------->
 
             <div id="number1">
-                <h4 id="topnum"></h4>
+                <h4 id="easytopnum"></h4>
             </div>
             <div id="operator">
                 <h4 id="rand-operator"></h4>
             </div>
             <div id="number2">
-                <h4 id="botnum"></h4>
+                <h4 id="easybotnum"></h4>
             </div>
-            <div id="answer">
-                <input type="number" placeholder="Answer" aria-label="Answer">
+            <div>
+                <p class="answer-message">Enter Answer:</p>
+                <input id="answer-box" name="answer" type="number">
+                <button type="button" class="btn btn-primary">Submit</button>
             </div>
 
 
 
         </div>
 
-        <div id="high-score">
-            High Score: <span>0</span>
+        <div class="row">
+            <div class="col-6" id="score">
+                Score: <span>0</span>
+            </div>
+            <div class="col-6" id="high-score">
+                High Score: <span>0</span>
+            </div>
         </div>
 
         <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
 
     </section>
-    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/script2.js"></script>
 </body>
 
 < /html>

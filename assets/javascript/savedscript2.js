@@ -30,27 +30,56 @@ function easyLevel() {
     let game1 = easylevel[(Math.random() * easylevel.length) | 0];
 
     if (game1 === "easyadd") {
-        let easyadd = easynum1 + easynum2
+        // let easyadd = easynum1 + easynum2
         document.getElementById("easytopnum").textContent = easynum1;
         document.getElementById("rand-operator").textContent = "+";
         document.getElementById("easybotnum").textContent = easynum2;
     } else if (game1 === "easysub") {
-        let easysub = easynum1 - easynum2
+        // let easysub = easynum1 - easynum2
         document.getElementById("easytopnum").textContent = easynum1;
         document.getElementById("rand-operator").textContent = "-";
         document.getElementById("easybotnum").textContent = easynum2;
     } else if (game1 === "easymultiply") {
-        let easymultiply = easynum1 * easynum2
+        // let easymultiply = easynum1 * easynum2
         document.getElementById("easytopnum").textContent = easynum1;
         document.getElementById("rand-operator").textContent = "*";
         document.getElementById("easybotnum").textContent = easynum2;
     } else if (game1 === "easydivide") {
-        let easydivide = easynum1 / easynum2
+        // let easydivide = easynum1 / easynum2
         document.getElementById("easytopnum").textContent = easynum1;
         document.getElementById("rand-operator").textContent = "/";
         document.getElementById("easybotnum").textContent = easynum2;
     }
+
+    function calculateAnswer() {
+        let easynum1 = parseInt(document.getElementById("easynum1").innerText);
+        let easynum2 = parseInt(document.getElementById("easynum2").innerText);
+        let operator = document.getElementById("rand-operator").innerText;
+
+        if (rand - operator === "+") {
+            return [easynum1 + easynum2, "easyLevel"];
+        } else if (rand - operator === "-") {
+            return [easynum1 - easynum2, "easyLevel"];
+        } else if (rand - operator === "*") {
+            return [easynum1 * easynum2, "easyLevel"];
+        } else if (rand - operator === "/") {
+            return [easynum1 / easynum2, "easylevel"];
+        }
+    }
+
+    function checkAnswer() {
+        let userAnswer = parseInt(document.getElementById("answer-box").value);
+        let calculatedAnswer = calculateAnswer();
+        let isCorrect = userAnswer === calculatedAnswer[0];
+
+        if (isCorrect) {
+            alert("Well fuck me!")
+        } else {
+            alert("no")
+        }
+    }
 }
+
 
 function mediumLevel() {
     var timeleft = 10;

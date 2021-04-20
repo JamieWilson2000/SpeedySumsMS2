@@ -177,7 +177,7 @@
     - Solution
 - Problem: Getting this error message "script.js:160 Uncaught TypeError: Cannot set property 'textContent' of null
     at startGame (script.js:160)at HTMLButtonElement.onclick (mediumlevel.html:32)"
-
+- Problem: Screen jumping when hovered over answer box
     
 
 # Credits

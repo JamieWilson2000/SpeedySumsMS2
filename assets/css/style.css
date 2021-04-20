@@ -33,6 +33,20 @@ h4 {
     font-size: 4rem;
     background: -webkit-linear-gradient(green, yellow, orange, red);
 } */
+.btn-primary {
+    margin-top: 5px;
+    color: black;
+    font-family: 'Londrina Solid', cursive;
+    background: -webkit-linear-gradient(green, yellow, orange, red);
+    margin-right: auto;
+
+}
+
+#answer-box {
+    margin-top: 5px;
+    background-color: aliceblue;
+    margin-left: auto;
+}
 
 #high-score {
     text-align: left;

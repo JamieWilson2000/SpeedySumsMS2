@@ -19,14 +19,22 @@ function runGame(gameType) {
     let num2 = Math.floor(Math.random() * 10) + 1;
 
     if (gameType === "easyLevel") {
-        displayEasyLevel(num1, num2)
+        displayEasyLevel(num1, num2);
     }
 }
 
-function displayEasyLevel(easytopnum, easybotnum) {
+// function randomOperator() {
+//     let randoperator = ["+", "-", "x", "/"];
+//     let o = randoperator[(Math.random() * randoperator.length) | 0];
+//     document.getElementById("operator").textContent = o;
+// }
+
+function displayEasyLevel(easytopnum, easybotnum, operator) {
     document.getElementById("easytopnum").textContent = easytopnum;
     document.getElementById("easybotnum").textContent = easybotnum;
-    document.getElementById("operator").textContent = "+";
+    let randoperator = ["+", "-", "x", "/"];
+    let o = randoperator[(Math.random() * randoperator.length) | 0];
+    document.getElementById("operator").textContent = o;
 }
 
 function calculateCorrectAnswer() {
@@ -36,8 +44,15 @@ function calculateCorrectAnswer() {
 
     if (operator === "+") {
         return [easytopnum + easybotnum, "easyLevel"];
+    } else if (operator === "-") {
+        return [easytopnum - easybotnum, "easyLevel"];
+    } else if (operator === "x") {
+        return [easytopnum * easybotnum, "easyLevel"];
+    } else if (operator === "/") {
+        return [easytopnum / easybotnum, "easyLevel"];
     } else {
-        alert("fuck it");
+        alert("Problem with the calculateCorrectAnswer function");
+        throw ("Problem with the calculateCorrectAnswer function");
     }
 
 }
@@ -50,7 +65,7 @@ function checkAnswer() {
     if (isCorrect) {
         incrementScore();
     } else {
-        alert("Wrong");
+        alert("Wroooong!!")
     }
     runGame(calculatedAnswer[1]);
 }

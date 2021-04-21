@@ -48,9 +48,14 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-        ;
+        incrementScore();
     } else {
         alert("Wrong");
     }
     runGame(calculatedAnswer[1]);
+}
+
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }

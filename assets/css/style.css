@@ -56,6 +56,15 @@ h4 {
     font-size: 2.5rem;
 }
 
+#scorestyle {
+    padding-right: 60px;
+    text-align: right;
+    margin-top: 10px;
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
 #score {
     padding-right: 60px;
     text-align: right;

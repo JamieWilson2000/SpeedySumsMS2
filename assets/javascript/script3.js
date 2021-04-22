@@ -24,11 +24,23 @@ function runGame(gameType) {
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
-    let num1 = Math.floor(Math.random() * 10) + 1;
-    let num2 = Math.floor(Math.random() * 10) + 1;
+    // let num1 = Math.floor(Math.random() * 10) + 1;
+    // let num2 = Math.floor(Math.random() * 10) + 1;
 
     if (gameType === "easyLevel") {
-        displayEasyLevel(num1, num2);
+        let num1 = Math.floor(Math.random() * 10) + 1;
+        let num2 = Math.floor(Math.random() * 10) + 1;
+        displaySum(num1, num2);
+    } else if (gameType === "mediumLevel") {
+        let num1 = Math.floor(Math.random() * 100) + 1;
+        let num2 = Math.floor(Math.random() * 100) + 1;
+        displayMediumLevel(num1, num2);
+    } else if (gameType === "hardLevel") {
+        let num1 = Math.floor(Math.random() * 1000) + 1;
+        let num2 = Math.floor(Math.random() * 1000) + 1;
+    } else if (gameType === "geniusLevel") {
+        let num1 = Math.floor(Math.random() * 10000) + 1;
+        let num2 = Math.floor(Math.random() * 10000) + 1;
     }
 }
 
@@ -38,27 +50,27 @@ function runGame(gameType) {
 //     document.getElementById("operator").textContent = o;
 // }
 
-function displayEasyLevel(easytopnum, easybotnum, operator) {
-    document.getElementById("easytopnum").textContent = easytopnum;
-    document.getElementById("easybotnum").textContent = easybotnum;
+function displaySum(topnum, botnum, operator) {
+    document.getElementById("topnum").textContent = topnum;
+    document.getElementById("botnum").textContent = botnum;
     let randoperator = ["+", "-", "x", "/"];
     let o = randoperator[(Math.random() * randoperator.length) | 0];
     document.getElementById("operator").textContent = o;
 }
 
 function calculateCorrectAnswer() {
-    let easytopnum = parseInt(document.getElementById("easytopnum").innerText);
-    let easybotnum = parseInt(document.getElementById("easybotnum").innerText);
+    let topnum = parseInt(document.getElementById("topnum").innerText);
+    let botnum = parseInt(document.getElementById("botnum").innerText);
     let operator = document.getElementById("operator").innerText;
 
     if (operator === "+") {
-        return [easytopnum + easybotnum, "easyLevel"];
+        return [topnum + botnum, "easyLevel"];
     } else if (operator === "-") {
-        return [easytopnum - easybotnum, "easyLevel"];
+        return [topnum - botnum, "easyLevel"];
     } else if (operator === "x") {
-        return [easytopnum * easybotnum, "easyLevel"];
+        return [topnum * botnum, "easyLevel"];
     } else if (operator === "/") {
-        return [easytopnum / easybotnum, "easyLevel"];
+        return [topnum / botnum, "easyLevel"];
     } else {
         alert("Problem with the calculateCorrectAnswer function");
         throw ("Problem with the calculateCorrectAnswer function");

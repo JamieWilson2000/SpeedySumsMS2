@@ -86,7 +86,7 @@ function checkAnswer() {
     if (isCorrect) {
         incrementScore();
     } else {
-        alert("Wroooong!!")
+        logHighScore();
     }
     runGame(calculatedAnswer[1]);
 }
@@ -94,4 +94,13 @@ function checkAnswer() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
+
+
+}
+
+function logHighScore() {
+
+    alert("wrong 'score'")
+    document.getElementById("score").innerText = "0";
+
 }

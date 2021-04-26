@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
             } else {
-                let startGame = this.getAttribute("data-type");
+                let easyGame = this.getAttribute("data-type");
                 runGame("easyLevel");
+
             }
         });
     }
@@ -24,9 +25,6 @@ function runGame(gameType) {
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
-    // let num1 = Math.floor(Math.random() * 10) + 1;
-    // let num2 = Math.floor(Math.random() * 10) + 1;
-
     if (gameType === "easyLevel") {
         let num1 = Math.floor(Math.random() * 10) + 1;
         let num2 = Math.floor(Math.random() * 10) + 1;
@@ -34,25 +32,21 @@ function runGame(gameType) {
     } else if (gameType === "mediumLevel") {
         let num1 = Math.floor(Math.random() * 100) + 1;
         let num2 = Math.floor(Math.random() * 100) + 1;
-        displayMediumLevel(num1, num2);
+        displaySum(num1, num2);
     } else if (gameType === "hardLevel") {
         let num1 = Math.floor(Math.random() * 1000) + 1;
         let num2 = Math.floor(Math.random() * 1000) + 1;
+        displaySum(num1, num2);
     } else if (gameType === "geniusLevel") {
         let num1 = Math.floor(Math.random() * 10000) + 1;
         let num2 = Math.floor(Math.random() * 10000) + 1;
+        displaySum(num1, num2);
     }
 }
 
-// function randomOperator() {
-//     let randoperator = ["+", "-", "x", "/"];
-//     let o = randoperator[(Math.random() * randoperator.length) | 0];
-//     document.getElementById("operator").textContent = o;
-// }
-
 function displaySum(topnum, botnum, operator) {
-    document.getElementById("topnum").textContent = topnum > botnum ? topnum : botnum,
-        document.getElementById("botnum").textContent = topnum > botnum ? botnum : topnum;
+    document.getElementById("topnum").textContent = topnum > botnum ? topnum : botnum;
+    document.getElementById("botnum").textContent = topnum > botnum ? botnum : topnum;
     let randoperator = ["+", "-", "x", "/"];
     let o = randoperator[(Math.random() * randoperator.length) | 0];
     document.getElementById("operator").textContent = o;
@@ -61,13 +55,6 @@ function displaySum(topnum, botnum, operator) {
         document.getElementById("botnum").textContent = botnum;
     }
 }
-
-function division() {
-    document.getElementById("topnum").textContent = (topnum * botnum);
-    document.getElementById("botnum").textContent = botnum;
-
-}
-
 
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);

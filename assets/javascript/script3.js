@@ -51,12 +51,23 @@ function runGame(gameType) {
 // }
 
 function displaySum(topnum, botnum, operator) {
-    document.getElementById("topnum").textContent = topnum;
-    document.getElementById("botnum").textContent = botnum;
+    document.getElementById("topnum").textContent = topnum > botnum ? topnum : botnum,
+        document.getElementById("botnum").textContent = topnum > botnum ? botnum : topnum;
     let randoperator = ["+", "-", "x", "/"];
     let o = randoperator[(Math.random() * randoperator.length) | 0];
     document.getElementById("operator").textContent = o;
+    if (document.getElementById("operator").textContent === "/") {
+        document.getElementById("topnum").textContent = (topnum * botnum);
+        document.getElementById("botnum").textContent = botnum;
+    }
 }
+
+function division() {
+    document.getElementById("topnum").textContent = (topnum * botnum);
+    document.getElementById("botnum").textContent = botnum;
+
+}
+
 
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);

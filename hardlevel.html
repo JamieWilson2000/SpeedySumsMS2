@@ -27,39 +27,33 @@
         </div>
         <!-----------------Game Area--------------->
         <div>
-            <button class="btn-light" id="countdown" onclick="hardLevel()">Start</button>
+            <button data-type="startGame" class="btn-light" id="countdown" onclick="easyLevel()">Start</button>
         </div>
 
         <div id="number1">
-            <h4 id="hardtopnum"></h4>
+            <h4 id="topnum"></h4>
         </div>
-        <div id="operator">
-            <h4 id="rand-operator"></h4>
+        <div>
+            <h4 id="operator"></h4>
         </div>
         <div id="number2">
-            <h4 id="hardbotnum"></h4>
+            <h4 id="botnum"></h4>
         </div>
-
         <div class="row">
             <p></p>
             <input id="answer-box" placeholder="Answer" name="answer" type="number">
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button data-type="submit" class="btn btn-primary">Submit</button>
+
         </div>
 
 
-        <div class="row">
-            <div class="col-6" id="score">
-                Score: <span>0</span>
-            </div>
-            <div class="col-6" id="high-score">
-                High Score: <span>0</span>
-            </div>
-        </div>
+
+        <label id="scorestyle">Score:<span id="score">0</span>High Score: <span id="high-score">0</span></label>
 
         <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
 
     </section>
-    <script src="assets/javascript/script2.js"></script>
+    <script src="assets/javascript/script3.js"></script>
 </body>
 
 </html>

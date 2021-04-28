@@ -1,3 +1,4 @@
+//Load page and add event listeners
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     runGame("easyLevel");
 });
-
+// Gerating numbers for the game
 function runGame(gameType) {
 
     document.getElementById("answer-box").value = "";
@@ -44,6 +45,7 @@ function runGame(gameType) {
     }
 }
 
+//Displaying the questions onto the screen
 function displaySum(topnum, botnum, operator) {
     document.getElementById("topnum").textContent = topnum > botnum ? topnum : botnum;
     document.getElementById("botnum").textContent = topnum > botnum ? botnum : topnum;
@@ -56,6 +58,7 @@ function displaySum(topnum, botnum, operator) {
     }
 }
 
+//Calculating the correct answers
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);
     let botnum = parseInt(document.getElementById("botnum").innerText);
@@ -76,6 +79,7 @@ function calculateCorrectAnswer() {
 
 }
 
+//Check the users answer with the correct answer
 function checkAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
@@ -84,21 +88,24 @@ function checkAnswer() {
     if (isCorrect) {
         incrementScore();
     } else {
-        logHighScore();
+        gameOver();
     }
     runGame(calculatedAnswer[1]);
 }
 
+//Increase the score
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-
-
+    let hiScore = parseInt(document.getElementById("high-score").innerText);
+    if (oldScore > hiScore) {
+        document.getElementById("high-score").innerText = oldScore;
+    } else {
+        document.getElementById("high-score").innerText = hiScore;
+    }
 }
 
-function logHighScore() {
-
-    alert("wrong 'score'")
-    document.getElementById("score").innerText = "0";
-
+//Game over function
+function gameOver() {
+    document.getElementById("easy-back").style.background = "red";
 }

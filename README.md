@@ -180,6 +180,8 @@
     - Solution:
 - Problem: Screen jumping when hovered over answer box
     - Solution:
+- Problem: High Score won't accept the latest high score.
+    - Solution:
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
             } else {
-                let easyGame = this.getAttribute("data-type");
+                let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
 
             }
@@ -25,6 +25,7 @@ function runGame(gameType) {
 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
+    document.getElementById("high-score").innerText;
 
     if (gameType === "easyLevel") {
         let num1 = Math.floor(Math.random() * 10) + 1;
@@ -88,6 +89,7 @@ function checkAnswer() {
     if (isCorrect) {
         incrementScore();
     } else {
+        logHiScore();
         gameOver();
     }
     runGame(calculatedAnswer[1]);
@@ -97,15 +99,28 @@ function checkAnswer() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    let hiScore = parseInt(document.getElementById("high-score").innerText);
-    if (oldScore > hiScore) {
-        document.getElementById("high-score").innerText = oldScore;
-    } else {
-        document.getElementById("high-score").innerText = hiScore;
-    }
+    // let hiScore = parseInt(document.getElementById("high-score").innerText);
+    // if (oldScore > hiScore) {
+    //     document.getElementById("high-score").innerText = oldScore;
+    // } else {
+    //     document.getElementById("high-score").innerText = hiScore;
 }
 
+function logHiScore() {
+
+}
+
+
 //Game over function
-function gameOver() {
-    document.getElementById("easy-back").style.background = "red";
+
+function gameOver(msg, playAgain) {
+    var confirmBox = $("#confirm");
+    confirmBox.find(".message").text(msg);
+    confirmBox.find(".playAgain").click(function () {
+        confirmBox.hide();
+    });
+    confirmBox.find(".return").click(playAgain);
+    confirmBox.show();
+
+
 }

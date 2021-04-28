@@ -180,6 +180,8 @@
     - Solution:
 - Problem: Screen jumping when hovered over answer box
     - Solution:
+- Problem: Score not refreshing back to 0 when selecting the play again option from the end of game prompt.
+    - Solution: I encased the "Play Again" button in an "<a></a>" with a href to "reload" the page.
 - Problem: High Score won't accept the latest high score.
     - Solution:
 
@@ -189,6 +191,9 @@
 
 - For instruction on how to create a countdown timer I referred to here:
 - Credit - https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+
+- For reference on how to create a "Game Over" alert box I referred to here:
+- Credit - https://www.tutorialspoint.com/How-I-can-change-the-style-of-alert-box-using-JavaScript#:~:text=You%20will%20not%20be%20able,library%2C%20jQuery%20to%20achive%20this.
 
 
 

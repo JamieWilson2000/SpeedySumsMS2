@@ -7,6 +7,8 @@ body {
     text-align: center;
 }
 
+
+
 h4 {
     font-size: 3rem;
 }
@@ -51,7 +53,9 @@ h4 {
 
 #answer-box {
     margin-top: 5px;
+    text-align: center;
     background-color: aliceblue;
+    font-family: 'Londrina Solid', cursive;
     margin-left: auto;
     margin-right: auto;
 }
@@ -146,11 +150,19 @@ ol {
     }
 }
 
-#title {
+#main-title {
     margin-left: 0, auto;
     margin-right: 0, auto;
     text-align: center;
     font-size: 6rem;
+    font-family: 'Londrina Solid', cursive;
+}
+
+#title {
+    margin-left: 0, auto;
+    margin-right: 0, auto;
+    text-align: center;
+    font-size: 3rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -529,14 +541,27 @@ textarea:focus {
 }
 
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     h1 {
-        padding-top: 30%;
+        padding-top: 0px;
     }
 
     #title {
+        font-size: 3rem;
+        padding-top: 0;
+    }
+
+    #level-title {
+        font-size: 2.5rem
+    }
+
+    #main-title {
+        padding-top: 0px;
         font-size: 4rem;
-        padding-top: 5%;
+    }
+
+    #instructstyle {
+        padding-left: 10px;
     }
 
     #easysubtitle {
@@ -546,5 +571,32 @@ textarea:focus {
     #countdown {
         height: 60px;
         width: 40%;
+    }
+
+    .row {
+        margin-top: 0;
+    }
+
+    #levelBtn {
+        font-size: 22px;
+        background: -webkit-linear-gradient(green, yellow, orange, red);
+    }
+
+    #answer-box {
+        height: 50px;
+        font-size: 30px;
+    }
+
+    #quit {
+        margin-top: 0;
+    }
+
+    #scorestyle {
+        margin-bottom: 0;
+    }
+
+    #confirm {
+        width: 350px;
+        height: 400px;
     }
 }

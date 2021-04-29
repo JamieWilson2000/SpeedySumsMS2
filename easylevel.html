@@ -31,24 +31,48 @@
         <div id="easy-level">
             <button gameType="easyLevel" data-type="easyGame" class="btn-light" id="countdown">Start</button>
         </div>
-
-        <div id="number1">
-            <h4 id="topnum"></h4>
-        </div>
-        <div>
-            <h4 id="operator"></h4>
-        </div>
-        <div id="number2">
-            <h4 id="botnum"></h4>
+        <div class="row">
+            <div id="number1">
+                <h4 id="topnum"></h4>
+            </div>
+            <div>
+                <h4 id="operator"></h4>
+            </div>
+            <div id="number2">
+                <h4 id="botnum"></h4>
+            </div>
         </div>
         <div class="row">
             <p></p>
             <input id="answer-box" placeholder="Answer" name="answer" type="number">
             <button data-type="submit" class="btn btn-primary">Submit</button>
-
-
-
         </div>
+
+        <!--Code for Mobile Numpad-->
+        <div class="numpad">
+            <div id="container">
+                <div>
+                    <button class="shuffle">1</button>
+                    <button class="shuffle">2</button>
+                    <button class="shuffle">3</button>
+                    <button class="shuffle">4</button>
+                    <button class="shuffle">5</button>
+                </div>
+                <div>
+                    <button class="shuffle">6</button>
+                    <button class="shuffle">7</button>
+                    <button class="shuffle">8</button>
+                    <button class="shuffle">9</button>
+                    <button class="shuffle">0</button>
+                </div>
+                <div>
+                    <button class="del">del</button>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <div id="confirm">
             <div class="message">Oh no!! Wrong Answer!!!</div>

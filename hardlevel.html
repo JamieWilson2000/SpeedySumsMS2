@@ -25,35 +25,64 @@
         <div>
             <span id="level-title">Hard Level!!</span>
         </div>
-        <!-----------------Game Area--------------->
-        <div>
-            <button data-type="startGame" class="btn-light" id="countdown" onclick="easyLevel()">Start</button>
+        <!---------------Game Area--------------->
+        <div id="easy-level">
+            <button gameType="easyLevel" data-type="easyGame" class="btn-light" id="countdown">Start</button>
         </div>
-
-        <div id="number1">
-            <h4 id="topnum"></h4>
-        </div>
-        <div>
-            <h4 id="operator"></h4>
-        </div>
-        <div id="number2">
-            <h4 id="botnum"></h4>
+        <div class="row">
+            <div id="number1">
+                <h4 id="topnum"></h4>
+            </div>
+            <div>
+                <h4 id="operator"></h4>
+            </div>
+            <div id="number2">
+                <h4 id="botnum"></h4>
+            </div>
         </div>
         <div class="row">
             <p></p>
             <input id="answer-box" placeholder="Answer" name="answer" type="number">
-            <button data-type="submit" class="btn btn-primary">Submit</button>
-
         </div>
 
+        <!--Code for Mobile Numpad-->
+        <div class="numpad">
+            <div id="container">
+                <div>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+                <div>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>0</button>
+                </div>
+                <div>
+                    <button data-type="submit" class="btn btn-primary">Go!</button>
+                    <button class="del">Del</button>
+                </div>
+            </div>
+        </div>
 
+        <div id="confirm">
+            <div class="message">Oh no!! Wrong Answer!!!</div>
+            <div class="message">Play again or quit back to home page??</div>
+            <a href="hardlevel.html"><button class="playAgain">Play Again?</button></a><br>
+            <a href="entrypage.html"><button class="return">Return to home page?</button></a>
+        </div>
 
-        <label id="scorestyle">Score:<span id="score">0</span>High Score: <span id="high-score">0</span></label>
+        <label id="scorestyle">Score:<span id="score">0</span>Hi-Score:<span id="high-score">10</span></label>
+
 
         <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
 
     </section>
-    <script src="assets/javascript/script3.js"></script>
+    <script src="assets/javascript/hardscript.js"></script>
 </body>
 
 </html>

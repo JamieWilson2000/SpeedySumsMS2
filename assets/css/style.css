@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
 
 /*************** General Styling ************/
+html {
+    height: 100%;
+}
+
 body {
     width: 100%;
     text-align: center;
@@ -199,6 +203,7 @@ a:hover {
 
 .btn-group {
     text-align: center;
+    top: 50px;
 }
 
 #easybtn {
@@ -425,6 +430,7 @@ a:hover {
 
 #confirm {
     display: none;
+    z-index: 2;
     background: -webkit-linear-gradient(green, yellow, orange, red);
     color: #FFFFFF;
     border: 1px solid #aaa;
@@ -540,6 +546,16 @@ textarea:focus {
     border: 1px solid rgba(250, 0, 0, 1);
 }
 
+#footer {
+    width: 100%;
+    top: 95%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 300;
+
+}
+
 
 @media screen and (max-width: 576px) {
     h1 {
@@ -562,6 +578,7 @@ textarea:focus {
 
     #instructstyle {
         padding-left: 10px;
+        font-size: 1.5rem;
     }
 
     #easysubtitle {

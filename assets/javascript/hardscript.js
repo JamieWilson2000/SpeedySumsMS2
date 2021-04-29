@@ -20,30 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     runGame("easyLevel");
 });
-// Gerating numbers for the game
-function runGame(gameType) {
 
+
+// Generating numbers for the game
+function runGame(gameType) {
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
     document.getElementById("high-score").innerText;
 
-    if (gameType === "easyLevel") {
-        let num1 = Math.floor(Math.random() * 10) + 1;
-        let num2 = Math.floor(Math.random() * 10) + 1;
-        displaySum(num1, num2);
-    } else if (gameType === "mediumLevel") {
-        let num1 = Math.floor(Math.random() * 100) + 1;
-        let num2 = Math.floor(Math.random() * 100) + 1;
-        displaySum(num1, num2);
-    } else if (gameType === "hardLevel") {
-        let num1 = Math.floor(Math.random() * 1000) + 1;
-        let num2 = Math.floor(Math.random() * 1000) + 1;
-        displaySum(num1, num2);
-    } else if (gameType === "geniusLevel") {
-        let num1 = Math.floor(Math.random() * 10000) + 1;
-        let num2 = Math.floor(Math.random() * 10000) + 1;
-        displaySum(num1, num2);
-    }
+    let num1 = Math.floor(Math.random() * 100) + 1;
+    let num2 = Math.floor(Math.random() * 1000) + 1;
+    displaySum(num1, num2);
 }
 
 //Displaying the questions onto the screen
@@ -124,44 +111,44 @@ function gameOver(msg, playAgain) {
 }
 // Numpad code
 $(document).ready(function () {
-$(".numpad").hide();
-$('.input').click(function () {
-    $('.numpad').fadeToggle('fast');
-});
+    $(".numpad").hide();
+    $('.input').click(function () {
+        $('.numpad').fadeToggle('fast');
+    });
 
-$('.del').click(function () {
-    $('.input').val($('.input').val().substring(0, $('.input').val().length - 1));
-});
-$('.faq').click(function () {
-    alert("Not sure when this will be called");
-})
-// $('.shuffle').click(function () {
-//     $('.input').val($('.input').val() + $(this).text());
-//     // $('.shuffle').shuffle();
-// });
-// (function ($) {
+    $('.del').click(function () {
+        $('.input').val($('.input').val().substring(0, $('.input').val().length - 1));
+    });
+    $('.faq').click(function () {
+        alert("Not sure when this will be called");
+    })
+    // $('.shuffle').click(function () {
+    //     $('.input').val($('.input').val() + $(this).text());
+    //     // $('.shuffle').shuffle();
+    // });
+    (function ($) {
 
-//     $.fn.shuffle = function () {
+        $.fn.shuffle = function () {
 
-//         var allElems = this.get(),
-//             getRandom = function (max) {
-//                 return Math.floor(Math.random() * max);
-//             },
-//             shuffled = $.map(allElems, function () {
-//                 var random = getRandom(allElems.length),
-//                     randEl = $(allElems[random]).clone(true)[0];
-//                 allElems.splice(random, 1);
-//                 return randEl;
-//             });
+            var allElems = this.get(),
+                getRandom = function (max) {
+                    return Math.floor(Math.random() * max);
+                },
+                shuffled = $.map(allElems, function () {
+                    var random = getRandom(allElems.length),
+                        randEl = $(allElems[random]).clone(true)[0];
+                    allElems.splice(random, 1);
+                    return randEl;
+                });
 
-//         this.each(function (i) {
-//             $(this).replaceWith($(shuffled[i]));
-//         });
+            this.each(function (i) {
+                $(this).replaceWith($(shuffled[i]));
+            });
 
-//         return $(shuffled);
+            return $(shuffled);
 
-//     };
+        };
 
-})(jQuery);
+    })(jQuery);
 
 });

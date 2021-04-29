@@ -17,8 +17,6 @@
 </head>
 
 <body>
-
-
     <section id="easy-back">
         <div>
             <h1 id="title">Speedy Sums</h1>
@@ -27,6 +25,7 @@
         <div>
             <span id="level-title">Easy Level!!</span>
         </div>
+
         <!-----------------Game Area--------------->
         <div id="easy-level">
             <button gameType="easyLevel" data-type="easyGame" class="btn-light" id="countdown">Start</button>
@@ -45,7 +44,6 @@
         <div class="row">
             <p></p>
             <input id="answer-box" placeholder="Answer" name="answer" type="number">
-            <button data-type="submit" class="btn btn-primary">Submit</button>
         </div>
 
         <!--Code for Mobile Numpad-->
@@ -66,13 +64,11 @@
                     <button class="shuffle">0</button>
                 </div>
                 <div>
-                    <button class="del">del</button>
+                    <button data-type="submit" class="btn btn-primary">Go!</button>
+                    <button class="del">Del</button>
                 </div>
             </div>
         </div>
-
-
-
 
         <div id="confirm">
             <div class="message">Oh no!! Wrong Answer!!!</div>
@@ -81,17 +77,10 @@
             <a href="entrypage.html"><button class="return">Return to home page?</button></a>
         </div>
 
-
-
-
-        <label id="scorestyle">Score:<span id="score">0</span>High Score: <span id="high-score">10</span></label>
+        <label id="scorestyle">Score:<span id="score">0</span>Hi-Score:<span id="high-score">10</span></label>
 
 
         <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
-
-
-
-
 
     </section>
     <script src="assets/javascript/script3.js"></script>

@@ -34,11 +34,18 @@ h4 {
     background: -webkit-linear-gradient(green, yellow, orange, red);
 } */
 .btn-primary {
-    margin-top: 5px;
+    display: inline-block;
+    border: 1px solid #FF0A0A;
     color: black;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     font-family: 'Londrina Solid', cursive;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    padding: 5px 18px;
     background: -webkit-linear-gradient(green, yellow, orange, red);
-    margin-right: auto;
 
 }
 
@@ -46,6 +53,7 @@ h4 {
     margin-top: 5px;
     background-color: aliceblue;
     margin-left: auto;
+    margin-right: auto;
 }
 
 #high-score {
@@ -57,7 +65,7 @@ h4 {
 }
 
 #scorestyle {
-    padding-right: 60px;
+    padding-right: 10px;
     text-align: right;
     margin-top: 10px;
     font-family: 'Londrina Solid', cursive;
@@ -66,7 +74,7 @@ h4 {
 }
 
 #score {
-    padding-right: 60px;
+    padding-right: 10px;
     text-align: right;
     margin-top: 10px;
     font-family: 'Londrina Solid', cursive;
@@ -86,15 +94,18 @@ ol {
 }
 
 #countdown {
-    width: 20%;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    border-radius: 20px;
-    background: -webkit-linear-gradient(green, yellow, orange, red);
+    display: inline-block;
+    border: 1px solid #FF0A0A;
+    color: black;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     font-family: 'Londrina Solid', cursive;
-    font-size: 3rem;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    padding: 5px 18px;
+    background: -webkit-linear-gradient(green, yellow, orange, red);
 }
 
 /* 
@@ -383,6 +394,10 @@ a:hover {
     background-color: (green);
 }
 
+#operator {
+    margin-top: 10px;
+}
+
 #randoperator {
     width: 10%;
     height: 50px;
@@ -478,11 +493,11 @@ button {
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
-    font-family: Verdana;
+    font-family: 'Londrina Solid', cursive;
     width: auto;
     height: auto;
-    font-size: 16px;
-    padding: 10px 17px;
+    font-size: 30px;
+    padding: 5px 18px;
     background-color: #FCFAF9;
 }
 
@@ -495,10 +510,10 @@ button:active {
 
 input[type=text],
 textarea {
-    -webkit-transition: all 0.30s ease-in-out;
+    /* -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out; */
     outline: none;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
@@ -529,6 +544,7 @@ textarea:focus {
     }
 
     #countdown {
+        height: 60px;
         width: 40%;
     }
 }

@@ -4,15 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let button of buttons) {
         button.addEventListener("click", function () {
+            //This event listener looks for the submit button to be pressed and then checks the answer
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
-
             }
         });
     }
+    //This event listener looks for the physical enter button to be pressed and then checks the answer 
     document.getElementById("answer-box").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             checkAnswer();
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     runGame("easyLevel");
 });
-
 
 // Generating numbers for the game
 function runGame(gameType) {
@@ -33,20 +33,9 @@ function runGame(gameType) {
         let num1 = Math.floor(Math.random() * 10) + 1;
         let num2 = Math.floor(Math.random() * 10) + 1;
         displaySum(num1, num2);
-    } else if (gameType === "mediumLevel") {
-        let num1 = Math.floor(Math.random() * 100) + 1;
-        let num2 = Math.floor(Math.random() * 100) + 1;
-        displaySum(num1, num2);
-    } else if (gameType === "hardLevel") {
-        let num1 = Math.floor(Math.random() * 1000) + 1;
-        let num2 = Math.floor(Math.random() * 1000) + 1;
-        displaySum(num1, num2);
-    } else if (gameType === "geniusLevel") {
-        let num1 = Math.floor(Math.random() * 10000) + 1;
-        let num2 = Math.floor(Math.random() * 10000) + 1;
-        displaySum(num1, num2);
     }
 }
+
 
 //Displaying the questions onto the screen
 function displaySum(topnum, botnum, operator) {
@@ -60,6 +49,9 @@ function displaySum(topnum, botnum, operator) {
         document.getElementById("botnum").textContent = botnum;
     }
 }
+
+//Functions for using the virtual numberpad
+
 
 //Calculating the correct answers
 function calculateCorrectAnswer() {
@@ -125,45 +117,45 @@ function gameOver(msg, playAgain) {
     confirmBox.show();
 }
 // Numpad code
-$(document).ready(function () {
-    $(".numpad").hide();
-    $('.input').click(function () {
-        $('.numpad').fadeToggle('fast');
-    });
+// $(document).ready(function () {
+//     $(".numpad").hide();
+//     $('.input').click(function () {
+//         $('.numpad').fadeToggle('fast');
+//     });
 
-    $('.del').click(function () {
-        $('.input').val($('.input').val().substring(0, $('.input').val().length - 1));
-    });
-    $('.faq').click(function () {
-        alert("Not sure when this will be called");
-    })
-    // $('.shuffle').click(function () {
-    //     $('.input').val($('.input').val() + $(this).text());
-    //     // $('.shuffle').shuffle();
-    // });
-    (function ($) {
+// $('.del').click(function () {
+//     $('.input').val($('.input').val().substring(0, $('.input').val().length - 1));
+// });
+// $('.faq').click(function () {
+//     alert("Not sure when this will be called");
+// })
+// $('.shuffle').click(function () {
+//     $('.input').val($('.input').val() + $(this).text());
+//     // $('.shuffle').shuffle();
+// });
+// (function ($) {
 
-        $.fn.shuffle = function () {
+//     $.fn.shuffle = function () {
 
-            var allElems = this.get(),
-                getRandom = function (max) {
-                    return Math.floor(Math.random() * max);
-                },
-                shuffled = $.map(allElems, function () {
-                    var random = getRandom(allElems.length),
-                        randEl = $(allElems[random]).clone(true)[0];
-                    allElems.splice(random, 1);
-                    return randEl;
-                });
+//         var allElems = this.get(),
+//             getRandom = function (max) {
+//                 return Math.floor(Math.random() * max);
+//             },
+//             shuffled = $.map(allElems, function () {
+//                 var random = getRandom(allElems.length),
+//                     randEl = $(allElems[random]).clone(true)[0];
+//                 allElems.splice(random, 1);
+//                 return randEl;
+//             });
 
-            this.each(function (i) {
-                $(this).replaceWith($(shuffled[i]));
-            });
+//         this.each(function (i) {
+//             $(this).replaceWith($(shuffled[i]));
+//         });
 
-            return $(shuffled);
+//         return $(shuffled);
 
-        };
+//     };
 
-    })(jQuery);
+// })(jQuery);
 
-});
+// });

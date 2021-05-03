@@ -428,7 +428,7 @@ a:hover {
     background-color: (green);
 }
 
-#confirm {
+#gameOver {
     display: none;
     z-index: 2;
     background: -webkit-linear-gradient(green, yellow, orange, red);
@@ -446,7 +446,7 @@ a:hover {
     text-align: center;
 }
 
-#confirm button {
+#gameOver button {
     background-color: yellow;
     font-size: 1.5rem;
     font-family: 'Londrina Solid', cursive;
@@ -460,7 +460,7 @@ a:hover {
     cursor: pointer;
 }
 
-#confirm .message {
+#gameOver .message {
     padding-top: 20px;
     font-size: 2rem;
     font-family: 'Londrina Solid', cursive;

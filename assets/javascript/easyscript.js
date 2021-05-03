@@ -7,22 +7,45 @@ document.addEventListener("DOMContentLoaded", function () {
             //This event listener looks for the submit button to be pressed and then checks the answer
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
+
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
+                countdownTimer();
             }
         });
     }
-    //This event listener looks for the physical enter button to be pressed and then checks the answer 
+    //This event listener looks for the physical enter button to be pressed and then checks the answer---------------------
     document.getElementById("answer-box").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             checkAnswer();
+
         }
     })
     runGame("easyLevel");
 });
 
-// Generating numbers for the game
+//Timer Function---------------------------------------------------------------------------------------------------------
+
+
+function countdownTimer() {
+
+    var timeleft = 10;
+    var gameTimer = setInterval(function () {
+        if (timeleft <= 0) {
+            clearInterval(gameTimer);
+            document.getElementById("countdown").innerHTML = "Time's Up!!";
+            document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!"
+            gameOver();
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft;
+        }
+        timeleft -= 1;
+    }, 1000);
+    //countdownTimer = function () {}; // Apply this to make the timer only run once
+}
+
+// Generating numbers for the game---------------------------------------------------------------------------------------
 function runGame(gameType) {
 
     document.getElementById("answer-box").value = "";
@@ -35,7 +58,6 @@ function runGame(gameType) {
         displaySum(num1, num2);
     }
 }
-
 
 //Displaying the questions onto the screen
 function displaySum(topnum, botnum, operator) {
@@ -82,10 +104,13 @@ function checkAnswer() {
 
     if (isCorrect) {
         incrementScore();
+        countdownTimer();
+
     } else {
         logHiScore();
         gameOver();
     }
+
     runGame(calculatedAnswer[1]);
 }
 
@@ -93,11 +118,6 @@ function checkAnswer() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    // let hiScore = parseInt(document.getElementById("high-score").innerText);
-    // if (oldScore > hiScore) {
-    //     document.getElementById("high-score").innerText = oldScore;
-    // } else {
-    //     document.getElementById("high-score").innerText = hiScore;
 }
 
 function logHiScore() {
@@ -106,9 +126,8 @@ function logHiScore() {
 
 
 //Game over function
-
 function gameOver(msg, playAgain) {
-    var confirmBox = $("#confirm");
+    var confirmBox = $("#gameOver");
     confirmBox.find(".message").text(msg);
     confirmBox.find(".playAgain").click(function () {
         confirmBox.hide();
@@ -116,6 +135,18 @@ function gameOver(msg, playAgain) {
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
 }
+//Times Up function
+function timeUp(msg, playAgain) {
+    var confirmBox = $("#timeUp");
+    confirmBox.find(".message").text(msg);
+    confirmBox.find(".playAgain").click(function () {
+        confirmBox.hide();
+    });
+    confirmBox.find(".return").click(playAgain);
+    confirmBox.show();
+}
+
+
 // Numpad code
 // $(document).ready(function () {
 //     $(".numpad").hide();

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             //This event listener looks for the submit button to be pressed and then checks the answer
             if (this.getAttribute("data-type") === "submit") {
+
                 checkAnswer();
 
             } else {
@@ -26,31 +27,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Timer Function---------------------------------------------------------------------------------------------------------
+//function countdownTimer() {
 
-
-function countdownTimer() {
-
-    var timeleft = 10;
-    var gameTimer = setInterval(function () {
-        if (timeleft <= 0) {
-            clearInterval(gameTimer);
-            document.getElementById("countdown").innerHTML = "Time's Up!!";
-            document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!"
-            gameOver();
-        } else {
-            document.getElementById("countdown").innerHTML = timeleft;
-        }
-        timeleft -= 1;
-    }, 1000);
-    //countdownTimer = function () {}; // Apply this to make the timer only run once
-}
+var timeleft = 10;
+var gameTimer = setInterval(function () {
+    if (timeleft <= 0) {
+        clearInterval(gameTimer);
+        document.getElementById("countdown").innerHTML = "Time's Up!!";
+        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!"
+        gameOver();
+        logHiScore();
+    } else {
+        document.getElementById("countdown").innerHTML = timeleft;
+    }
+    timeleft -= 1;
+}, 1000);
+//}
 
 // Generating numbers for the game---------------------------------------------------------------------------------------
 function runGame(gameType) {
 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
-    document.getElementById("high-score").innerText;
+
 
     if (gameType === "easyLevel") {
         let num1 = Math.floor(Math.random() * 10) + 1;
@@ -104,11 +103,12 @@ function checkAnswer() {
 
     if (isCorrect) {
         incrementScore();
-        countdownTimer();
+
 
     } else {
-        logHiScore();
+
         gameOver();
+
     }
 
     runGame(calculatedAnswer[1]);
@@ -121,7 +121,15 @@ function incrementScore() {
 }
 
 function logHiScore() {
-
+    let hiScore = parseInt(document.getElementById("high-score").innerText);
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    let scoreRecord = []
+    if (hiScore > oldScore) {
+        document.getElementById("high-score").innerText;
+    } else {
+        scoreRecord.push(hiScore);
+        document.getElementById("high-score").textContent = oldScore;
+    }
 }
 
 
@@ -134,6 +142,7 @@ function gameOver(msg, playAgain) {
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
+    logHiScore();
 }
 //Times Up function
 function timeUp(msg, playAgain) {
@@ -144,6 +153,7 @@ function timeUp(msg, playAgain) {
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
+    logHighScore();
 }
 
 

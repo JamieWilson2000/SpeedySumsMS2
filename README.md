@@ -184,6 +184,8 @@
     - Solution: I encased the "Play Again" button in an "<a></a>" with a href to "reload" the page.
 - Problem: High Score won't accept the latest high score.
     - Solution:
+- Problem : Timer not refreshing when correct answer given.
+    - Solution : 
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

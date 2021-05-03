@@ -109,7 +109,7 @@ ol {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     font-family: 'Londrina Solid', cursive;
-    width: auto;
+    width: 90%;
     height: auto;
     font-size: 30px;
     padding: 5px 18px;
@@ -587,10 +587,11 @@ textarea:focus {
 
     #countdown {
         height: 60px;
-        width: 40%;
+        width: 90%;
     }
 
     .row {
+
         margin-top: 0;
     }
 

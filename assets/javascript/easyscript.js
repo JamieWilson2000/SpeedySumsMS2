@@ -34,6 +34,7 @@ var gameTimer = setInterval(function () {
         document.getElementById("countdown").innerHTML = "Time's Up!!";
         document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
         document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
+        document.getElementById("quit").innerHTML = "";
         gameOver();
         logHiScore();
     } else {

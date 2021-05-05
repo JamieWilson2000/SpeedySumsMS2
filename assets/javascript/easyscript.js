@@ -106,7 +106,7 @@ function checkAnswer() {
 
 
     } else {
-
+        document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
         gameOver();
 
     }

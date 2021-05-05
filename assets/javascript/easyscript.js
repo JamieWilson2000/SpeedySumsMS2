@@ -26,25 +26,27 @@ document.addEventListener("DOMContentLoaded", function () {
     runGame("easyLevel");
 });
 
-//Timer Function---------------------------------------------------------------------------------------------------------
-//function countdownTimer() {
-
+//-------------------------------------------Timer Function--------------------------------------------------------
 var timeleft = 10;
 var gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);
         document.getElementById("countdown").innerHTML = "Time's Up!!";
-        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!"
+        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
+        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
         gameOver();
         logHiScore();
     } else {
         document.getElementById("countdown").innerHTML = timeleft;
+
+
     }
     timeleft -= 1;
-}, 1000);
-//}
 
-// Generating numbers for the game---------------------------------------------------------------------------------------
+}, 1000);
+
+
+//--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
 
     document.getElementById("answer-box").value = "";
@@ -58,7 +60,7 @@ function runGame(gameType) {
     }
 }
 
-//Displaying the questions onto the screen
+//----------------------------------Displaying the questions onto the screen------------------------------------------
 function displaySum(topnum, botnum, operator) {
     document.getElementById("topnum").textContent = topnum > botnum ? topnum : botnum;
     document.getElementById("botnum").textContent = topnum > botnum ? botnum : topnum;
@@ -71,10 +73,10 @@ function displaySum(topnum, botnum, operator) {
     }
 }
 
-//Functions for using the virtual numberpad
+//---------------------------------Functions for using the virtual numberpad------------------------------------------
 
 
-//Calculating the correct answers
+//-------------------------------------Calculating the correct answers-----------------------------------------------
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);
     let botnum = parseInt(document.getElementById("botnum").innerText);
@@ -95,7 +97,7 @@ function calculateCorrectAnswer() {
 
 }
 
-//Check the users answer with the correct answer
+//-----------------------------Check the users answer with the correct answer------------------------------------------
 function checkAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
@@ -114,12 +116,12 @@ function checkAnswer() {
     runGame(calculatedAnswer[1]);
 }
 
-//Increase the score
+//----------------------------------------Increase the score---------------------------------------------------------
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
-
+//-------------------------------------Log the high score function---------------------------------------------------
 function logHiScore() {
     let hiScore = parseInt(document.getElementById("high-score").innerText);
     let oldScore = parseInt(document.getElementById("score").innerText);
@@ -129,11 +131,12 @@ function logHiScore() {
     } else {
         scoreRecord.push(hiScore);
         document.getElementById("high-score").textContent = oldScore;
+
     }
 }
 
 
-//Game over function
+//---------------------------------------Game over message function---------------------------------------------------
 function gameOver(msg, playAgain) {
     var confirmBox = $("#gameOver");
     confirmBox.find(".message").text(msg);
@@ -144,59 +147,14 @@ function gameOver(msg, playAgain) {
     confirmBox.show();
     logHiScore();
 }
-//Times Up function
-function timeUp(msg, playAgain) {
-    var confirmBox = $("#timeUp");
-    confirmBox.find(".message").text(msg);
-    confirmBox.find(".playAgain").click(function () {
-        confirmBox.hide();
-    });
-    confirmBox.find(".return").click(playAgain);
-    confirmBox.show();
-    logHighScore();
-}
-
-
-// Numpad code
-// $(document).ready(function () {
-//     $(".numpad").hide();
-//     $('.input').click(function () {
-//         $('.numpad').fadeToggle('fast');
+// //Times Up function
+// function timeUp(msg, playAgain) {
+//     var confirmBox = $("#timeUp");
+//     confirmBox.find(".message").text(msg);
+//     confirmBox.find(".playAgain").click(function () {
+//         confirmBox.hide();
 //     });
-
-// $('.del').click(function () {
-//     $('.input').val($('.input').val().substring(0, $('.input').val().length - 1));
-// });
-// $('.faq').click(function () {
-//     alert("Not sure when this will be called");
-// })
-// $('.shuffle').click(function () {
-//     $('.input').val($('.input').val() + $(this).text());
-//     // $('.shuffle').shuffle();
-// });
-// (function ($) {
-
-//     $.fn.shuffle = function () {
-
-//         var allElems = this.get(),
-//             getRandom = function (max) {
-//                 return Math.floor(Math.random() * max);
-//             },
-//             shuffled = $.map(allElems, function () {
-//                 var random = getRandom(allElems.length),
-//                     randEl = $(allElems[random]).clone(true)[0];
-//                 allElems.splice(random, 1);
-//                 return randEl;
-//             });
-
-//         this.each(function (i) {
-//             $(this).replaceWith($(shuffled[i]));
-//         });
-
-//         return $(shuffled);
-
-//     };
-
-// })(jQuery);
-
-// });
+//     confirmBox.find(".return").click(playAgain);
+//     confirmBox.show();
+//     logHighScore();
+// }

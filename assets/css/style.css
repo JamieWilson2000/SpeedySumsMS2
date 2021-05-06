@@ -205,9 +205,10 @@ a:hover {
 .btn-group {
     text-align: center;
     top: 50px;
+
 }
 
-#easybtn {
+#easyBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
@@ -220,11 +221,11 @@ a:hover {
     float: left;
 }
 
-#easybtn:hover {
+#easyBtn:hover {
     background-color: rgb(59, 212, 59);
 }
 
-#medbtn {
+#mediumBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
@@ -237,11 +238,11 @@ a:hover {
     float: left;
 }
 
-#medbtn:hover {
+#mediumBtn:hover {
     background-color: rgb(207, 207, 2);
 }
 
-#hardbtn {
+#hardBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
@@ -254,11 +255,11 @@ a:hover {
     float: left;
 }
 
-#hardbtn:hover {
+#hardBtn:hover {
     background-color: rgb(209, 136, 0);
 }
 
-#genbtn {
+#geniusBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
@@ -271,7 +272,7 @@ a:hover {
     float: left;
 }
 
-#genbtn:hover {
+#geniusBtn:hover {
     background-color: rgb(207, 0, 0);
 }
 
@@ -557,13 +558,23 @@ textarea:focus {
 }
 
 #footer {
+
+    font-size: 1.5rem;
     width: 100%;
-    top: 95%;
+    bottom: 2%;
     position: absolute;
     text-align: center;
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
 
+}
+
+i {
+    margin-left: 10px;
+}
+
+i:hover {
+    color: white;
 }
 
 

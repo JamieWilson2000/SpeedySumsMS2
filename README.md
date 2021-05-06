@@ -178,6 +178,8 @@
 - Problem: Getting this error message "script.js:160 Uncaught TypeError: Cannot set property 'textContent' of null
     at startGame (script.js:160)at HTMLButtonElement.onclick (mediumlevel.html:32)"
     - Solution:
+- Problem: Game buttons on entry page had lost their styling elements.
+    - Fix: Discovered I had made changes to the Id tag that was overriding the original stylings.
 - Problem: Screen jumping when hovered over answer box
     - Solution:
 - Problem: Score not refreshing back to 0 when selecting the play again option from the end of game prompt.

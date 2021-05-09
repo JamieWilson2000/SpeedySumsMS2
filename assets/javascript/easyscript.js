@@ -12,39 +12,56 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
-                countdownTimer();
+
             }
         });
     }
     //This event listener looks for the physical enter button to be pressed and then checks the answer---------------------
     document.getElementById("answer-box").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
+            startTimer();
             checkAnswer();
 
         }
     })
     runGame("easyLevel");
+
 });
 
 //-------------------------------------------Timer Function--------------------------------------------------------
-var timeleft = 10;
-var gameTimer = setInterval(function () {
-    if (timeleft <= 0) {
-        clearInterval(gameTimer);
-        document.getElementById("countdown").innerHTML = "Time's Up!!";
-        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
-        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
-        document.getElementById("quit").innerHTML = "";
-        gameOver();
-        logHiScore();
-    } else {
-        document.getElementById("countdown").innerHTML = timeleft;
 
 
-    }
-    timeleft -= 1;
+function startTimer() {
+    let timeleft = 10;
+    var gameTimer = setInterval(function () {
+        if (timeleft <= 0) {
+            clearInterval(gameTimer);
+            document.getElementById("countdown").innerHTML = "Time's Up!!";
+            document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
+            document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
+            document.getElementById("quit").innerHTML = "";
+            gameOver();
+            logHiScore();
+        } else {
 
-}, 1000);
+            //document.getElementById("countdown").innerHTML = "10";
+            document.getElementById("countdown").innerHTML = timeleft;
+        }
+        timeleft -= 1;
+
+    }, 1000);
+}
+
+function resetTimer() {
+    clearInterval(gameTimer);
+    timeleft = 10
+    startTimer
+
+}
+
+
+
+
 
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
@@ -105,15 +122,16 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-        incrementScore();
 
+        incrementScore();
 
     } else {
         document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
+
         gameOver();
 
-    }
 
+    }
     runGame(calculatedAnswer[1]);
 }
 

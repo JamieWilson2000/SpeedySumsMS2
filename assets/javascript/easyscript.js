@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //This event listener looks for the physical enter button to be pressed and then checks the answer---------------------
     document.getElementById("answer-box").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            startTimer();
+            //startTimer();
             checkAnswer();
 
         }
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function startTimer() {
     let timeleft = 10;
-    var gameTimer = setInterval(function () {
+    let gameTimer = setInterval(function () {
         if (timeleft <= 0) {
             clearInterval(gameTimer);
             document.getElementById("countdown").innerHTML = "Time's Up!!";
@@ -44,7 +44,6 @@ function startTimer() {
             logHiScore();
         } else {
 
-            //document.getElementById("countdown").innerHTML = "10";
             document.getElementById("countdown").innerHTML = timeleft;
         }
         timeleft -= 1;
@@ -53,9 +52,9 @@ function startTimer() {
 }
 
 function resetTimer() {
-    clearInterval(gameTimer);
-    timeleft = 10
-    startTimer
+    alert("Reset");
+
+    startTimer();
 
 }
 
@@ -122,7 +121,7 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-
+        resetTimer();
         incrementScore();
 
     } else {

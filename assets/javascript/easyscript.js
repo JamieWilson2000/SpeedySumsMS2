@@ -159,6 +159,7 @@ function gameOver(msg, playAgain) {
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
+    clearInterval(gameTimer);
     logHiScore();
 
 }

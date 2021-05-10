@@ -187,7 +187,7 @@
 - Problem: High Score won't accept the latest high score.
     - Solution:
 - Problem : Timer not refreshing when correct answer given.
-    - Solution : 
+    - Solution : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

@@ -31,37 +31,30 @@ document.addEventListener("DOMContentLoaded", function () {
 //-------------------------------------------Timer Function--------------------------------------------------------
 
 
-function startTimer() {
-    let timeleft = 10;
-    let gameTimer = setInterval(function () {
-        if (timeleft <= 0) {
-            clearInterval(gameTimer);
-            document.getElementById("countdown").innerHTML = "Time's Up!!";
-            document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
-            document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
-            document.getElementById("quit").innerHTML = "";
-            gameOver();
-            logHiScore();
-        } else {
+//function startTimer() {
+let timeleft = 10;
+let gameTimer = setInterval(function () {
+    if (timeleft <= 0) {
+        clearInterval(gameTimer);
+        document.getElementById("countdown").innerHTML = "Time's Up!!";
+        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
+        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
+        document.getElementById("quit").innerHTML = "";
+        gameOver();
+        logHiScore();
+    } else {
 
-            document.getElementById("countdown").innerHTML = timeleft;
-        }
-        timeleft -= 1;
+        document.getElementById("countdown").innerHTML = timeleft;
+    }
+    timeleft -= 1;
 
-    }, 1000);
-}
+}, 1000);
+//}
 
 function resetTimer() {
-    alert("Reset");
-
     startTimer();
 
 }
-
-
-
-
-
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
@@ -121,12 +114,14 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-        resetTimer();
+        timeleft = 10;
+        //resetTimer();
         incrementScore();
+
+
 
     } else {
         document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
-
         gameOver();
 
 
@@ -140,19 +135,20 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 }
 //-------------------------------------Log the high score function---------------------------------------------------
+let scoreRecord = []
+
 function logHiScore() {
     let hiScore = parseInt(document.getElementById("high-score").innerText);
     let oldScore = parseInt(document.getElementById("score").innerText);
-    let scoreRecord = []
-    if (hiScore > oldScore) {
-        document.getElementById("high-score").innerText;
+
+    if (hiScore >= oldScore) {
+        document.getElementById("high-score").textContent;
     } else {
         scoreRecord.push(hiScore);
         document.getElementById("high-score").textContent = oldScore;
 
     }
 }
-
 
 //---------------------------------------Game over message function---------------------------------------------------
 function gameOver(msg, playAgain) {
@@ -164,15 +160,5 @@ function gameOver(msg, playAgain) {
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
     logHiScore();
+
 }
-// //Times Up function
-// function timeUp(msg, playAgain) {
-//     var confirmBox = $("#timeUp");
-//     confirmBox.find(".message").text(msg);
-//     confirmBox.find(".playAgain").click(function () {
-//         confirmBox.hide();
-//     });
-//     confirmBox.find(".return").click(playAgain);
-//     confirmBox.show();
-//     logHighScore();
-// }

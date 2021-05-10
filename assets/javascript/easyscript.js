@@ -135,19 +135,35 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 }
 //-------------------------------------Log the high score function---------------------------------------------------
-let scoreRecord = []
+
 
 function logHiScore() {
     let hiScore = parseInt(document.getElementById("high-score").innerText);
     let oldScore = parseInt(document.getElementById("score").innerText);
+    var savedScore = localStorage.getItem("storedHiScore");
 
-    if (hiScore >= oldScore) {
-        document.getElementById("high-score").textContent;
+    if (savedScore >= oldScore) {
+        document.getElementById("high-score").innerText;
     } else {
-        scoreRecord.push(hiScore);
-        document.getElementById("high-score").textContent = oldScore;
+        document.getElementById("high-score").innerText = savedScore;
+    }
+    if (typeof (Storage) !== "undefined") {
+        //Store
+        localStorage.setItem("storedHiScore", savedScore);
+        //Retrieve
+        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 
     }
+    console.log(oldScore, hiScore, savedScore);
+
+    // if (hiScore >= oldScore) {
+    //     document.getElementById("high-score").textContent;
+    // } else {
+    //     scoreRecord.push(hiScore);
+    //     document.getElementById("high-score").textContent = oldScore;
+    // }
 }
 
 //---------------------------------------Game over message function---------------------------------------------------

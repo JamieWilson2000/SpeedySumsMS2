@@ -170,24 +170,24 @@
     ## Problems and bugs experienced along the way
 
 - Problem: Subtitle on easylevel.html stuck to left side of page
-    - Solution: Adjusted styling width to 100%
+    - Fix: Adjusted styling width to 100%
 - Problem: Trying to have timer and first question appear when start button is pressed.
-    - Solution: Moved the timer code inside the function targeted by the onclick function.
+    - Fix: Moved the timer code inside the function targeted by the onclick function.
 - Problem: "Random sums are actually just repeating the sum question instead of generating a new sum.
-    - Solution
+    - Fix: 
 - Problem: Getting this error message "script.js:160 Uncaught TypeError: Cannot set property 'textContent' of null
     at startGame (script.js:160)at HTMLButtonElement.onclick (mediumlevel.html:32)"
     - Solution:
 - Problem: Game buttons on entry page had lost their styling elements.
     - Fix: Discovered I had made changes to the Id tag that was overriding the original stylings.
 - Problem: Screen jumping when hovered over answer box
-    - Solution:
+    - Fix:I discovered that the div that the answer box was located in had a wider value than the body of the page so I set the width to 100% and that fixed the issue
 - Problem: Score not refreshing back to 0 when selecting the play again option from the end of game prompt.
-    - Solution: I encased the "Play Again" button in an "<a></a>" with a href to "reload" the page.
+    - Fix: I encased the "Play Again" button in an "<a></a>" with a href to "reload" the page.
 - Problem: High Score won't accept the latest high score.
-    - Solution:
+    - Fix: Even though I was passing the correct values to the local storage I hadn't been accessing the high score from the local storage for use within the if statements.
 - Problem : Timer not refreshing when correct answer given.
-    - Solution : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
+    - Fix : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:
@@ -200,6 +200,8 @@
 - Credit - https://www.tutorialspoint.com/How-I-can-change-the-style-of-alert-box-using-JavaScript#:~:text=You%20will%20not%20be%20able,library%2C%20jQuery%20to%20achive%20this.
 - For instruction on how to set up a virtual keypad in the game I referenced:
 - Credit - https://codepen.io/erkmen/pen/pyjxOY
+- For reference on how to store High Scores within the game I referred to:
+- Credit - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
 
 

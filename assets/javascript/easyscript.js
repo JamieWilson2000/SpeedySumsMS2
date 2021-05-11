@@ -6,13 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             //This event listener looks for the submit button to be pressed and then checks the answer
             if (this.getAttribute("data-type") === "submit") {
-
                 checkAnswer();
-
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
-
             }
         });
     }
@@ -84,6 +81,8 @@ function displaySum(topnum, botnum, operator) {
 }
 
 //---------------------------------Functions for using the virtual numberpad------------------------------------------
+
+
 
 
 //-------------------------------------Calculating the correct answers-----------------------------------------------

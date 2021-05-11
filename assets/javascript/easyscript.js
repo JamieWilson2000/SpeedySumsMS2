@@ -138,32 +138,16 @@ function incrementScore() {
 
 
 function logHiScore() {
-    let hiScore = parseInt(document.getElementById("high-score").innerText);
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    var savedScore = localStorage.getItem("storedHiScore");
+    let hiScore = parseInt(document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore")); //accesses the info from the local storage
+    let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
 
-    if (savedScore >= oldScore) {
-        document.getElementById("high-score").innerText;
-    } else {
-        document.getElementById("high-score").innerText = savedScore;
+    if (typeof Storage !== undefined && currentScore >= hiScore) { //if the current score is higher than the hi score
+        localStorage.setItem("storedHiScore", currentScore); // then store the current score in storage
+        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); // display the current score as the new high score 
     }
-    if (typeof (Storage) !== "undefined") {
-        //Store
-        localStorage.setItem("storedHiScore", savedScore);
-        //Retrieve
-        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-
+    if (currentScore <= hiScore) {
+        document.getElementById("high-score").innerHTML;
     }
-    console.log(oldScore, hiScore, savedScore);
-
-    // if (hiScore >= oldScore) {
-    //     document.getElementById("high-score").textContent;
-    // } else {
-    //     scoreRecord.push(hiScore);
-    //     document.getElementById("high-score").textContent = oldScore;
-    // }
 }
 
 //---------------------------------------Game over message function---------------------------------------------------

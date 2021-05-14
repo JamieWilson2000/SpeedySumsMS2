@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             //This event listener looks for the submit button to be pressed and then checks the answer
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
+                //This event listener looks for a number on the numpad to be selected then prints to the answer box
+            } else if (this.getAttribute("data-type") === "number") {
+
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             checkAnswer();
 
         }
-    })
+    });
     runGame("easyLevel");
 
 });
@@ -81,6 +84,66 @@ function displaySum(topnum, botnum, operator) {
 }
 
 //---------------------------------Functions for using the virtual numberpad------------------------------------------
+
+function show1() {
+    var number1 = 1;
+    var a = number1.toString();
+    document.getElementById("answer-box").value = document.getElementById("answer-box").value + a;
+}
+
+function show2() {
+    var number2 = 2;
+    var b = number2.toString();
+    document.getElementById("answer-box").value = document.getElementById("answer-box").value + b;
+}
+
+function show3() {
+    var number3 = 3;
+    var c = number3.toString();
+    document.getElementById("answer-box").value = document.getElementById("answer-box").value + c;
+}
+
+function show4() {
+    var number4 = 4;
+    var d = number4.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + d;
+}
+
+function show5() {
+    var number5 = 5;
+    var e = number5.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + e;
+}
+
+function show6() {
+    var number6 = 6;
+    var f = number6.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + f;
+}
+
+function show7() {
+    var number7 = 7;
+    var g = number7.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + g;
+}
+
+function show8() {
+    var number8 = 8;
+    var h = number8.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + h;
+}
+
+function show9() {
+    var number9 = 9;
+    var i = number9.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + i;
+}
+
+function show0() {
+    var number0 = 0;
+    var j = number0.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + j;
+}
 
 
 

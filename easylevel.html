@@ -44,30 +44,30 @@
             </div>
         </div>
         <div class="row">
-            <p></p>
-            <input id="answer-box" placeholder="Answer" name="answer" type="number">
+
+            <input id="answer-box">
         </div>
 
         <!--Code for Mobile Numpad-->
         <div class="numpad">
             <div id="container">
                 <div>
-                    <button id="one" onclick=one()>1</button>
-                    <button onclick=two()>2</button>
-                    <button onclick=three()>3</button>
-                    <button onclick=four()>4</button>
-                    <button onclick=five()>5</button>
+                    <button data-type="number" onclick=show1()>1</button>
+                    <button data-type="number" onclick=show2()>2</button>
+                    <button data-type="number" onclick=show3()>3</button>
+                    <button data-type="number" onclick=show4()>4</button>
+                    <button data-type="number" onclick=show5()>5</button>
                 </div>
                 <div>
-                    <button onclick=six()>6</button>
-                    <button onclick=seven()>7</button>
-                    <button onclick=eight()>8</button>
-                    <button onclick=nine()>9</button>
-                    <button onclick=zero()>0</button>
+                    <button data-type="number" onclick=show6()>6</button>
+                    <button data-type="number" onclick=show7()>7</button>
+                    <button data-type="number" onclick=show8()>8</button>
+                    <button data-type="number" onclick=show9()>9</button>
+                    <button data-type="number" onclick=show0()>0</button>
                 </div>
                 <div>
-                    <button data-type="submit" class="btn btn-primary">Go!</button>
-                    <button onclick=del() class="del">Del</button>
+                    <button data-type="submit" class="btn btn-primary">Check!</button>
+                    <button data-type="delete" class="del">Delete</button>
                 </div>
             </div>
         </div>

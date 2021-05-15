@@ -186,6 +186,8 @@
     - Fix: I encased the "Play Again" button in an "<a></a>" with a href to "reload" the page.
 - Problem: High Score won't accept the latest high score.
     - Fix: Even though I was passing the correct values to the local storage I hadn't been accessing the high score from the local storage for use within the if statements.
+- Problem: The High Score function was not running in new instances of the game only in existing workspaces.
+    - Fix: I started off the function with accessing the local storage and then running the conditions, before I was setting the conditions and then accessing the local storage.
 - Problem : Timer not refreshing when correct answer given.
     - Fix : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
 

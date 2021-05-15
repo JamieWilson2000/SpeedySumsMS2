@@ -75,7 +75,7 @@ h4 {
 
 #scorestyle {
     padding-right: 10px;
-    text-align: right;
+    text-align: center;
     /* margin-top: 10px; */
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
@@ -441,7 +441,7 @@ a:hover {
     border: 1px solid #aaa;
     border-radius: 50px;
     position: relative;
-    width: 500px;
+    width: 50%;
     height: 350px;
     margin-right: auto;
     margin-left: auto;
@@ -465,13 +465,13 @@ a:hover {
     cursor: pointer;
 }
 
-#gameOver {
-    /* padding-top: 20px; */
+/* #gameOver {
+    padding-top: 20px;
     font-size: 2rem;
     font-family: 'Londrina Solid', cursive;
     color: black;
     text-align: center;
-}
+} */
 
 .message {
     /* padding-top: 20px; */
@@ -479,6 +479,14 @@ a:hover {
     font-family: 'Londrina Solid', cursive;
     color: black;
     text-align: center;
+}
+
+.scoreMessage {
+    /* padding-top: 20px; */
+    font-size: 2rem;
+    font-family: 'Londrina Solid', cursive;
+    color: black;
+    /*text-align: center;*/
 }
 
 /* #number2 {
@@ -634,10 +642,15 @@ i:hover {
 
     #scorestyle {
         margin-bottom: 0;
+        font-size: 2rem;
     }
 
     #confirm {
         width: 350px;
         height: 400px;
+    }
+
+    #gameOver {
+        width: 100%;
     }
 }

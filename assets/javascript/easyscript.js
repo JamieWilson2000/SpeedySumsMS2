@@ -58,7 +58,7 @@ function resetTimer() {
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
-
+    document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
@@ -198,19 +198,25 @@ function incrementScore() {
 }
 //-------------------------------------Log the high score function---------------------------------------------------
 
-
 function logHiScore() {
-    let hiScore = parseInt(document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore")); //accesses the info from the local storage
-    let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
-
-    if (typeof Storage !== undefined && currentScore >= hiScore) { //if the current score is higher than the hi score
-        localStorage.setItem("storedHiScore", currentScore); // then store the current score in storage
-        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); // display the current score as the new high score 
-    }
-    if (currentScore <= hiScore) {
-        document.getElementById("high-score").innerHTML;
+    if (typeof (Storage) !== "undefined") {
+        // Move storage if storage is undefined here so that hiScore can be retrieved only if storage exist
+        let hiScore = parseInt(document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore")); //accesses the info from the local storage
+        let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
+        if (currentScore >= hiScore) { //if the current score is higher than the hi score
+            localStorage.setItem("storedHiScore", currentScore); // then store the current score in storage
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); // display the current score as the new high score 
+        }
+        if (currentScore <= hiScore) {
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHighScore");
+        }
+    } else {
+        localStorage.setItem("storedHighScore", 0)
     }
 }
+
+
+
 
 //---------------------------------------Game over message function---------------------------------------------------
 function gameOver(msg, playAgain) {

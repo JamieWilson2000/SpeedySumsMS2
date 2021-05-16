@@ -110,7 +110,7 @@ ol {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     font-family: 'Londrina Solid', cursive;
-    width: 90%;
+    width: 50%;
     height: auto;
     font-size: 30px;
     padding: 5px 18px;
@@ -203,6 +203,7 @@ a:hover {
 }
 
 .btn-group {
+
     text-align: center;
     top: 50px;
 
@@ -211,6 +212,7 @@ a:hover {
 #easyBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
+    font-size: 1.5rem;
     text-align: center;
     background-color: rgb(68, 245, 68);
     border: 2px solid black;
@@ -228,6 +230,7 @@ a:hover {
 #mediumBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
+    font-size: 1.5rem;
     text-align: center;
     background-color: yellow;
     border: 2px solid black;
@@ -245,6 +248,7 @@ a:hover {
 #hardBtn {
     margin: 20px 10px;
     font-family: 'Londrina Solid', cursive;
+    font-size: 1.5rem;
     text-align: center;
     background-color: orange;
     border: 2px solid black;

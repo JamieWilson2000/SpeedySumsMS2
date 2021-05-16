@@ -25,6 +25,11 @@
         <div>
             <span id="level-title">Easy Level!!</span>
         </div>
+        <div>
+            <label id="scorestyle">High Score: <span id="high-score">0</span></label>
+
+        </div>
+
 
 
         <!---------------Game Area--------------->
@@ -65,8 +70,8 @@
                     <button data-type="number" onclick=show0()>0</button>
                 </div>
                 <div>
-                    <button data-type="submit" class="btn btn-primary">Check!</button>
-                    <button data-type="delete" class="del">Delete</button>
+                    <button data-type="submit">Check!</button>
+                    <button data-type="delete">Skip Sum!</button>
                 </div>
             </div>
         </div>
@@ -74,8 +79,9 @@
         <div id="gameOver">
             <div class="message" id="timeMessage">Oh no!! Wrong Answer!!!</div>
             <div class="message" id="diffMessage">The correct answer was <span id="rightAnswer"></span></div>
-            <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span>Score to beat:<span
-                    id="high-score">0</span></label>
+            <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span></label>
+            <!-- <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span>Score to beat:<span
+                    id="high-score">0</span></label> -->
             <div class="message">Play again or head back to main menu??</div>
             <a href="easylevel.html"><button class="playAgain">Play Again?</button></a>
             <a href="entrypage.html"><button class="return">Main menu?</button></a>

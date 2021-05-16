@@ -1,4 +1,4 @@
-# <u>Milestone Project 2</u>
+# <u>Milestone Project 2: Speedy Sums</u>
 
 ![site screenshot]()
  
@@ -21,24 +21,29 @@
 
 # User Story
 
-- User Summary
+- Speedy Sums was inspired by the Code Institute walkthrough project "Love Maths". Whilst working on the walkthrough I thought it would be fun and educational to have a game that had a learning aspect along with the feeling of being under pressure making the whole thing a little more exciting.
+- Whereas the walkthrough offers the choice of which type of sum you're faced with, i.e addition, subtraction etc, I thought it would be more fun and challenging to not know what variety of sum you're going to be faced with. Add to that, with a 10 second timer counting down the pressure should unevitably start mounting.
+- I wanted this game to appeal to all ages. Young children can enjoy a challenge in the easy level, whilst adults can test their maths knowledge in the medium and hard levels. 
 
 - Site objectives for new users
-    - 
+    - I want the user to have a clear understanding of the concept from the start. The opening screen has but one option and thats to open the game. The following page has a simple instruction paragraph informing the user that the goal is to simply answer the given sum within the 10 second window. The user then has to select one of three options, Easy, Medium, or Hard to enter into the actual gamepage.
 
 - Site objectives for returning users
-    - 
+    - The incentive for returning users would be to better their high scores or to try another, harder level. This could be used as an incentive scheme for younger children to improve their high scores to recieve physical rewards from their parents/ teachers.
 
 - User Conclusion
+    - The user should feel that after playing the game, first and foremost , that they had fun. I wanted the site to be bright, vibrant and fun looking. Appealing to young and old.
+    - The user should also feel that this has been a stimulating experience, without the timer the game would be too easy all round but with the introduction of the timer, there is always an element of pressure behind every sum.
+    - The user should feel a want to return to the game simply to spend 5 - 10 minutes playing it as a brain training exercise, to improve their high score, and / or to encourage their young ones to practise their mathematics in a fun, safe environment.
 
 
 
 # The 5 planes of UX
 
-- When thinking on designing this site i took into mind the 5 planes that had been highlighted during the course previously. This made the overall process easier to plan-out.
+- When planning out this game I thought it important to implement the same 5 planes of UX that I had used when designing my Milestone Project 1. Doing this makes the process an easier task.
 
 - ## <u>The strategy</u>
-    
+    The strategy for this game was to create an exciting, fun, vibrant environment where users young and old can practise their mathematical problem solving skills. Reports show that if a mundane task is incorporated into a game environment then children are more likely to tackle these mundane tasks. It was with this in mind that I thought of creating a game with young children in mind that could see them solving mathematical problems with a high score record that they could show off, brag about, and aim to better along the line. Whilst considering the concept I felt that there would be adults that would enjoy the challenge too so that spurred on then the option to have an easy, medium, and hard level with obviously increasing difficulty levels. I dwelled on using fun elements to label these levels , ie animals or faces etc, but I felt that could put some users off so I decided to stick with plain and simple Easy, Medium and Hard as level titles.
 
 - ## <u>The Scope</u>
     
@@ -188,6 +193,8 @@
     - Fix: Even though I was passing the correct values to the local storage I hadn't been accessing the high score from the local storage for use within the if statements.
 - Problem: The High Score function was not running in new instances of the game only in existing workspaces.
     - Fix: I started off the function with accessing the local storage and then running the conditions, before I was setting the conditions and then accessing the local storage.
+- Problem: High Score not displaying in the event of the game finishing due to time running out.
+    -Fix: I discovered using the google dev tools for application local storage that the value was being stored so I decided to add a line of code as part of the time running out statement that simply printed out the value stored in the local storage.
 - Problem : Timer not refreshing when correct answer given.
     - Fix : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
 

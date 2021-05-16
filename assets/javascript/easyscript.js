@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+
 //-------------------------------------------Timer Function--------------------------------------------------------
 
 
@@ -36,12 +38,15 @@ let timeleft = 10;
 let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);
+        gameOver();
+        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
         document.getElementById("countdown").innerHTML = "Time's Up!!";
         document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
         document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
         document.getElementById("quit").innerHTML = "";
-        gameOver();
-        logHiScore();
+
+
+
     } else {
 
         document.getElementById("countdown").innerHTML = timeleft;
@@ -146,8 +151,6 @@ function show0() {
 }
 
 
-
-
 //-------------------------------------Calculating the correct answers-----------------------------------------------
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);
@@ -182,6 +185,7 @@ function checkAnswer() {
 
 
 
+
     } else {
         document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
         gameOver();
@@ -200,7 +204,7 @@ function incrementScore() {
 
 function logHiScore() {
     if (typeof (Storage) !== "undefined") {
-        // Move storage if storage is undefined here so that hiScore can be retrieved only if storage exist
+
         let hiScore = parseInt(document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore")); //accesses the info from the local storage
         let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
         if (currentScore >= hiScore) { //if the current score is higher than the hi score
@@ -227,7 +231,8 @@ function gameOver(msg, playAgain) {
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
-    clearInterval(gameTimer);
     logHiScore();
+    clearInterval(gameTimer);
+
 
 }

@@ -46,15 +46,17 @@
     The strategy for this game was to create an exciting, fun, vibrant environment where users young and old can practise their mathematical problem solving skills. Reports show that if a mundane task is incorporated into a game environment then children are more likely to tackle these mundane tasks. It was with this in mind that I thought of creating a game with young children in mind that could see them solving mathematical problems with a high score record that they could show off, brag about, and aim to better along the line. Whilst considering the concept I felt that there would be adults that would enjoy the challenge too so that spurred on then the option to have an easy, medium, and hard level with obviously increasing difficulty levels. I dwelled on using fun elements to label these levels , ie animals or faces etc, but I felt that could put some users off so I decided to stick with plain and simple Easy, Medium and Hard as level titles.
 
 - ## <u>The Scope</u>
+    The overall site is to be a very simplistic, colorful and striking environment. Big bold letters in a lighthearted font that will prove easy to read, and to instill a sense of fun from the start. To differentiate between levels I decided on bold colors in the background so there should be no mistaking which level the user has opted for.
     
 
 - ## <u>The Structure</u>
-    
+    As with my Milestone Project 1,  I have learnt my limitations over the course of this project so I planned for this site to be very simple. As mentioned previously I wanted a site that would be accessible to young and old, therefore, I felt that the best user interface would be one of simplicity. Basically the structure would only consist of three real elements, the landing page (which is simply a one off greeting page), an "entry" page which is where the purpose of the game is explained and presented to the user are the three main options for level difficulty. In this way, I felt that the game could be handed to a child, unsupervised and they would have no difficulty getting a game up and running.
 
 - ## <u>The Skeleton</u>
-    
+    The 'bones' of the game was sketched out in Balsamiq, as mentioned, I was wanting to keep the look and feel of the game very simplistic so as to not become too overwhelming. Strong, big, bold fonts accompanying strong primary colors based on a traffic light system with a primary green being the easy level, an amber/orange color representing the medium level and finally the red to distinguish the hardest of the levels. The landing page and the "entry" page would have a blended gradient background consisting of the three main colors for continuity.
 
 - ## <u>The Surface</u>
+    It is of course at this stage when my actual level of understanding of coding comes into play. I felt very comfortable with designing the look of the game and getting all the elements to position correctly within the game area. The Javascript side I opted for a simple approach, keeping functions to a minimum where possible, and by distinguishing each levels javascript code into it's on .js file. Upon researching this approach, it seemed an acceptable, clean way of operating so I was happy to continue in this fashion.
    
     ---
 # Early Stages
@@ -81,11 +83,38 @@
 
 ## Colour Schemes
 
+<img src="assets/images/main_color_scheme.png" alt="colorscheme" width="500" height="197">
+<img src="assets/images/button_hover_colors.png" alt="hovercolorscheme" width="480" height="197">
+
+The colors I have chosen are based around a very plain and simple primary colorscheme. The main theme is that of a traffic light system with green being the easy level, orange(amber) representing the medium level, and red to indicate the hard level.<br>
+I chose a darker variant for the hover variants to indicate the button about to be selected.<br>
+To ensure the text is easily readable throughout the game I ran the colors through the coolers.co color contrast checker and was happy with the results as shown below. Admittedly, I would have prefered a higher score on the hard level and I played around with different variants of the text color but I felt the change in text color felt unusual and somewhat out of place so I thought that with the chosen colors being pleasing to my eyes that I would stick with the continuity of the selected color.<br>
+
+<img src="assets/images/Contrastcheck1.png" alt="contrastcheck1" width="250" height="180">
+<img src="assets/images/Contrastcheck2.png" alt="contrastcheck2" width="250" height="180">
+<img src="assets/images/Contrastcheck3.png" alt="contrastcheck3" width="250" height="180">
+<br>
+
+- I adopted these colors in the following styles:
+    - I used a gradient effect using the three main sourced colors #44F544, #FFA500, and #FF0000 on the greeting page and the landing page and on the in game buttons.
+    - I used the color #44F544 green on the easy level button and for the background color of the easy level.
+    - I used #3BD43B as a variant of #44F544 to indicate the hover effect on the easy level button .
+    - I used the color #FFA500 orange on the medium button and for the background color of the medium level.
+    - I used #D18800 as a variant of #FFA500 to indicate the hover effect on the medium level button .
+    - I used the color #FF0000 red on the hard button and for the background color of the hard level.
+    - I used #CF0000 as a variant of #FF0000 to indicate the hover effect on the hard level button .
+    - I used #FFFF00 yellow as the button color in the game over box.
+    - I used #000000 black as the main and only color of text throughout the game.
+
 
 
 ## Fonts
 
+- For the textual elements I imported in two font family variants from Google Fonts.
 
+    ![Main Font](assets/images/fontimage.png)<br>
+    - Londrina Solid regular is used throughout as the brand text.
+    - I opted to stick to the one font-family being Londrina but in finer pieces of text I used a lower font-weight of 300.
 
     
 

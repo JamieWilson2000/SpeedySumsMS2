@@ -25,9 +25,16 @@
         <div>
             <span id="level-title">Hard Level!!</span>
         </div>
+        <div>
+            <label id="scorestyle">High Score: <span id="high-score">0</span></label>
+
+        </div>
+
+
+
         <!---------------Game Area--------------->
         <div id="easy-level">
-            <button gameType="easyLevel" data-type="easyGame" class="btn-light" id="countdown">Start</button>
+            <label gameType="easyLevel" data-type="easyGame" class="btn-light" id="countdown">GO!!</label>
         </div>
         <div class="row">
             <div id="number1">
@@ -41,47 +48,52 @@
             </div>
         </div>
         <div class="row">
-            <p></p>
-            <input id="answer-box" placeholder="Answer" name="answer" type="number">
+
+            <input id="answer-box">
         </div>
 
         <!--Code for Mobile Numpad-->
         <div class="numpad">
             <div id="container">
                 <div>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
+                    <button data-type="number" onclick=show1()>1</button>
+                    <button data-type="number" onclick=show2()>2</button>
+                    <button data-type="number" onclick=show3()>3</button>
+                    <button data-type="number" onclick=show4()>4</button>
+                    <button data-type="number" onclick=show5()>5</button>
                 </div>
                 <div>
-                    <button>6</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>0</button>
+                    <button data-type="number" onclick=show6()>6</button>
+                    <button data-type="number" onclick=show7()>7</button>
+                    <button data-type="number" onclick=show8()>8</button>
+                    <button data-type="number" onclick=show9()>9</button>
+                    <button data-type="number" onclick=show0()>0</button>
                 </div>
                 <div>
-                    <button data-type="submit" class="btn btn-primary">Go!</button>
-                    <button class="del">Del</button>
+                    <button data-type="submit">Check!</button>
+                    <button data-type="delete">Skip Sum!</button>
                 </div>
             </div>
         </div>
 
-        <div id="confirm">
-            <div class="message">Oh no!! Wrong Answer!!!</div>
-            <div class="message">Play again or quit back to home page??</div>
-            <a href="hardlevel.html"><button class="playAgain">Play Again?</button></a><br>
-            <a href="entrypage.html"><button class="return">Return to home page?</button></a>
+        <div id="gameOver">
+            <div class="message" id="timeMessage">Oh no!! Wrong Answer!!!</div>
+            <div class="message" id="diffMessage">The correct answer was <span id="rightAnswer"></span></div>
+            <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span></label>
+            <!-- <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span>Score to beat:<span
+                    id="high-score">0</span></label> -->
+            <div class="message">Play again or head back to main menu??</div>
+            <a href="hardlevel.html"><button class="playAgain">Play Again?</button></a>
+            <a href="entrypage.html"><button class="return">Main menu?</button></a>
         </div>
 
-        <label id="scorestyle">Score:<span id="score">0</span>Hi-Score:<span id="high-score">10</span></label>
+
+        <!-- <label id="scorestyle">Score:<span id="score">0</span>Hi-Score:<span id="high-score">0</span></label> -->
 
 
         <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
 
-    </section>
+    </section>>
     <script src="assets/javascript/hardscript.js"></script>
 </body>
 

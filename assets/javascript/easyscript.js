@@ -21,19 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.key === "Enter") {
             //startTimer();
             checkAnswer();
-
         }
     });
     runGame("easyLevel");
-
 });
 
-
-
 //-------------------------------------------Timer Function--------------------------------------------------------
-
-
-//function startTimer() {
 let timeleft = 10;
 let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
@@ -44,22 +37,17 @@ let gameTimer = setInterval(function () {
         document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
         document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
         document.getElementById("quit").innerHTML = "";
-
-
-
     } else {
-
         document.getElementById("countdown").innerHTML = timeleft;
     }
     timeleft -= 1;
-
 }, 1000);
-//}
 
-function resetTimer() {
-    startTimer();
 
-}
+// function resetTimer() {
+//     startTimer();
+
+// }
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
@@ -150,7 +138,6 @@ function show0() {
     document.getElementById('answer-box').value = document.getElementById("answer-box").value + j;
 }
 
-
 //-------------------------------------Calculating the correct answers-----------------------------------------------
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);
@@ -169,7 +156,6 @@ function calculateCorrectAnswer() {
         alert("Problem with the calculateCorrectAnswer function");
         throw ("Problem with the calculateCorrectAnswer function");
     }
-
 }
 
 //-----------------------------Check the users answer with the correct answer------------------------------------------
@@ -180,17 +166,11 @@ function checkAnswer() {
 
     if (isCorrect) {
         timeleft = 10;
-        //resetTimer();
+
         incrementScore();
-
-
-
-
     } else {
         document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
         gameOver();
-
-
     }
     runGame(calculatedAnswer[1]);
 }
@@ -205,7 +185,7 @@ function incrementScore() {
 function logHiScore() {
     if (typeof (Storage) !== "undefined") {
 
-        let hiScore = parseInt(document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore")); //accesses the info from the local storage
+        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); //accesses the info from the local storage
         let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
         if (currentScore >= hiScore) { //if the current score is higher than the hi score
             localStorage.setItem("storedHiScore", currentScore); // then store the current score in storage
@@ -218,9 +198,6 @@ function logHiScore() {
         localStorage.setItem("storedHighScore", 0)
     }
 }
-
-
-
 
 //---------------------------------------Game over message function---------------------------------------------------
 function gameOver(msg, playAgain) {

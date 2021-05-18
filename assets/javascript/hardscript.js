@@ -4,36 +4,66 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let button of buttons) {
         button.addEventListener("click", function () {
+            //This event listener looks for the submit button to be pressed and then checks the answer
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
+                //This event listener looks for a number on the numpad to be selected then prints to the answer box
+            } else if (this.getAttribute("data-type") === "number") {
+
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
-
             }
         });
     }
+    //This event listener looks for the physical enter button to be pressed and then checks the answer---------------------
     document.getElementById("answer-box").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
+            //startTimer();
             checkAnswer();
         }
-    })
+    });
     runGame("easyLevel");
 });
 
+//-------------------------------------------Timer Function--------------------------------------------------------
+let timeleft = 15;
+let gameTimer = setInterval(function () {
+    if (timeleft <= 0) {
+        clearInterval(gameTimer);
+        gameOver();
+        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
+        document.getElementById("countdown").innerHTML = "Time's Up!!";
+        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
+        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
+        document.getElementById("quit").innerHTML = "";
+    } else {
+        document.getElementById("countdown").innerHTML = timeleft;
+    }
+    timeleft -= 1;
+}, 1000);
 
-// Generating numbers for the game
+
+// function resetTimer() {
+//     startTimer();
+
+// }
+
+//--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
+    document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
-    document.getElementById("high-score").innerText;
 
-    let num1 = Math.floor(Math.random() * 100) + 1;
-    let num2 = Math.floor(Math.random() * 1000) + 1;
-    displaySum(num1, num2);
+
+    if (gameType === "easyLevel") {
+        let num1 = Math.floor(Math.random() * 1000) + 1;
+        let num2 = Math.floor(Math.random() * 100) + 1;
+        displaySum(num1, num2);
+    }
 }
 
-//Displaying the questions onto the screen
+//----------------------------------Displaying the questions onto the screen------------------------------------------
 function displaySum(topnum, botnum, operator) {
     document.getElementById("topnum").textContent = topnum > botnum ? topnum : botnum;
     document.getElementById("botnum").textContent = topnum > botnum ? botnum : topnum;
@@ -46,7 +76,69 @@ function displaySum(topnum, botnum, operator) {
     }
 }
 
-//Calculating the correct answers
+//---------------------------------Functions for using the virtual numberpad------------------------------------------
+
+function show1() {
+    var number1 = 1;
+    var a = number1.toString();
+    document.getElementById("answer-box").value = document.getElementById("answer-box").value + a;
+}
+
+function show2() {
+    var number2 = 2;
+    var b = number2.toString();
+    document.getElementById("answer-box").value = document.getElementById("answer-box").value + b;
+}
+
+function show3() {
+    var number3 = 3;
+    var c = number3.toString();
+    document.getElementById("answer-box").value = document.getElementById("answer-box").value + c;
+}
+
+function show4() {
+    var number4 = 4;
+    var d = number4.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + d;
+}
+
+function show5() {
+    var number5 = 5;
+    var e = number5.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + e;
+}
+
+function show6() {
+    var number6 = 6;
+    var f = number6.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + f;
+}
+
+function show7() {
+    var number7 = 7;
+    var g = number7.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + g;
+}
+
+function show8() {
+    var number8 = 8;
+    var h = number8.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + h;
+}
+
+function show9() {
+    var number9 = 9;
+    var i = number9.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + i;
+}
+
+function show0() {
+    var number0 = 0;
+    var j = number0.toString();
+    document.getElementById('answer-box').value = document.getElementById("answer-box").value + j;
+}
+
+//-------------------------------------Calculating the correct answers-----------------------------------------------
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);
     let botnum = parseInt(document.getElementById("botnum").innerText);
@@ -64,91 +156,60 @@ function calculateCorrectAnswer() {
         alert("Problem with the calculateCorrectAnswer function");
         throw ("Problem with the calculateCorrectAnswer function");
     }
-
 }
 
-//Check the users answer with the correct answer
+//-----------------------------Check the users answer with the correct answer------------------------------------------
 function checkAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
+        timeleft = 15;
+
         incrementScore();
     } else {
-        logHiScore();
+        document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
         gameOver();
     }
     runGame(calculatedAnswer[1]);
 }
 
-//Increase the score
+//----------------------------------------Increase the score---------------------------------------------------------
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    // let hiScore = parseInt(document.getElementById("high-score").innerText);
-    // if (oldScore > hiScore) {
-    //     document.getElementById("high-score").innerText = oldScore;
-    // } else {
-    //     document.getElementById("high-score").innerText = hiScore;
 }
+//-------------------------------------Log the high score function---------------------------------------------------
 
 function logHiScore() {
+    if (typeof (Storage) !== "undefined") {
 
+        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); //accesses the info from the local storage
+        let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
+        if (currentScore >= hiScore) { //if the current score is higher than the hi score
+            localStorage.setItem("storedHiScore", currentScore); // then store the current score in storage
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); // display the current score as the new high score 
+        }
+        if (currentScore <= hiScore) {
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHighScore");
+        }
+    } else {
+        localStorage.setItem("storedHighScore", 0)
+    }
 }
 
-
-//Game over function
-
+//---------------------------------------Game over message function---------------------------------------------------
 function gameOver(msg, playAgain) {
-    var confirmBox = $("#confirm");
+    var confirmBox = $("#gameOver");
     confirmBox.find(".message").text(msg);
     confirmBox.find(".playAgain").click(function () {
         confirmBox.hide();
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
+    logHiScore();
+    clearInterval(gameTimer);
+
+
 }
-// Numpad code
-$(document).ready(function () {
-    $(".numpad").hide();
-    $('.input').click(function () {
-        $('.numpad').fadeToggle('fast');
-    });
-
-    $('.del').click(function () {
-        $('.input').val($('.input').val().substring(0, $('.input').val().length - 1));
-    });
-    $('.faq').click(function () {
-        alert("Not sure when this will be called");
-    })
-    // $('.shuffle').click(function () {
-    //     $('.input').val($('.input').val() + $(this).text());
-    //     // $('.shuffle').shuffle();
-    // });
-    (function ($) {
-
-        $.fn.shuffle = function () {
-
-            var allElems = this.get(),
-                getRandom = function (max) {
-                    return Math.floor(Math.random() * max);
-                },
-                shuffled = $.map(allElems, function () {
-                    var random = getRandom(allElems.length),
-                        randEl = $(allElems[random]).clone(true)[0];
-                    allElems.splice(random, 1);
-                    return randEl;
-                });
-
-            this.each(function (i) {
-                $(this).replaceWith($(shuffled[i]));
-            });
-
-            return $(shuffled);
-
-        };
-
-    })(jQuery);
-
-});

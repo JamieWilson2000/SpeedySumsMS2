@@ -32,10 +32,10 @@ let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);
         gameOver();
-        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
+        document.getElementById("high-score").innerHTML = localStorage.getItem("storedMediumHiScore");
         document.getElementById("countdown").innerHTML = "Time's Up!!";
         document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
-        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
+        //document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
         document.getElementById("quit").innerHTML = "";
     } else {
         document.getElementById("countdown").innerHTML = timeleft;
@@ -51,7 +51,7 @@ let gameTimer = setInterval(function () {
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
-    document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore");
+    document.getElementById("high-score").innerHTML = localStorage.getItem("storedMediumHiScore");
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
@@ -165,7 +165,7 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-        timeleft = 10;
+        timeleft = 12;
 
         incrementScore();
     } else {
@@ -185,17 +185,17 @@ function incrementScore() {
 function logHiScore() {
     if (typeof (Storage) !== "undefined") {
 
-        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); //accesses the info from the local storage
+        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedMediumHiScore"); //accesses the info from the local storage
         let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
         if (currentScore >= hiScore) { //if the current score is higher than the hi score
-            localStorage.setItem("storedHiScore", currentScore); // then store the current score in storage
-            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHiScore"); // display the current score as the new high score 
+            localStorage.setItem("storedMediumHiScore", currentScore); // then store the current score in storage
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedMediumHiScore"); // display the current score as the new high score 
         }
         if (currentScore <= hiScore) {
-            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHighScore");
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHighScore");
         }
     } else {
-        localStorage.setItem("storedHighScore", 0)
+        localStorage.setItem("storedEasyHighScore", 0)
     }
 }
 

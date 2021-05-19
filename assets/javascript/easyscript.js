@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //-------------------------------------------Timer Function--------------------------------------------------------
-let timeleft = 10;
+let timeleft = 120;
 let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);

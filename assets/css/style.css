@@ -607,9 +607,62 @@ i:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    #zoomtitle {
+        margin-top: 40%;
+        font-size: 8rem;
+    }
+
+    #entrytitle {
+        font-size: 6rem;
+    }
+
     #main-title {
         font-size: 8rem;
     }
+
+    #title {
+        font-size: 7rem;
+    }
+
+    #level-title {
+        font-size: 6rem;
+    }
+
+    #scorestyle,
+    #high-score {
+        font-size: 5rem;
+    }
+
+    #countdown {
+        font-size: 5rem;
+    }
+
+    .row h4 {
+        font-size: 5rem;
+    }
+
+    #answer-box {
+        width: 100%;
+        height: 75px;
+        font-size: 4rem;
+    }
+
+    .numpad {
+        margin-top: 60px;
+    }
+
+    #rainbow {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 3.5rem;
+    }
+
+
+    #quit {
+        margin-top: 60px;
+        font-size: 3.5rem;
+    }
+
 
     #subtitle {
         font-size: 5rem;
@@ -635,6 +688,15 @@ i:hover {
 }
 
 @media screen and (max-width: 768px) {
+    #zoomtitle {
+        margin-top: 30%;
+        font-size: 8rem;
+    }
+
+    #entrytitle {
+        font-size: 6rem;
+    }
+
     #title {
         font-size: 6rem;
     }
@@ -674,7 +736,12 @@ i:hover {
     }
 
     #answer-box {
-        font-size: 2rem;
+        height: 55px;
+        font-size: 3rem;
+    }
+
+    .numpad {
+        margin-top: 20px;
     }
 
     #rainbow {
@@ -684,7 +751,15 @@ i:hover {
     }
 
     #quit {
+        margin-top: 20px;
         font-size: 3.5rem;
+    }
+
+    #gameOver {
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        width: 80%;
     }
 
     #footer {
@@ -693,6 +768,15 @@ i:hover {
 }
 
 @media screen and (max-width: 576px) {
+    #zoomtitle {
+        margin-top: 40%;
+        font-size: 5rem;
+    }
+
+    #entrytitle {
+        font-size: 3rem;
+    }
+
     h1 {
         padding-top: 0px;
     }
@@ -766,7 +850,8 @@ i:hover {
     #answer-box {
         margin-top: 20px;
         height: 50px;
-        font-size: 30px;
+        width: 60%;
+        font-size: 2.5rem;
     }
 
     #rainbow {
@@ -801,6 +886,15 @@ i:hover {
 }
 
 @media screen and (max-width: 380px) {
+    #zoomtitle {
+        margin-top: 40%;
+        font-size: 4rem;
+    }
+
+    #entrytitle {
+        font-size: 3rem;
+    }
+
     #instructstyle {
         padding-left: 10px;
         padding-right: 10px;
@@ -820,5 +914,16 @@ i:hover {
 
     #answer-box {
         margin-top: 0;
+    }
+
+    #rainbow {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.5rem;
+    }
+
+    #quit {
+        font-size: 2rem;
+        margin-top: 20px;
     }
 }

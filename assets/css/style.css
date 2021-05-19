@@ -606,6 +606,56 @@ i:hover {
     color: white;
 }
 
+@media screen and (max-width: 1024px) {
+    #main-title {
+        font-size: 8rem;
+    }
+
+    #subtitle {
+        font-size: 5rem;
+    }
+
+    #instructstyle {
+        font-size: 3rem;
+    }
+
+    #easyBtn,
+    #mediumBtn,
+    #hardBtn {
+        font-size: 3rem;
+    }
+
+    .btn-group {
+        top: 100px;
+    }
+
+    #footer {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #instructstyle {
+        font-size: 2.5rem;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .btn-group {
+        top: 0;
+        margin-top: 50px;
+    }
+
+    #easyBtn,
+    #mediumBtn,
+    #hardBtn {
+        font-size: 2rem;
+    }
+
+    #footer {
+        font-size: 2rem;
+    }
+}
 
 @media screen and (max-width: 576px) {
     h1 {
@@ -615,6 +665,10 @@ i:hover {
     #title {
         font-size: 3rem;
         padding-top: 0;
+    }
+
+    #subtitle {
+        font-size: 3rem;
     }
 
     #level-title {
@@ -631,27 +685,23 @@ i:hover {
         font-size: 1.5rem;
     }
 
-    #easyBtn {
+    #easyBtn,
+    #mediumBtn,
+    #hardBtn {
+        font-size: 1.5rem;
         padding-left: 5px;
         padding-right: 5px;
         margin: 0;
+    }
+
+    .btn-group {
+        top: 60px;
+        margin-top: 0;
     }
 
     .btn-group a {
         margin-left: 2px;
         margin-right: 2px;
-    }
-
-    #mediumBtn {
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 0;
-    }
-
-    #hardBtn {
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 0;
     }
 
     #easysubtitle {
@@ -694,5 +744,28 @@ i:hover {
 
     #gameOver {
         width: 100%;
+    }
+
+    #footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #instructstyle {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn-group {
+        top: 20px;
+        margin-top: 0;
+    }
+
+    #easyBtn,
+    #mediumBtn,
+    #hardBtn {
+        padding-left: 2px;
+        padding-right: 2px;
     }
 }

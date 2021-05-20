@@ -226,6 +226,8 @@ To ensure the text is easily readable throughout the game I ran the colors throu
     -Fix: I discovered using the google dev tools for application local storage that the value was being stored so I decided to add a line of code as part of the time running out statement that simply printed out the value stored in the local storage.
 - Problem : Timer not refreshing when correct answer given.
     - Fix : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
+- Problem : When playing the game on mobile devices the built in android keyboard keeps showing blocking half of the screen game.
+    - Fix : I researched the issue and applied the inputmode="none" method to the input line.
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

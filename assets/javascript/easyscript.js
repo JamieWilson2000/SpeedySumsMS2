@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             //This event listener looks for the submit button to be pressed and then checks the answer
-            if (this.getAttribute("data-type") === "submit") {
+            if (this.getAttribute("data-type") === "check") {
                 checkAnswer();
                 //This event listener looks for a number on the numpad to be selected then prints to the answer box
             } else if (this.getAttribute("data-type") === "number") {

@@ -27,16 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //-------------------------------------------Timer Function--------------------------------------------------------
-let timeleft = 120;
+let timeleft = 10;
 let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);
         gameOver();
         document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
-        document.getElementById("countdown").innerHTML = "Time's Up!!";
-        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
-        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
-        document.getElementById("quit").innerHTML = "";
+        document.getElementById("countdown").textContent = "Time's Up!!";
+        document.getElementById("timeMessage").textContent = "You ran out of time!!";
+        document.getElementById("diffMessage").textContent = "Have to be quicker!!";
+        // document.getElementById("quit").innerHTML = "";
     } else {
         document.getElementById("countdown").innerHTML = timeleft;
     }

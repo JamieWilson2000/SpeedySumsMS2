@@ -47,8 +47,8 @@
                 <h4 id="botnum"></h4>
             </div>
         </div>
-        <div class="row">
 
+        <div class="row">
             <input id="answer-box">
         </div>
 
@@ -56,29 +56,32 @@
         <div class="numpad">
             <div id="container">
                 <div>
-                    <button data-type="number" onclick=show1()>1</button>
-                    <button data-type="number" onclick=show2()>2</button>
-                    <button data-type="number" onclick=show3()>3</button>
-                    <button data-type="number" onclick=show4()>4</button>
-                    <button data-type="number" onclick=show5()>5</button>
+                    <button id="rainbow" data-type="number" onclick=show1()>1</button>
+                    <button id="rainbow" data-type="number" onclick=show2()>2</button>
+                    <button id="rainbow" data-type="number" onclick=show3()>3</button>
+                    <button id="rainbow" data-type="number" onclick=show4()>4</button>
+                    <button id="rainbow" data-type="number" onclick=show5()>5</button>
                 </div>
                 <div>
-                    <button data-type="number" onclick=show6()>6</button>
-                    <button data-type="number" onclick=show7()>7</button>
-                    <button data-type="number" onclick=show8()>8</button>
-                    <button data-type="number" onclick=show9()>9</button>
-                    <button data-type="number" onclick=show0()>0</button>
+                    <button id="rainbow" data-type="number" onclick=show6()>6</button>
+                    <button id="rainbow" data-type="number" onclick=show7()>7</button>
+                    <button id="rainbow" data-type="number" onclick=show8()>8</button>
+                    <button id="rainbow" data-type="number" onclick=show9()>9</button>
+                    <button id="rainbow" data-type="number" onclick=show0()>0</button>
                 </div>
+                <br>
                 <div>
-                    <button data-type="submit">Check!</button>
-                    <button data-type="delete">Skip Sum!</button>
+                    <button id="rainbow" data-type="submit">Check!</button>
+                    <button id="rainbow" data-type="delete">Skip Sum!</button>
                 </div>
             </div>
+            <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
         </div>
+        <div id="pcQuit"><a href="entrypage.html">Quit back to home page!!</a></div>
 
         <div id="gameOver">
             <div class="message" id="timeMessage">Oh no!! Wrong Answer!!!</div>
-            <div class="message" id="diffMessage">The correct answer was <span id="rightAnswer"></span></div>
+            <div class="message" id="diffMessage">Correct answer is <span id="rightAnswer"></span></div>
             <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span></label>
             <!-- <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span>Score to beat:<span
                     id="high-score">0</span></label> -->
@@ -91,9 +94,9 @@
         <!-- <label id="scorestyle">Score:<span id="score">0</span>Hi-Score:<span id="high-score">0</span></label> -->
 
 
-        <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div>
 
-    </section>>
+
+    </section>
 
 
     <script src="assets/javascript/medscript.js"></script>

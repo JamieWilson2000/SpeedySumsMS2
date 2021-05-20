@@ -218,7 +218,7 @@ a:hover {
 .btn-group {
 
     text-align: center;
-    top: 50px;
+    top: 20px;
 
 }
 
@@ -470,7 +470,7 @@ a:hover {
     border-radius: 50px;
     position: relative;
     width: 60%;
-    height: 400px;
+    height: 390px;
     margin-right: auto;
     margin-left: auto;
     bottom: 370px;
@@ -951,7 +951,7 @@ i:hover {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 415px) {
     #zoomtitle {
         margin-top: 40%;
         font-size: 4rem;
@@ -967,7 +967,7 @@ i:hover {
     }
 
     .btn-group {
-        top: 20px;
+        top: 40px;
         margin-top: 0;
     }
 

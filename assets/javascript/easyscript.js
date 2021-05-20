@@ -170,6 +170,7 @@ function checkAnswer() {
         incrementScore();
     } else {
         document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
+
         gameOver();
     }
     runGame(calculatedAnswer[1]);
@@ -210,6 +211,8 @@ function gameOver(msg, playAgain) {
     confirmBox.show();
     logHiScore();
     clearInterval(gameTimer);
+
+
 
 
 }

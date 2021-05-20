@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
 
+
 /*************** General Styling ************/
 html {
     width: 100%;
@@ -9,6 +10,7 @@ html {
 
 body {
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -25,7 +27,7 @@ h4 {
     background-color: transparent;
     text-align: center;
     color: black;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -52,18 +54,19 @@ h4 {
     height: auto;
     font-size: 30px;
     padding: 5px 18px;
-    background: -webkit-linear-gradient(green, orange, red);
+    background: -webkit-linear-gradient(#44f544, yellow, orange, red);
 
 }
 
 #rainbow {
-    background: -webkit-linear-gradient(green, orange, red);
+    background: -webkit-linear-gradient(#44f544, yellow, orange, red);
 }
 
 #answer-box {
     margin-top: 5px;
     text-align: center;
-    background-color: aliceblue;
+    background: -webkit-linear-gradient(#44f544, yellow, orange, red);
+    font-size: 2.5rem;
     font-family: 'Londrina Solid', cursive;
     margin-left: auto;
     margin-right: auto;
@@ -101,6 +104,12 @@ h4 {
     font-size: 2rem;
 }
 
+#pcQuit {
+    margin-top: 60px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2rem;
+}
+
 ol {
     padding-left: 50px;
     margin: 0;
@@ -133,7 +142,7 @@ ol {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(green, orange, red);
+    background: -webkit-linear-gradient(#44f544, yellow, orange, red);
 }
 
 #zoomtitle {
@@ -171,7 +180,7 @@ ol {
     margin-left: 0, auto;
     margin-right: 0, auto;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -428,7 +437,7 @@ a:hover {
 .row {
     width: 40%;
     height: auto;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -455,16 +464,16 @@ a:hover {
 #gameOver {
     display: none;
     z-index: 2;
-    background: -webkit-linear-gradient(green, yellow, orange, red);
+    background: -webkit-linear-gradient(#44f544, yellow, orange, red);
     color: #FFFFFF;
     border: 1px solid #aaa;
     border-radius: 50px;
     position: relative;
-    width: 50%;
-    height: 350px;
+    width: 60%;
+    height: 400px;
     margin-right: auto;
     margin-left: auto;
-    bottom: 320px;
+    bottom: 370px;
     padding: 6px 8px 8px;
     box-sizing: border-box;
     text-align: center;
@@ -472,7 +481,7 @@ a:hover {
 
 #gameOver button {
     background-color: yellow;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Londrina Solid', cursive;
     display: inline-block;
     border-radius: 10px;
@@ -480,7 +489,7 @@ a:hover {
     margin-top: 15px;
     padding: 5px;
     text-align: center;
-    width: 150px;
+    width: auto;
     cursor: pointer;
 }
 
@@ -494,7 +503,7 @@ a:hover {
 
 .message {
     /* padding-top: 20px; */
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Londrina Solid', cursive;
     color: black;
     text-align: center;
@@ -506,6 +515,10 @@ a:hover {
     font-family: 'Londrina Solid', cursive;
     color: black;
     /*text-align: center;*/
+}
+
+#score {
+    font-size: 2rem;
 }
 
 /* #number2 {
@@ -540,7 +553,7 @@ button {
 }
 
 .numpad {
-    display: block !important;
+    display: none;
     margin-top: 20px;
 }
 
@@ -558,6 +571,7 @@ button {
     padding: 5px 18px;
     background-color: #FCFAF9;
 }
+
 
 button:hover,
 button:active {
@@ -577,6 +591,7 @@ textarea {
     margin: 5px 1px 3px 0px;
     border: 1px solid #DDDDDD;
 }
+
 
 input[type=text]:focus,
 textarea:focus {
@@ -607,6 +622,10 @@ i:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    #pcQuit {
+        display: none;
+    }
+
     #zoomtitle {
         margin-top: 40%;
         font-size: 8rem;
@@ -633,6 +652,10 @@ i:hover {
         font-size: 5rem;
     }
 
+    #score {
+        font-size: 4rem;
+    }
+
     #countdown {
         font-size: 5rem;
     }
@@ -648,6 +671,7 @@ i:hover {
     }
 
     .numpad {
+        display: block !important;
         margin-top: 60px;
     }
 
@@ -657,9 +681,25 @@ i:hover {
         font-size: 3.5rem;
     }
 
+    #gameOver {
+        width: 80%;
+        height: 850px;
+        bottom: 850px
+    }
+
+    .message {
+        font-size: 4rem;
+        padding-top: 50px;
+    }
+
+    #gameOver button {
+        font-size: 3rem;
+        margin-top: 50px;
+    }
+
 
     #quit {
-        margin-top: 60px;
+        padding-top: 30px;
         font-size: 3.5rem;
     }
 
@@ -731,6 +771,10 @@ i:hover {
         font-size: 4rem;
     }
 
+    .row {
+        margin-top: 0;
+    }
+
     .row h4 {
         font-size: 4rem;
     }
@@ -751,15 +795,21 @@ i:hover {
     }
 
     #quit {
+        padding-top: 0;
         margin-top: 20px;
         font-size: 3.5rem;
     }
 
     #gameOver {
-        z-index: 2;
-        top: 0;
-        bottom: 0;
+        height: 680px;
+        bottom: 680px;
         width: 80%;
+
+    }
+
+    .message {
+        padding-top: 30px;
+        font-size: 3rem;
     }
 
     #footer {
@@ -844,7 +894,7 @@ i:hover {
 
     #levelBtn {
         font-size: 22px;
-        background: -webkit-linear-gradient(green, yellow, orange, red);
+        background: -webkit-linear-gradient(#44f544, yellow, orange, red);
     }
 
     #answer-box {
@@ -866,10 +916,15 @@ i:hover {
     }
 
     #scorestyle,
-    #high-score {
+    #high-score,
+    #score {
         margin-bottom: 0;
-        font-size: 2rem;
+        font-size: 3rem;
     }
+
+    /* #score {
+        font-size: 2rem;
+    } */
 
     #confirm {
         width: 350px;
@@ -877,7 +932,18 @@ i:hover {
     }
 
     #gameOver {
-        width: 100%;
+        bottom: 430px;
+        height: 450px;
+        width: 95%;
+    }
+
+    .message {
+        font-size: 2.2rem;
+    }
+
+    #gameOver button {
+        margin-top: 0;
+        font-size: 2rem;
     }
 
     #footer {
@@ -924,6 +990,6 @@ i:hover {
 
     #quit {
         font-size: 2rem;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 }

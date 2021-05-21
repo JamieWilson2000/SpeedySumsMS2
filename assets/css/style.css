@@ -446,7 +446,7 @@ a:hover {
     box-sizing: border-box;
     text-align: center;
     animation-name: title;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-direction: forwards;
 }
 
@@ -990,8 +990,8 @@ i:hover {
     }
 
     #gameOver {
-        bottom: 430px;
-        height: 350px;
+        bottom: 370px;
+        height: 370px;
         width: 95%;
     }
 

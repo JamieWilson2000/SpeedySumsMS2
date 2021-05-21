@@ -441,7 +441,7 @@ a:hover {
     height: 390px;
     margin-right: auto;
     margin-left: auto;
-    bottom: 370px;
+    bottom: 260px;
     padding: 6px 8px 8px;
     box-sizing: border-box;
     text-align: center;
@@ -668,7 +668,7 @@ i:hover {
     #gameOver {
         width: 80%;
         height: 850px;
-        bottom: 850px
+        bottom: 750px
     }
 
     .message {
@@ -788,7 +788,7 @@ i:hover {
 
     #gameOver {
         height: 680px;
-        bottom: 680px;
+        bottom: 580px;
         width: 80%;
 
     }
@@ -971,22 +971,64 @@ i:hover {
     #rainbow {
         margin-left: 0;
         margin-right: 0;
-        font-size: 1.5rem;
+
+    }
+
+    #gameOver {
+        bottom: 440px;
+        height: 450px;
+        width: 95%;
+    }
+
+    .message {
+        padding-top: 10px;
     }
 
     #quit {
         font-size: 2rem;
         /* margin-top: 20px; */
     }
+
+    footer {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 320px) {
+
+    #main-title {
+        font-size: 3rem;
+    }
+
+    #subtitle {
+        font-size: 2rem;
+    }
+
+    #title {
+        margin-bottom: 0;
+    }
+
+    #level-title {
+        margin-top: 0;
+    }
+
+    .btn-group {
+        top: 0;
+    }
 
     #scorestyle,
     #high-score,
     #score {
         margin-bottom: 0;
         font-size: 2rem;
+    }
+
+    #answer-box {
+        font-size: 2rem;
+    }
+
+    #rainbow {
+        font-size: 1.5rem;
     }
 
     #gameOver {
@@ -996,7 +1038,7 @@ i:hover {
     }
 
     .message {
-        padding-top: 0;
+        padding-top: 1px0;
         font-size: 2rem;
     }
 
@@ -1004,5 +1046,10 @@ i:hover {
         margin-top: 0;
         font-size: 1.5rem;
     }
+
+    footer {
+        display: none;
+    }
+
 
 }

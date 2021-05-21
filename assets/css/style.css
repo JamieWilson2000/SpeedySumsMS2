@@ -59,8 +59,11 @@ h4 {
 }
 
 #rainbow {
+    border: transparent;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rbga(255, 255, 255, 0.3);
     background: -webkit-linear-gradient(#44f544, yellow, orange, red);
 }
+
 
 #answer-box {
     margin-top: 5px;
@@ -276,40 +279,6 @@ a:hover {
     background-color: rgb(207, 0, 0);
 }
 
-/* #geniusBtn {
-    margin: 20px 10px;
-    font-family: 'Londrina Solid', cursive;
-    text-align: center;
-    background-color: red;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: black;
-    padding: 10px 24px;
-    cursor: pointer;
-    float: left;
-} */
-
-/* #geniusBtn:hover {
-    background-color: rgb(207, 0, 0);
-} */
-
-
-/* .btn-group button:not(:last-child) {
-    border-right: none;
-} */
-
-/* Clear floats (clearfix hack) */
-/* .btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
-/* Add a background color on hover */
-/* .btn-group button:hover {
-    background-color: #3e8e41;
-} */
-
 /********************* Easy Level Page ******************/
 #easy-back {
     position: absolute;
@@ -328,8 +297,6 @@ a:hover {
     font-size: 3rem;
     font-family: 'Londrina Solid', cursive;
 }
-
-
 
 /********************* Medium Level Page ******************/
 #medium-back {
@@ -400,6 +367,7 @@ a:hover {
         cursive;
     font-size: 1rem;
     /* background-color: (red); */
+
 }
 
 #randoperator {
@@ -477,6 +445,19 @@ a:hover {
     padding: 6px 8px 8px;
     box-sizing: border-box;
     text-align: center;
+    animation-name: title;
+    animation-duration: 1s;
+    animation-direction: forwards;
+}
+
+@keyframes title {
+    from {
+        transform: scale(.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 #gameOver button {
@@ -548,16 +529,18 @@ a:hover {
 } */
 
 /* Numpad CSS Styling */
-button {
+/* button {
     margin: 3px;
-}
+} */
 
 .numpad {
+
     display: none;
     margin-top: 20px;
 }
 
 button {
+    margin: 3px;
     display: inline-block;
     border: 1px solid #FF0A0A;
     color: black;
@@ -570,36 +553,37 @@ button {
     font-size: 30px;
     padding: 5px 18px;
     background-color: #FCFAF9;
+
 }
 
 
 button:hover,
 button:active {
-    border: 1px solid #FFFFFF;
+
     color: #FFFDFC;
-    background-color: #FC0000;
+
 }
 
-input[type=text],
+/* input[type=text],
 textarea {
     /* -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out; */
+    -o-transition: all 0.30s ease-in-out; 
     outline: none;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
-    border: 1px solid #DDDDDD;
-}
+    border: 1px solid #DDDDDD; 
+} */
 
 
-input[type=text]:focus,
+/* input[type=text]:focus,
 textarea:focus {
-    box-shadow: 0 0 5px rgba(250, 0, 0, 1);
+     box-shadow: 0 0 5px rgba(250, 0, 0, 1);
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
-    border: 1px solid rgba(250, 0, 0, 1);
-}
+    border: 1px solid rgba(250, 0, 0, 1); 
+} */
 
 #footer {
 
@@ -716,6 +700,7 @@ i:hover {
     #mediumBtn,
     #hardBtn {
         font-size: 3rem;
+
     }
 
     .btn-group {
@@ -782,6 +767,7 @@ i:hover {
     #answer-box {
         height: 55px;
         font-size: 3rem;
+        box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
     }
 
     .numpad {
@@ -992,4 +978,31 @@ i:hover {
         font-size: 2rem;
         /* margin-top: 20px; */
     }
+}
+
+@media screen and (max-width: 320px) {
+
+    #scorestyle,
+    #high-score,
+    #score {
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+
+    #gameOver {
+        bottom: 430px;
+        height: 350px;
+        width: 95%;
+    }
+
+    .message {
+        padding-top: 0;
+        font-size: 2rem;
+    }
+
+    #gameOver button {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
 }

@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     runGame("easyLevel");
 });
-
+document.getElementById("myAudio").play();
 //-------------------------------------------Timer Function--------------------------------------------------------
-let timeleft = 10;
+let timeleft = 120;
 let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);
@@ -209,6 +209,8 @@ function gameOver(msg, playAgain) {
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
+    document.getElementById("myAudio").pause()
+    document.getElementById("fail").play();
     logHiScore();
     clearInterval(gameTimer);
 

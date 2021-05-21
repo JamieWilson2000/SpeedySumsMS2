@@ -138,6 +138,10 @@ function show0() {
     document.getElementById('answer-box').value = document.getElementById("answer-box").value + j;
 }
 
+function skipSum() {
+    timeleft = 15
+}
+
 //-------------------------------------Calculating the correct answers-----------------------------------------------
 function calculateCorrectAnswer() {
     let topnum = parseInt(document.getElementById("topnum").innerText);

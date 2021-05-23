@@ -228,6 +228,8 @@ To ensure the text is easily readable throughout the game I ran the colors throu
     - Fix : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
 - Problem : When playing the game on mobile devices the built in android keyboard keeps showing blocking half of the screen game.
     - Fix : I researched the issue and applied the inputmode="none" method to the input line.
+- Problem : Css styling wasn't affecting the appearance of the game on iPhones. The background was running short and the numbers in the answer-box were being cut in half.
+    - Fix : I tried a variation of changing the background to a vh value, and a line height of 1em and that seems to have fixed the issue on the devices that I could use for testing.
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

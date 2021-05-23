@@ -329,7 +329,7 @@ a:hover {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #ffa500;
 }
 
@@ -339,44 +339,12 @@ a:hover {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #ff0000;
 }
 
-/********************* Genius Level Page ******************/
-#genius-back {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: red;
-}
 
-/********************* High Scores Page ******************/
 
-#easy-scores {
-    font-family: 'Londrina Solid', cursive;
-    font-size: 2rem;
-    background-color: rgb(68, 245, 68);
-}
-
-#medium-scores {
-    font-family: 'Londrina Solid', cursive;
-    font-size: 2rem;
-    background-color: yellow;
-}
-
-#hard-scores {
-    font-family: 'Londrina Solid', cursive;
-    font-size: 2rem;
-    background-color: orange;
-}
-
-#genius-scores {
-    font-family: 'Londrina Solid', cursive;
-    font-size: 2rem;
-    background-color: red;
-}
 
 /******************** Game Elements ****************/
 #number1 {
@@ -1017,7 +985,7 @@ i:hover {
     }
 
     #gameOver {
-        bottom: 440px;
+        bottom: 410px;
         height: 450px;
         width: 95%;
     }

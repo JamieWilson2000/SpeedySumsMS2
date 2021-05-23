@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     runGame("easyLevel");
 });
-document.getElementById("myAudio").play();
 
+document.getElementById("myAudio").play();
 //-------------------------------------------Timer Function--------------------------------------------------------
 let timeleft = 120;
 let gameTimer = setInterval(function () {
@@ -52,6 +52,7 @@ let gameTimer = setInterval(function () {
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
+
     document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();

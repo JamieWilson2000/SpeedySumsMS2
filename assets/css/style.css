@@ -81,6 +81,7 @@ h4 {
     font-family: 'Londrina Solid', cursive;
     margin-left: auto;
     margin-right: auto;
+    overflow: visible;
 }
 
 #high-score {
@@ -798,8 +799,7 @@ i:hover {
     #answer-box {
         height: 55px;
         font-size: 3rem;
-        -webkit-box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-        box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+
     }
 
     .numpad {
@@ -831,6 +831,7 @@ i:hover {
     }
 
     #footer {
+        display: none;
         font-size: 2rem;
     }
 }
@@ -965,6 +966,7 @@ i:hover {
     }
 
     #footer {
+        display: none;
         font-size: 1.5rem;
     }
 }

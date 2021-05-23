@@ -650,7 +650,7 @@ i:hover {
 
     #answer-box {
         width: 100%;
-        height: 75vh;
+        height: 75px;
         line-height: 1em;
         overflow: visible;
         font-size: 4rem;
@@ -670,7 +670,7 @@ i:hover {
     #gameOver {
         width: 80%;
         height: 850px;
-        bottom: 750px
+        bottom: 630px
     }
 
     .message {
@@ -792,7 +792,7 @@ i:hover {
 
     #gameOver {
         height: 680px;
-        bottom: 580px;
+        bottom: 500px;
         width: 80%;
 
     }

@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     runGame("easyLevel");
 });
 document.getElementById("myAudio").play();
+
 //-------------------------------------------Timer Function--------------------------------------------------------
 let timeleft = 120;
 let gameTimer = setInterval(function () {

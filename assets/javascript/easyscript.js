@@ -142,8 +142,7 @@ function show0() {
 
 function skipSum() {
     timeleft = 10
-    var value = document.getElementById("answer-box").value;
-    document.getElementById("answer-box").value = value.substr(0, value.length - 1);
+
 
 
 }

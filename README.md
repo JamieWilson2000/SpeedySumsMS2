@@ -63,22 +63,67 @@
 
 ## Wireframes
 
-![wireframe collection]()
+<img src="assets/wireframes/landingpagemobile.png" alt="landingpagemobile" width="150" height="300">
+<img src="assets/wireframes/entrypagemobile.png" alt="entrypagemobile" width="150" height="300">
+<img src="assets/wireframes/easylevelmobile.png" alt="easylevelmobile" width="150" height="300">
+<img src="assets/wireframes/mediumlevelmobile.png" alt="mediumlevelmobile" width="150" height="300">
+<img src="assets/wireframes/hardlevelmobile.png" alt="hardlevelmobile" width="150" height="300">
 
-- Above is a summary of the wireframes for this site (The desktop view). The basis of the site is very simple. One main landing page, one structure for the page that will contain the recipes (content will change but the structure remains the same), and one contact form page. Below are the links to the full images and their respective mobile views.
 
-- [Link to landing page desktop view]()
-- [Link to landing page tablet view]()
-- [Link to landing page mobile view]()
-- [Link to recipe page desktop view]()
-- [Link to recipe page tablet view]()
-- [Link to recipe page mobile view]()
-- [Link to contect form page desktop view]()
-- [Link to contact form page tablet view]()
-- [Link to contact form page mobile view]()
+- Above is a summary of the wireframes for this site (The mobile view). The basis of the site is very simple. One main landing page, very simplistic just to welcome the user to the game. Upon clicking to play, the user is taken to the entry page where again, in a very simplistic manner, the instructions on how to play the game are outlined in a very simple paragraph and below this are the three game options, Easy, Medium, and Hard. Below are the links to this aspect of the game in their respective full views.
 
-![Wireframe_showing_desktop_to_mobile_view]()
+<img src="assets/wireframes/easylevelgameovermobile.png" alt="easylevelgameovermobile" width="150" height="300">
+<img src="assets/wireframes/mediumlevelgameovermobile.png" alt="mediumlevelgameovermobile" width="150" height="300">
+<img src="assets/wireframes/hardlevelgameovermobile.png" alt="hardlevelgameovermobile" width="150" height="300">
 
+- Above we have the screen presented to the user upon either answering a question incorrectly or by the user running out of time. Either way the user is given the option to either play again or return back to the main menu. Below are the links to this aspect of the game in their respective full views.
+
+<img src="assets/wireframes/landingpagetablet.png" alt="landingpagetablet" width="179" height="250">
+<img src="assets/wireframes/entrypagetablet.png" alt="entrypagetablet" width="179" height="250">
+<img src="assets/wireframes/easyleveltablet.png" alt="easyleveltablet" width="179" height="250">
+<img src="assets/wireframes/mediumleveltablet.png" alt="mediumleveltablet" width="179" height="250">
+<img src="assets/wireframes/hardleveltablet.png" alt="hardleveltablet" width="179" height="250">
+<img src="assets/wireframes/easylevelgameovertablet.png" alt="easyleveltablet" width="179" height="250">
+<img src="assets/wireframes/mediumlevelgameovertablet.png" alt="mediumleveltablet" width="179" height="250">
+<img src="assets/wireframes/hardlevelgameovertablet.png" alt="hardleveltablet" width="179" height="250">
+
+- Above are the wireframes for the game in tablet view. Below are the links to this aspect of the game in their respective full views.
+
+<img src="assets/wireframes/landingpagedesktop.png" alt="landingpagedesktop" width="218" height="150">
+<img src="assets/wireframes/entrypagedesktop.png" alt="entrypagedesktop" width="218" height="150">
+<img src="assets/wireframes/easyleveldesktop.png" alt="easyleveldesktop" width="218" height="150">
+<img src="assets/wireframes/easylevelgameoverdesktop.png" alt="easylevelgameoverdesktop" width="218" height="150">
+<img src="assets/wireframes/mediumleveldesktop.png" alt="mediumleveldesktop" width="218" height="150">
+<img src="assets/wireframes/mediumlevelgameoverdesktop.png" alt="mediumleveldesktop" width="218" height="150">
+<img src="assets/wireframes/hardleveldesktop.png" alt="hardleveldesktop" width="218" height="150">
+<img src="assets/wireframes/hardlevelgameoverdesktop.png" alt="hardleveldesktop" width="218" height="150">
+
+- Finally, above is the main views in desktop mode. Again, below are the links to this aspect of the game in their respective full views.
+
+- [Link to landing page desktop view](assets/wireframes/landingpagedesktop.png)
+- [Link to landing page tablet view](assets/wireframes/landingpagetablet.png)
+- [Link to landing page mobile view](assets/wireframes/landingpagemobile.png)
+- [Link to entry page desktop view](assets/wireframes/entrypagedesktop.png)
+- [Link to entry page tablet view](assets/wireframes/entrypagetablet.png)
+- [Link to entry page mobile view](assets/wireframes/entrypagemobile.png)
+- [Link to easy level page desktop view](assets/wireframes/easyleveldesktop.png)
+- [Link to easy level page tablet view](assets/wireframes/easyleveltablet.png)
+- [Link to easy level page mobile view](assets/wireframes/easylevelmobile.png)
+- [Link to easy level game over page desktop view](assets/wireframes/easylevelgameoverdesktop.png)
+- [Link to easy level game over page tablet view](assets/wireframes/easylevelgameovertablet.png)
+- [Link to easy level game over page mobile view](assets/wireframes/easylevelgameovermobile.png)
+- [Link to medium level page desktop view](assets/wireframes/mediumleveldesktop.png)
+- [Link to medium level page tablet view](assets/wireframes/mediumleveltablet.png)
+- [Link to medium level page mobile view](assets/wireframes/mediumlevelmobile.png)
+- [Link to medium level game over page desktop view](assets/wireframes/mediumlevelgameoverdesktop.png)
+- [Link to medium level game over page tablet view](assets/wireframes/mediumlevelgameovertablet.png)
+- [Link to medium level game over page mobile view](assets/wireframes/mediumlevelgameovermobile.png)
+- [Link to hard level page desktop view](assets/wireframes/hardleveldesktop.png)
+- [Link to hard level page tablet view](assets/wireframes/hardleveltablet.png)
+- [Link to hard level page mobile view](assets/wireframes/hardlevelmobile.png)
+- [Link to hard level game over page desktop view](assets/wireframes/hardlevelgameoverdesktop.png)
+- [Link to hard level game over page tablet view](assets/wireframes/hardlevelgameovertablet.png)
+- [Link to hard level game over page mobile view](assets/wireframes/hardlevelgameovermobile.png)
 
 
 ## Colour Schemes
@@ -130,23 +175,30 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 # User Interaction
 
 - The following elements are selectable:
-    -   The Landing Page:
+    -   The Landing Page:<br>
+            A "Click to play" element is the only selectable option for the user, this is in keeping with the bare, simplistic feel of the game.
        
-    
-    - The Mobile Landing Page:
-        
+    - The Entry Page:<br>
+            Here the user is presented with three buttons, each representing a level of difficulty for the user to choose from.<br>
+            In the footer, there is the standard social icons for Facebook, Twitter, and Instagram which in the real world scenario would link to the relevant Speedy Sums game fan pages.
 
-    - The Recipe Pages:
-       
+        - The Game Pages Desktop Mode:<br>
+            In desktop mode the user will be relying on the computer keyboard to enter the answers.  
+    - The Game Pages Mobile/Tablet Mode:<br>
+            As with the desktop mode, the user will be presented with 2 randomly generated numbers and a randomly generated operator as a sum.<br>
+            The user will be lead to answer the questions using a virtual number pad consisting of numbers 1 through to 0, and a Check button for submitting the answer.<br>
+            Along side the Check button will be a Skip Sum option where the user can decide to skip a sum if they feel it's too difficult. This will re-generate a new sum and replenish the timer back to its allocated amount of seconds.
 
-    - The Contact Form:
-       
+    - The Game Over Feature:<br>
+            In the event of the user answering a question wrong or running out of time, they will be presented with a game over modal informing them of their current score and the options to either play again or head back to the main menu.
 
 # The Coding Languages and Techniques Used
 
 - This site was constructed using:
     - HTML5
     - CSS3
+    - Javascript
+    - jquery
     - Bootstrap 4.2.1
     - Fontawesome
    
@@ -240,8 +292,10 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
 - For reference on how to create a "Game Over" alert box I referred to here:
 - Credit - https://www.tutorialspoint.com/How-I-can-change-the-style-of-alert-box-using-JavaScript#:~:text=You%20will%20not%20be%20able,library%2C%20jQuery%20to%20achive%20this.
+
 - For instruction on how to set up a virtual keypad in the game I referenced:
 - Credit - https://codepen.io/erkmen/pen/pyjxOY
+
 - For reference on how to store High Scores within the game I referred to:
 - Credit - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
@@ -258,7 +312,7 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
 # Acknowledgement
 
-- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Gurjot Singh for his advice in completing this project. As a  complete newbie to coding I am so proud that thanks to CI I have the ability to acheive this creation. I look forward to the rest of the course and a new future career.<br>
+- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Arnold Kyeza for his advice in completing this project. I am so proud to have worked through the Javascript modules and have retained enough information to make sense of and bring to life this nice little game. Thanks to CI I feel that I have a place in the world of software devlopment. I look forward to the rest of the course and a new future career.<br>
 
 
 

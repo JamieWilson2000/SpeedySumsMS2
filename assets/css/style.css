@@ -428,14 +428,14 @@ a:hover {
     z-index: 2;
     background: -webkit-linear-gradient(#44f544, yellow, orange, red);
     color: #FFFFFF;
-    border: 1px solid #aaa;
+    border: 3px solid yellow;
     border-radius: 50px;
     position: relative;
     width: 60%;
     height: 390px;
     margin-right: auto;
     margin-left: auto;
-    bottom: 260px;
+    bottom: 240px;
     padding: 6px 8px 8px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

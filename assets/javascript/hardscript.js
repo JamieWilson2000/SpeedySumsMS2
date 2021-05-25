@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             //This event listener looks for the submit button to be pressed and then checks the answer
-            if (this.getAttribute("data-type") === "submit") {
+            if (this.getAttribute("data-type") === "check") {
                 checkAnswer();
                 //This event listener looks for a number on the numpad to be selected then prints to the answer box
-            } else if (this.getAttribute("data-type") === "number") {
-
+            } else if (this.getAttribute("data-type") === "number") {} else if (this.getAttribute("data-type") === "clear") {
+                clearAnswer();
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
-                runGame("hardLevel");
+                runGame("easyLevel");
             }
         });
     }
@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
             checkAnswer();
         }
     });
-    runGame("hardLevel");
+    runGame("easyLevel");
 });
+
 document.getElementById("myAudio").play();
 //-------------------------------------------Timer Function--------------------------------------------------------
 let timeleft = 15;
@@ -32,11 +33,11 @@ let gameTimer = setInterval(function () {
     if (timeleft <= 0) {
         clearInterval(gameTimer);
         gameOver();
-        document.getElementById("high-score").innerHTML = localStorage.getItem("storedHardHiScore");
-        document.getElementById("countdown").innerHTML = "Time's Up!!";
-        document.getElementById("timeMessage").innerHTML = "Oh No!! You ran out of time!!";
-        document.getElementById("diffMessage").innerHTML = "You need to be a bit quicker!!";
-        document.getElementById("quit").innerHTML = "";
+        document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
+        document.getElementById("countdown").textContent = "Time's Up!!";
+        document.getElementById("timeMessage").textContent = "You ran out of time!!";
+        document.getElementById("diffMessage").textContent = "Have to be quicker!!";
+        // document.getElementById("quit").innerHTML = "";
     } else {
         document.getElementById("countdown").innerHTML = timeleft;
     }
@@ -51,14 +52,15 @@ let gameTimer = setInterval(function () {
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
-    document.getElementById("high-score").innerHTML = localStorage.getItem("storedHardHiScore");
+
+    document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
 
-    if (gameType === "hardLevel") {
+    if (gameType === "easyLevel") {
         let num1 = Math.floor(Math.random() * 1000) + 1;
-        let num2 = Math.floor(Math.random() * 100) + 1;
+        let num2 = Math.floor(Math.random() * 1000) + 1;
         displaySum(num1, num2);
     }
 }
@@ -138,8 +140,12 @@ function show0() {
     document.getElementById('answer-box').value = document.getElementById("answer-box").value + j;
 }
 
-function skipSum() {
-    timeleft = 15
+function clearAnswer() {
+    //timeleft = 10
+    var del = "";
+    document.getElementById('answer-box').value = del;
+
+
 }
 
 //-------------------------------------Calculating the correct answers-----------------------------------------------
@@ -149,13 +155,13 @@ function calculateCorrectAnswer() {
     let operator = document.getElementById("operator").innerText;
 
     if (operator === "+") {
-        return [topnum + botnum, "hardLevel"];
+        return [topnum + botnum, "easyLevel"];
     } else if (operator === "-") {
-        return [topnum - botnum, "hardLevel"];
+        return [topnum - botnum, "easyLevel"];
     } else if (operator === "x") {
-        return [topnum * botnum, "hardLevel"];
+        return [topnum * botnum, "easyLevel"];
     } else if (operator === "/") {
-        return [topnum / botnum, "hardLevel"];
+        return [topnum / botnum, "easyLevel"];
     } else {
         alert("Problem with the calculateCorrectAnswer function");
         throw ("Problem with the calculateCorrectAnswer function");
@@ -174,6 +180,7 @@ function checkAnswer() {
         incrementScore();
     } else {
         document.getElementById("rightAnswer").textContent = calculatedAnswer[0];
+
         gameOver();
     }
     runGame(calculatedAnswer[1]);
@@ -189,17 +196,17 @@ function incrementScore() {
 function logHiScore() {
     if (typeof (Storage) !== "undefined") {
 
-        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedHardHiScore"); //accesses the info from the local storage
+        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore"); //accesses the info from the local storage
         let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
         if (currentScore >= hiScore) { //if the current score is higher than the hi score
-            localStorage.setItem("storedHardHiScore", currentScore); // then store the current score in storage
-            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHardHiScore"); // display the current score as the new high score 
+            localStorage.setItem("storedEasyHiScore", currentScore); // then store the current score in storage
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore"); // display the current score as the new high score 
         }
         if (currentScore <= hiScore) {
-            document.getElementById("high-score").innerHTML = localStorage.getItem("storedHardHighScore");
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHighScore");
         }
     } else {
-        localStorage.setItem("storedHardHighScore", 0)
+        localStorage.setItem("storedEasyHighScore", 0)
     }
 }
 
@@ -216,6 +223,4 @@ function gameOver(msg, playAgain) {
     document.getElementById("fail").play();
     logHiScore();
     clearInterval(gameTimer);
-
-
 }

@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "check") {
                 checkAnswer();
                 //This event listener looks for a number on the numpad to be selected then prints to the answer box
-            } else if (this.getAttribute("data-type") === "number") {
-
+            } else if (this.getAttribute("data-type") === "number") {} else if (this.getAttribute("data-type") === "clear") {
+                clearAnswer();
             } else {
                 let easyGame = this.getAttribute("data-type") === "easyGame";
                 runGame("easyLevel");
@@ -140,9 +140,10 @@ function show0() {
     document.getElementById('answer-box').value = document.getElementById("answer-box").value + j;
 }
 
-function skipSum() {
-    timeleft = 10
-
+function clearAnswer() {
+    //timeleft = 10
+    var del = "";
+    document.getElementById('answer-box').value = del;
 
 
 }
@@ -222,8 +223,4 @@ function gameOver(msg, playAgain) {
     document.getElementById("fail").play();
     logHiScore();
     clearInterval(gameTimer);
-
-
-
-
 }

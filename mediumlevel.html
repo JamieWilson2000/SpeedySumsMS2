@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--<meta name="viewport" content="width=device-width">-->
     <title>Speedy Sums</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
@@ -16,7 +17,6 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-
 <body>
     <audio loop id="myAudio" src="assets/audio/gamemusic.mp3"></audio>
     <section id="medium-back">
@@ -24,7 +24,7 @@
             <h1 id="title">Speedy Sums</h1>
         </div>
         <div>
-            <span id="level-title">Medium Level!!</span>
+            <span id="level-title">Easy Level!!</span>
         </div>
         <div>
             <label id="scorestyle">High Score: <span id="high-score">0</span></label>
@@ -35,17 +35,17 @@
 
         <!---------------Game Area--------------->
         <div id="easy-level">
-            <label gameType="easyLevel" data-type="easyGame" class="btn-light" id="countdown">GO!!</label>
+            <label data-type="easyGame" class="btn-light" id="countdown">GO!!</label>
         </div>
         <div class="row">
             <div class="col 4" id="number1">
-                <h4 id="topnum"></h4>
+                <h4 id="topnum">0</h4>
             </div>
             <div class="col 4" id="randoperator">
-                <h4 id="operator"></h4>
+                <h4 id="operator">+</h4>
             </div>
             <div class="col 4" id="number2">
-                <h4 id="botnum"></h4>
+                <h4 id="botnum">0</h4>
             </div>
         </div>
 
@@ -57,23 +57,23 @@
         <div class="numpad">
             <div id="container">
                 <div>
-                    <button id="rainbow" data-type="number" onclick=show1()>1</button>
-                    <button id="rainbow" data-type="number" onclick=show2()>2</button>
-                    <button id="rainbow" data-type="number" onclick=show3()>3</button>
-                    <button id="rainbow" data-type="number" onclick=show4()>4</button>
-                    <button id="rainbow" data-type="number" onclick=show5()>5</button>
+                    <button data-type="number" onclick=show1()>1</button>
+                    <button data-type="number" onclick=show2()>2</button>
+                    <button data-type="number" onclick=show3()>3</button>
+                    <button data-type="number" onclick=show4()>4</button>
+                    <button data-type="number" onclick=show5()>5</button>
                 </div>
                 <div>
-                    <button id="rainbow" data-type="number" onclick=show6()>6</button>
-                    <button id="rainbow" data-type="number" onclick=show7()>7</button>
-                    <button id="rainbow" data-type="number" onclick=show8()>8</button>
-                    <button id="rainbow" data-type="number" onclick=show9()>9</button>
-                    <button id="rainbow" data-type="number" onclick=show0()>0</button>
+                    <button data-type="number" onclick=show6()>6</button>
+                    <button data-type="number" onclick=show7()>7</button>
+                    <button data-type="number" onclick=show8()>8</button>
+                    <button data-type="number" onclick=show9()>9</button>
+                    <button data-type="number" onclick=show0()>0</button>
                 </div>
                 <br>
                 <div>
-                    <button id="rainbow" data-type="submit">Check!</button>
-                    <button id="rainbow" data-type="skip" onclick=skipSum()>Skip!!</button>
+                    <button data-type="check">Check!</button>
+                    <button data-type="clear">Clear! </button>
                 </div>
             </div>
             <!-- <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div> -->
@@ -88,7 +88,7 @@
             <!-- <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span>Score to beat:<span
                     id="high-score">0</span></label> -->
             <div class="message">Play again or head back to main menu??</div>
-            <a href="easylevel.html">Play Again?</a>
+            <a href="mediumlevel.html">Play Again?</a>
             <a href="entrypage.html">Main menu?</a>
         </div>
 
@@ -97,11 +97,14 @@
 
 
 
-
+        <footer id="footer">Speedy Sums J. Wilson Copyright 2021<br>
+            <a href="facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </footer>
     </section>
-
-
     <script src="assets/javascript/medscript.js"></script>
+
 </body>
 
 </html>

@@ -291,6 +291,8 @@ To ensure the text is easily readable throughout the game I ran the colors throu
     - Fix : I researched the issue and applied the inputmode="none" method to the input line.
 - Problem : Css styling wasn't affecting the appearance of the game on iPhones. The background was running short and the numbers in the answer-box were being cut in half.
     - Fix : I tried a variation of changing the background to a vh value, and a line height of 1em and that seems to have fixed the issue on the devices that I could use for testing.
+- Problem : The clear button was not actually clearing the answer-box but rather generating a whole new sum.
+    - Fix : I discovered that within the gamepage code I was calling the clearAnswer function, and I wasn't 'listening' for the function within the event listeners. Therefore, I deleted the function call on the gameplay page, and added an event listener to call the function once selected. I altered the function too to clear the answerbox and leave the remaining time as it stands.
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

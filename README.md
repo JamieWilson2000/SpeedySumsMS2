@@ -161,7 +161,16 @@ To ensure the text is easily readable throughout the game I ran the colors throu
     - Londrina Solid regular is used throughout as the brand text.
     - I opted to stick to the one font-family being Londrina but in finer pieces of text I used a lower font-weight of 300.
 
-    
+## Audio
+
+- To enhance the fun factor of the game I wanted to add music to the different stages of the game. As a hobbyist freelance composer I had written a soundtrack for another farm based game application so I decided to save time and re-source the music for my own uses and in doing so I would also avoid any copyrighting issues.
+- The main theme of the game would be triggered when entering into the entry page wherein you decide which level to play. The music would be lighthearted and fun and would instill a sense of fun to the user and add to their overall enjoyment. Although I anticipate the audio runs for plenty of time for the user to make their decision about which level of gameplay to choose, I chose to loop the audio so in the event of the user becoming distracted with something else, the music will continue to run.
+- The following theme would then be triggered upon entering into a game mode. This music will be slightly faster and more concentrated in hurrying the user along. I feel that this is done in a gentle but effective manner. As with the main theme, I chose to loop the audio so that it runs continuously throughout the game, and only ends when the answer is incorrect or the user runs out of time during a question.
+- If the answer is incorrect or the user runs out of time, then the game over box will arrive to a downward spiral of music aurally indicating the end of the game.
+
+- [Link to the main theme](assets/audio/openingmusic.mp3)
+- [Link to the main gameplay theme](assets/audio/gamemusic.mp3)
+- [Link to the failed game over theme](assets/audio/cartoon_fail_strings_trumpet.mp3)
 
 
 # The Website Features

@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
 
@@ -24,7 +17,7 @@ body {
 
 
 h4 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #level-title {
@@ -34,7 +27,7 @@ h4 {
     background-color: transparent;
     text-align: center;
     color: black;
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -67,7 +60,7 @@ h4 {
 
 #container button {
     border: transparent;
-
+    font-size: 3rem;
     background: -webkit-linear-gradient(#44f544, yellow, orange, red);
 }
 
@@ -76,7 +69,7 @@ h4 {
     margin-top: 5px;
     text-align: center;
     background: -webkit-linear-gradient(#44f544, yellow, orange, red);
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1em;
     font-family: 'Londrina Solid', cursive;
     margin-left: auto;
@@ -89,7 +82,7 @@ h4 {
     margin-top: 10px;
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
 }
 
 #scorestyle {
@@ -98,7 +91,7 @@ h4 {
     /* margin-top: 10px; */
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 #score {
@@ -107,7 +100,7 @@ h4 {
     margin-top: 10px;
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 #quit {
@@ -137,7 +130,7 @@ ol {
     font-family: 'Londrina Solid', cursive;
     width: auto;
     height: auto;
-    font-size: 2.5rem;
+    font-size: 4rem;
     padding: 5px 18px;
     background: transparent;
 }
@@ -162,7 +155,7 @@ ol {
     margin-left: 0, auto;
     margin-right: 0, auto;
     text-align: center;
-    font-size: 6rem;
+    font-size: 10rem;
     font-family: 'Londrina Solid', cursive;
     -webkit-animation-name: title;
     animation-name: title;
@@ -201,7 +194,7 @@ ol {
     margin-left: 0, auto;
     margin-right: 0, auto;
     text-align: center;
-    font-size: 6rem;
+    font-size: 10rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -209,7 +202,7 @@ ol {
     margin-left: 0, auto;
     margin-right: 0, auto;
     text-align: center;
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -221,7 +214,7 @@ ol {
     background-color: transparent;
     text-align: center;
     color: black;
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -320,7 +313,7 @@ a:hover {
     background-color: transparent;
     text-align: center;
     color: black;
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: 'Londrina Solid', cursive;
 }
 
@@ -432,10 +425,10 @@ a:hover {
     border-radius: 50px;
     position: relative;
     width: 60%;
-    height: 390px;
+    /* height: 390px; */
     margin-right: auto;
     margin-left: auto;
-    bottom: 240px;
+    bottom: 320px;
     padding: 6px 8px 8px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -484,7 +477,7 @@ a:hover {
 
 .message {
     /* padding-top: 20px; */
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Londrina Solid', cursive;
     color: black;
     text-align: center;
@@ -498,9 +491,9 @@ a:hover {
     /*text-align: center;*/
 }
 
-#score {
+/* #score {
     font-size: 2rem;
-}
+} */
 
 /* #number2 {
     width: 10%;
@@ -716,7 +709,7 @@ i:hover {
 
 @media screen and (max-width: 768px) {
     #zoomtitle {
-        margin-top: 30%;
+        margin-top: 20%;
         font-size: 8rem;
     }
 
@@ -792,7 +785,7 @@ i:hover {
 
     #gameOver {
         height: 680px;
-        bottom: 500px;
+        bottom: 580px;
         width: 80%;
 
     }
@@ -947,8 +940,8 @@ i:hover {
 
 @media screen and (max-width: 415px) {
     #zoomtitle {
-        margin-top: 40%;
-        font-size: 4rem;
+        margin-top: 10%;
+        font-size: 3rem;
     }
 
     #entrytitle {
@@ -1033,10 +1026,25 @@ i:hover {
         font-size: 2rem;
     }
 
-    #answer-box {
-        line-height: 1em;
+    #countdown {
+        margin-bottom: 0;
         font-size: 2rem;
+    }
+
+    .row h4 {
+        font-size: 2rem;
+    }
+
+    #answer-box {
+        height: 40px;
+        line-height: 1em;
+        font-size: 1.5rem;
         overflow: visible;
+    }
+
+    #container button {
+        font-size: 1rem;
+        border-radius: 50px;
     }
 
     #rainbow {
@@ -1044,14 +1052,14 @@ i:hover {
     }
 
     #gameOver {
-        bottom: 370px;
-        height: 370px;
+        bottom: 310px;
+        height: 310px;
         width: 95%;
     }
 
     .message {
-        padding-top: 1px0;
-        font-size: 2rem;
+
+        font-size: 1.5rem;
     }
 
     #gameOver a {

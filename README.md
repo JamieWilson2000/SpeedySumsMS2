@@ -1,12 +1,13 @@
 # <u>Milestone Project 2: Speedy Sums</u>
 
-![site screenshot]()
+![site screenshot](assets/images/gamedisplayimage.png)
  
 
-## [Link to live site]()
+## [Link to live site for the game](https://jamiewilson2000.github.io/SpeedySumsMS2/)
 
 # Contents
 
+## - [Project Aims](#aim-of-the-project)
 ## - [User Story](#user-story)
 ## - [The 5 planes of UX](#the-5-planes-of-ux)
 ## - [Early Stages](#early-stages)
@@ -19,14 +20,31 @@
 
 <br>
 
+# Aim of the project
+
+- The aim of this project is to introduce a fun, easy to understand and exciting environment for children to practise their maths skills. The content of the game will be a very simplistic style, with no distractions other than the sums on the screen. I feel that children learn best through repetition and although the premise of the game is one of repetition, the combination of variety of sums (taking into account the randomly generated numbers and the randomly generated operators) is immense so there should not be a moment to relax.<br>
+- This should also provide the opportunity for parents to play alongside their children, working together to acheive a great high score, with the child answering the managable sums and the parents stepping in to help with the more difficult questions.
+- For the older children there is higher levels of mathematical problems to solve. Still in keeping with the basic four arithmatic operators but dealing with higher numbers.
+- For adults there should be an element of interest there as well with a combination of the medium and the hard levels. This is an excellent method of keeping the brain active in a simple, pick up and play premise and even in easy level it is still possible to get carried away and trip yourself up which just adds to the fun.
+
 # User Story
 
 - Speedy Sums was inspired by the Code Institute walkthrough project "Love Maths". Whilst working on the walkthrough I thought it would be fun and educational to have a game that had a learning aspect along with the feeling of being under pressure making the whole thing a little more exciting.
-- Whereas the walkthrough offers the choice of which type of sum you're faced with, i.e addition, subtraction etc, I thought it would be more fun and challenging to not know what variety of sum you're going to be faced with. Add to that, with a 10 second timer counting down the pressure should unevitably start mounting.
+- Whereas the walkthrough offers the choice of which type of sum you're faced with, i.e addition, subtraction etc, I thought it would be more fun and challenging to not know what variety of sum you're going to be faced with. Add to that, with a 10 - 15 second timer counting down, the pressure should unevitably start mounting.
 - I wanted this game to appeal to all ages. Young children can enjoy a challenge in the easy level, whilst adults can test their maths knowledge in the medium and hard levels. 
 
+- This site should appeal to and be suited for :
+
+    - A child currently attending primary school with a basic knowledge of maths.
+
+    - A teenager currently attending secondary school with a stronger grasp on solving basic mathematical sums.
+
+    - A child/teenager with a weaker grasp on the academic side of maths but enjoys playing games and thrives through repetitive learning.
+
+    - An adult who enjoys the pick up and play aspect of games and enjoys the excitement of playing against the clock to solve even the simplest of questions. 
+
 - Site objectives for new users
-    - I want the user to have a clear understanding of the concept from the start. The opening screen has but one option and thats to open the game. The following page has a simple instruction paragraph informing the user that the goal is to simply answer the given sum within the 10 second window. The user then has to select one of three options, Easy, Medium, or Hard to enter into the actual gamepage.
+    - I want the user to have a clear understanding of the concept from the start. The opening screen has but one option and thats to open the game. The following page has a simple instruction paragraph informing the user that the goal is to simply answer the given sum within the allocated time window. The user then has to select one of three options, Easy, Medium, or Hard to enter into the actual gamepage.
 
 - Site objectives for returning users
     - The incentive for returning users would be to better their high scores or to try another, harder level. This could be used as an incentive scheme for younger children to improve their high scores to recieve physical rewards from their parents/ teachers.
@@ -46,7 +64,7 @@
     The strategy for this game was to create an exciting, fun, vibrant environment where users young and old can practise their mathematical problem solving skills. Reports show that if a mundane task is incorporated into a game environment then children are more likely to tackle these mundane tasks. It was with this in mind that I thought of creating a game with young children in mind that could see them solving mathematical problems with a high score record that they could show off, brag about, and aim to better along the line. Whilst considering the concept I felt that there would be adults that would enjoy the challenge too so that spurred on then the option to have an easy, medium, and hard level with obviously increasing difficulty levels. I dwelled on using fun elements to label these levels , ie animals or faces etc, but I felt that could put some users off so I decided to stick with plain and simple Easy, Medium and Hard as level titles.
 
 - ## <u>The Scope</u>
-    The overall site is to be a very simplistic, colorful and striking environment. Big bold letters in a lighthearted font that will prove easy to read, and to instill a sense of fun from the start. To differentiate between levels I decided on bold colors in the background so there should be no mistaking which level the user has opted for.
+    The overall site is to be a very simplistic, colorful and striking environment. Big bold letters in a lighthearted font that will prove easy to read, and to instill a sense of fun from the start. To differentiate between levels I decided on bold colors in the background so there should be no mistaking which level the user has opted for. There will be fun, gentle theme music playing through the entry page to occupy the player whilst choosing a level. There will be music accompanying each game level but this theme will have a more intense feel to it though keeping it lighthearted and fun.
     
 
 - ## <u>The Structure</u>
@@ -176,6 +194,10 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 # The Website Features
 
 - ## <u>As Submitted</u>
+
+    - Landing page features a simple "Click to play" message to guide the user into the main menu screen.
+    - The main menu screen features a brief but concise outline of how to play the game and three brightly coloured buttons indicating the level of difficulty through words, (Easy, Medium and hard), but also through colors with green indicating the easy level, orange for the medium level, and red for the hard level. In the footer there is links to three social media sites, Facebook, Twitter, and Instagram. In the "real world" environment these would link to the fan based pages on these platforms.
+    - The main game page on desktop/laptop features the game title, the level difficulty, the countdown timer, the newly generated sum, and the answer-box area. Again in the footer there is the social media links.
    
 
 - ## <u>Features I would include in the future</u>

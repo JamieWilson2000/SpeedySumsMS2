@@ -598,6 +598,20 @@ i:hover {
     color: white;
 }
 
+@media screen and (max-width: 1400px) {
+    #title {
+        font-size: 6rem;
+    }
+
+    #level-title {
+        font-size: 4rem;
+    }
+
+    #gameOver {
+        bottom: 300px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     #pcQuit {
         display: none;
@@ -974,6 +988,11 @@ i:hover {
     #rainbow {
         margin-left: 0;
         margin-right: 0;
+
+    }
+
+    #container button {
+        font-size: 2rem;
 
     }
 

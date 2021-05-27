@@ -187,8 +187,10 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 - If the answer is incorrect or the user runs out of time, then the game over box will arrive to a downward spiral of music aurally indicating the end of the game.
 
 - [Link to the main theme](assets/audio/openingmusic.mp3)
-- [Link to the main gameplay theme](assets/audio/gamemusic.mp3)
-- [Link to the failed game over theme](assets/audio/cartoon_fail_strings_trumpet.mp3)
+- [Link to the easy level gameplay theme](assets/audio/easyaudio.mp3)
+- [Link to the medium level gameplay theme](assets/audio/mediumaudio.mp3)
+- [Link to the hard level gameplay theme](assets/audio/hardaudio.mp3)
+- [Link to the failed game over theme](assets/audio/gameover.mp3)
 
 
 # The Website Features
@@ -284,7 +286,7 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
 
 
-    ## Problems and bugs experienced along the way
+## Problems and bugs experienced along the way
 
 - Problem: Subtitle on easylevel.html stuck to left side of page
     - Fix: Adjusted styling width to 100%
@@ -316,7 +318,9 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 - Problem : The clear button was not actually clearing the answer-box but rather generating a whole new sum.
     - Fix : I discovered that within the gamepage code I was calling the clearAnswer function, and I wasn't 'listening' for the function within the event listeners. Therefore, I deleted the function call on the gameplay page, and added an event listener to call the function once selected. I altered the function too to clear the answerbox and leave the remaining time as it stands.
 - Problem : The social icons in the footer section of the entry page were returning an error code 404.
-    -Fix : I discovered that I hadn't the full URL of i.e. https://www.facebook.com. 
+    - Fix : I discovered that I hadn't the full URL of i.e. https://www.facebook.com. 
+- Problem : Struggled to get css styling to suit every device available from virtual to physical devices.
+    - Fix : Created multiple breakpoints throughout the css file to accomodate multiple stylings
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

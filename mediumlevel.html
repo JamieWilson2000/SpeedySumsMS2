@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <!--<meta name="viewport" content="width=device-width">-->
+
     <title>Speedy Sums</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -27,13 +27,11 @@
             <span id="level-title">Medium Level!!</span>
         </div>
         <div>
-            <label id="scorestyle">High Score: <span id="high-score">0</span></label>
+            <label id="highscorestyle">High Score: <span id="high-score">0</span></label>
 
         </div>
 
-
-
-        <!---------------Game Area--------------->
+        <!--Game Area-->
         <div id="easy-level">
             <label data-type="easyGame" class="btn-light" id="countdown">GO!!</label>
         </div>
@@ -76,32 +74,19 @@
                     <button data-type="clear">Clear! </button>
                 </div>
             </div>
-            <!-- <div id="quit"><a href="entrypage.html">Quit back to home page!!</a></div> -->
         </div>
-        <!-- <div id="pcQuit"><a href="entrypage.html">Quit back to home page!!</a></div> -->
 
         <div id="gameOver">
             <audio id="fail" src="assets/audio/gameover.mp3"></audio>
             <div class="message" id="timeMessage">Oh no!! Wrong Answer!!!</div>
             <div class="message" id="diffMessage">Correct answer is <span id="rightAnswer"></span></div>
             <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span></label>
-            <!-- <label class="scoreMessage" id="scorestyle">Score:<span id="score">0</span>Score to beat:<span
-                    id="high-score">0</span></label> -->
+
             <div class="message">Play again or head back to main menu??</div>
             <a href="mediumlevel.html">Play Again?</a>
             <a href="entrypage.html">Main menu?</a>
         </div>
 
-
-        <!-- <label id="scorestyle">Score:<span id="score">0</span>Hi-Score:<span id="high-score">0</span></label> -->
-
-
-
-        <!-- <footer id="footer">Speedy Sums J. Wilson Copyright 2021<br>
-            <a href="facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-            <a href="twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <a href="instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </footer> -->
     </section>
     <script src="assets/javascript/medscript.js"></script>
 

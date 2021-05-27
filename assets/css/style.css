@@ -70,7 +70,8 @@ h4 {
     font-weight: 300;
 }
 
-#scorestyle {
+#scorestyle,
+#highscorestyle {
     padding-right: 10px;
     text-align: center;
     font-family: 'Londrina Solid', cursive;
@@ -596,6 +597,7 @@ i:hover {
         font-size: 4rem;
     }
 
+    #highscorestyle,
     #scorestyle,
     #score,
     .row h4 {
@@ -652,6 +654,7 @@ i:hover {
         font-size: 6rem;
     }
 
+    #highscorestyle,
     #scorestyle,
     #high-score {
         font-size: 5rem;
@@ -753,6 +756,7 @@ i:hover {
         font-size: 5rem;
     }
 
+    #highscorestyle,
     #scorestyle,
     #high-score {
         font-size: 4rem;
@@ -929,6 +933,7 @@ i:hover {
         margin-top: 0;
     }
 
+    #highscorestyle,
     #scorestyle,
     #high-score,
     #score {
@@ -1052,6 +1057,7 @@ i:hover {
         top: 0;
     }
 
+    #highscorestyle,
     #scorestyle,
     #high-score,
     #score {

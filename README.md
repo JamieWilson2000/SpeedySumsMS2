@@ -358,6 +358,8 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
     <br>
     <br>
 - My conclusions from the user tests are that although the subject matter is one of very personal taste and primarily academic, I feel that there is scope there for users to feel an element of fun and excitement when playing the game. It is possible that the game would become repetitive after long stints of playing but I feel that every game has that shortfall with the most addictive games being ones based on a repetitive nature. 
+<br>
+<br>
 ## Problems and bugs experienced along the way
 
 - Problem: Subtitle on easylevel.html stuck to left side of page
@@ -393,6 +395,18 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
     - Fix : I discovered that I hadn't the full URL of i.e. https://www.facebook.com. 
 - Problem : Struggled to get css styling to suit every device available from virtual to physical devices.
     - Fix : Created multiple breakpoints throughout the css file to accomodate multiple stylings
+
+# Code Validations
+
+- For the easylevel.html, the mediumlevel.html and the hardlevel.html pages I received the following warning that the inputmode attribute is not supported in all browsers. I ran this problem by my mentor who assured me that it was an issue not too worrying, it is only a warning and the attribute seemed to be working fine all round.
+<br>
+Links to the full validation pages below:
+<br>
+- [Link to the landing page validation](assets/images/htmllandingpagevalidated.png)
+- [Link to the entry page validation](assets/images/htmlentrypagevalidated.png)
+- [Link to the easy level validation](assets/images/easylevelpagevalidated.png)
+- [Link to the medium level validation](assets/images/mediumlevelpagevalidated.png)
+- [Link to the hard level validation](assets/images/hardlevelpagevalidated.png)
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

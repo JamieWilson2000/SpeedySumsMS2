@@ -14,8 +14,6 @@ body {
     text-align: center;
 }
 
-
-
 h4 {
     font-size: 4rem;
 }
@@ -31,17 +29,6 @@ h4 {
     font-family: 'Londrina Solid', cursive;
 }
 
-/* #start-button {
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Londrina Solid', cursive;
-    font-size: 4rem;
-    background: -webkit-linear-gradient(green, yellow, orange, red);
-} */
 .btn-primary {
     display: inline-block;
     border: 1px solid #FF0A0A;
@@ -64,7 +51,6 @@ h4 {
     background: -webkit-linear-gradient(#44f544, yellow, orange, red);
 }
 
-
 #answer-box {
     margin-top: 5px;
     text-align: center;
@@ -82,13 +68,11 @@ h4 {
     margin-top: 10px;
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
-    /* font-size: 2.5rem; */
 }
 
 #scorestyle {
     padding-right: 10px;
     text-align: center;
-    /* margin-top: 10px; */
     font-family: 'Londrina Solid', cursive;
     font-weight: 300;
     font-size: 4rem;
@@ -135,12 +119,6 @@ ol {
     background: transparent;
 }
 
-/* 
-#hide {
-    /* display: none; */
-/* border: 1px solid red;
-}  */
-
 /*************** Landing Page ***************/
 #landing-back {
     position: absolute;
@@ -152,8 +130,8 @@ ol {
 
 #zoomtitle {
     padding-top: 10%;
-    margin-left: 0, auto;
-    margin-right: 0, auto;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
     font-size: 10rem;
     font-family: 'Londrina Solid', cursive;
@@ -163,7 +141,6 @@ ol {
     animation-duration: 3s;
     -webkit-animation-direction: forwards;
     animation-direction: forwards;
-
 }
 
 @-webkit-keyframes title {
@@ -191,16 +168,16 @@ ol {
 }
 
 #main-title {
-    margin-left: 0, auto;
-    margin-right: 0, auto;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
     font-size: 10rem;
     font-family: 'Londrina Solid', cursive;
 }
 
 #title {
-    margin-left: 0, auto;
-    margin-right: 0, auto;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
     font-size: 8rem;
     font-family: 'Londrina Solid', cursive;

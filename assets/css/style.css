@@ -599,6 +599,18 @@ i:hover {
 }
 
 @media screen and (max-width: 1400px) {
+    #main-title {
+        font-size: 7rem;
+    }
+
+    #subtitle {
+        font-size: 4rem;
+    }
+
+    #instructstyle {
+        margin-top: 0;
+    }
+
     #title {
         font-size: 6rem;
     }
@@ -607,8 +619,33 @@ i:hover {
         font-size: 4rem;
     }
 
+    #scorestyle,
+    #score,
+    .row h4 {
+        font-size: 3rem;
+    }
+
+    #countdown {
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* .row h4 {
+        font-size: 3rem;
+    } */
+
+    #answer-box {
+        height: auto;
+        font-size: 2rem;
+    }
+
     #gameOver {
         bottom: 300px;
+    }
+
+    .message {
+        font-size: 2rem;
     }
 }
 
@@ -677,7 +714,7 @@ i:hover {
     #gameOver {
         width: 80%;
         height: 850px;
-        bottom: 630px
+        bottom: 690px
     }
 
     .message {
@@ -799,7 +836,7 @@ i:hover {
 
     #gameOver {
         height: 680px;
-        bottom: 580px;
+        bottom: 560px;
         width: 80%;
 
     }

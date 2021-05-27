@@ -208,7 +208,7 @@ function logHiScore() {
             document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHighScore");
         }
     } else {
-        localStorage.setItem("storedEasyHighScore", 0)
+        localStorage.setItem("storedEasyHighScore", 0);
     }
 }
 
@@ -221,7 +221,7 @@ function gameOver(msg, playAgain) {
     });
     confirmBox.find(".return").click(playAgain);
     confirmBox.show();
-    document.getElementById("myAudio").pause()
+    document.getElementById("myAudio").pause();
     document.getElementById("fail").play();
     logHiScore();
     clearInterval(gameTimer);

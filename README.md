@@ -360,6 +360,7 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
 - My conclusions from the user tests are that although the subject matter is one of very personal taste and primarily academic, I feel that there is scope there for users to feel an element of fun and excitement when playing the game. It is possible that the game would become repetitive after long stints of playing but I feel that every game has that shortfall with the most addictive games being ones based on a repetitive nature. 
 <br>
 <br>
+
 ## Problems and bugs experienced along the way
 
 - Problem: Subtitle on easylevel.html stuck to left side of page
@@ -395,18 +396,43 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
     - Fix : I discovered that I hadn't the full URL of i.e. https://www.facebook.com. 
 - Problem : Struggled to get css styling to suit every device available from virtual to physical devices.
     - Fix : Created multiple breakpoints throughout the css file to accomodate multiple stylings
+- Problem : Running the code through the CSS validator showed up a few warnings regarding instances of -webkit- attributes that weren't necessary.
+    - Fix : Using the advice offered by the validator I removed the -webkit- attributes from the code and the code ran clean.
 
 # Code Validations
+
+## HTML Validator
 
 - For the easylevel.html, the mediumlevel.html and the hardlevel.html pages I received the following warning that the inputmode attribute is not supported in all browsers. I ran this problem by my mentor who assured me that it was an issue not too worrying, it is only a warning and the attribute seemed to be working fine all round.
 <br>
 Links to the full validation pages below:
 <br>
+
 - [Link to the landing page validation](assets/images/htmllandingpagevalidated.png)
 - [Link to the entry page validation](assets/images/htmlentrypagevalidated.png)
 - [Link to the easy level validation](assets/images/easylevelpagevalidated.png)
 - [Link to the medium level validation](assets/images/mediumlevelpagevalidated.png)
 - [Link to the hard level validation](assets/images/hardlevelpagevalidated.png)
+
+## CSS Validator
+
+- Running the style.css code through the CSS Validator showed up only a couple of mistakes which was easy fixed giving me a clean, validated code.
+<br>
+<br>
+- [Link to the CSS validation](assets/images/cssvalidated.png)
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+## Javascript Validator
+
+- I have run the four .js files through JSHint and due to the similarities in the files they all return similar results.
+- Of the twenty warnings, seventeen of them are based on my use of 'let'.
+- JSHint has highlighted there are ten unused variables and one undefined variable.
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:
@@ -437,7 +463,7 @@ Links to the full validation pages below:
 
 # Acknowledgement
 
-- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Arnold Kyeza for his advice in completing this project. I am so proud to have worked through the Javascript modules and have retained enough information to make sense of and bring to life this nice little game. Thanks to CI I feel that I have a place in the world of software devlopment. I look forward to the rest of the course and a new future career.<br>
+- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Arnold Kyeza for his advice in completing this project. Thanks also go to my friends and family who have taken time to test the game for me in the past few weeks. I am so proud to have worked through the Javascript modules and have retained enough understanding of the concepts to make sense of and bring to life this nice little game. Thanks to Code Institute I am starting to feel that I have a place in the world of software devlopment. I look forward to the rest of the course and a new future career.<br>
 
 
 

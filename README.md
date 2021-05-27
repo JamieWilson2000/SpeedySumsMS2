@@ -315,6 +315,8 @@ To ensure the text is easily readable throughout the game I ran the colors throu
     - Fix : I tried a variation of changing the background to a vh value, and a line height of 1em and that seems to have fixed the issue on the devices that I could use for testing.
 - Problem : The clear button was not actually clearing the answer-box but rather generating a whole new sum.
     - Fix : I discovered that within the gamepage code I was calling the clearAnswer function, and I wasn't 'listening' for the function within the event listeners. Therefore, I deleted the function call on the gameplay page, and added an event listener to call the function once selected. I altered the function too to clear the answerbox and leave the remaining time as it stands.
+- Problem : The social icons in the footer section of the entry page were returning an error code 404.
+    -Fix : I discovered that I hadn't the full URL of i.e. https://www.facebook.com. 
 
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:

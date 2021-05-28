@@ -22,9 +22,15 @@
 
 # Aim of the project
 
-- The aim of this project is to introduce a fun, easy to understand and exciting environment for children to practise their maths skills. The content of the game will be a very simplistic style, with no distractions other than the sums on the screen. I feel that children learn best through repetition and although the premise of the game is one of repetition, the combination of variety of sums (taking into account the randomly generated numbers and the randomly generated operators) is immense so there should not be a moment to relax.<br>
+- The aim of this project is to introduce a fun, easy to understand and exciting environment for children to practise their maths skills. The content of the game will be a very simplistic style, with no distractions other than the sums on the screen. I feel that children learn best through repetition and although the premise of the game is one of repetition, the combination of variety of sums (taking into account the randomly generated numbers and the randomly generated operators) is immense so there should not be a moment to relax.
+<br>
+
 - This should also provide the opportunity for parents to play alongside their children, working together to acheive a great high score, with the child answering the managable sums and the parents stepping in to help with the more difficult questions.
+<br>
+
 - For the older children there is higher levels of mathematical problems to solve. Still in keeping with the basic four arithmatic operators but dealing with higher numbers.
+<br>
+
 - For adults there should be an element of interest there as well with a combination of the medium and the hard levels. This is an excellent method of keeping the brain active in a simple, pick up and play premise and even in easy level it is still possible to get carried away and trip yourself up which just adds to the fun.
 
 # User Story
@@ -367,11 +373,6 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
     - Fix: Adjusted styling width to 100%
 - Problem: Trying to have timer and first question appear when start button is pressed.
     - Fix: Moved the timer code inside the function targeted by the onclick function.
-- Problem: "Random sums are actually just repeating the sum question instead of generating a new sum.
-    - Fix: 
-- Problem: Getting this error message "script.js:160 Uncaught TypeError: Cannot set property 'textContent' of null
-    at startGame (script.js:160)at HTMLButtonElement.onclick (mediumlevel.html:32)"
-    - Solution:
 - Problem: Game buttons on entry page had lost their styling elements.
     - Fix: Discovered I had made changes to the Id tag that was overriding the original stylings.
 - Problem: Screen jumping when hovered over answer box

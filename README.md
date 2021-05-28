@@ -16,6 +16,7 @@
 ## - [The Coding Languages and Techniques Used](#the-coding-languages-and-techniques-used)
 ## - [Method of Deployment](#method-of-deployment)
 ## - [Methods of Testing](#methods-of-testing)
+## - [Code Validations](#code-validations)
 ## - [Credits](#credits)
 
 <br>
@@ -434,7 +435,23 @@ Links to the full validation pages below:
 - I have run the four .js files through JSHint and due to the similarities in the files they all return similar results.
 - Of the twenty warnings, seventeen of them are based on my use of 'let'.
 - JSHint has highlighted there are ten unused variables and one undefined variable.
+<br>
+<br>
 
+## Lighthouse Testing
+- I ran the program through the Google Lighthouse test to check the overall results and was delighted by the overall figures. 
+- In desktop mode:
+<br>
+<br>
+<img src="assets/images/lighthouseperformancedesktopresults.png" alt="lighthouseresultsdesktop" width="279" height="100">
+<br>
+<br>
+- In mobile mode:
+<br>
+<br>
+<img src="assets/images/lighthouseperformancemobileresults.png" alt="lighthouseresultsdesktop" width="279" height="100">
+<br>
+<br>
 # Credits
 - For instruction on how to create the title animation on the landing page I refered to here:
 - Credit - https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/83c6c94d55f44c79a3646810d80ce7a3/
@@ -464,7 +481,7 @@ Links to the full validation pages below:
 
 # Acknowledgement
 
-- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Arnold Kyeza for his advice in completing this project. Thanks also go to my friends and family who have taken time to test the game for me in the past few weeks. I am so proud to have worked through the Javascript modules and have retained enough understanding of the concepts to make sense of and bring to life this nice little game. Thanks to Code Institute I am starting to feel that I have a place in the world of software devlopment. I look forward to the rest of the course and a new future career.<br>
+- I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Arnold Kyeza for his advice in completing this project and the many fellow slackers who have been both  helpful and supportive in equal measures. Thanks also go to my friends and family who have taken time to test the game for me in the past few weeks. I am so proud to have worked through the Javascript modules and have retained enough understanding of the concepts to make sense of and bring to life this nice little game. Thanks to Code Institute I am starting to feel that I have a place in the world of software devlopment. I look forward to the rest of the course and a new future career.<br>
 
 
 

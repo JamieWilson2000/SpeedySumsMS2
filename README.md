@@ -3,7 +3,7 @@
 ![site screenshot](assets/images/gamedisplayimage.png)
  
 
-## [Link to live site for the game](https://jamiewilson2000.github.io/SpeedySumsMS2/)
+# [Link to live site for the game](https://jamiewilson2000.github.io/SpeedySumsMS2/)
 
 # Contents
 

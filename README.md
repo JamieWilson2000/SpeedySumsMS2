@@ -3,7 +3,7 @@
 ![site screenshot](assets/images/gamedisplayimage.png)
  
 
-# [Link to live site for the game](https://jamiewilson2000.github.io/SpeedySumsMS2/)
+# [Link to play "Speedy Sums"](https://jamiewilson2000.github.io/SpeedySumsMS2/)
 
 # Contents
 
@@ -70,7 +70,7 @@
 - When planning out this game I thought it important to implement the same 5 planes of UX that I had used when designing my Milestone Project 1. Doing this makes the process an easier task.
 
 - ## <u>The strategy</u>
-    The strategy for this game was to create an exciting, fun, vibrant environment where users young and old can practise their mathematical problem solving skills. Reports show that if a mundane task is incorporated into a game environment then children are more likely to tackle these mundane tasks. It was with this in mind that I thought of creating a game with young children in mind that could see them solving mathematical problems with a high score record that they could show off, brag about, and aim to better along the line. Whilst considering the concept I felt that there would be adults that would enjoy the challenge too so that spurred on then the option to have an easy, medium, and hard level with obviously increasing difficulty levels. I dwelled on using fun elements to label these levels , ie animals or faces etc, but I felt that could put some users off so I decided to stick with plain and simple Easy, Medium and Hard as level titles.
+    The strategy for this game was to create an exciting, fun, vibrant environment where users young and old can practise their mathematical problem solving skills. Reports** show that if a mundane task is incorporated into a game environment then children are more likely to tackle these mundane tasks. It was with this in mind that I thought of creating a game with young children in mind that could see them solving mathematical problems with a high score record that they could show off, brag about, and aim to better along the line. Whilst considering the concept I felt that there would be adults that would enjoy the challenge too so that spurred on then the option to have an easy, medium, and hard level with obviously increasing difficulty levels. I dwelled on using fun elements to label these levels , ie animals or faces etc, but I felt that could put some users off so I decided to stick with plain and simple Easy, Medium and Hard as level titles.
 
 - ## <u>The Scope</u>
     The overall site is to be a very simplistic, colorful and striking environment. Big bold letters in a lighthearted font that will prove easy to read, and to instill a sense of fun from the start. To differentiate between levels I decided on bold colors in the background so there should be no mistaking which level the user has opted for. There will be fun, gentle theme music playing through the entry page to occupy the player whilst choosing a level. There will be music accompanying each game level but this theme will have a more intense feel to it though keeping it lighthearted and fun.
@@ -168,7 +168,7 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 <br>
 
 - I adopted these colors in the following styles:
-    - I used a gradient effect using the three main sourced colors #44F544, #FFA500, and #FF0000 on the greeting page and the landing page and on the in game buttons.
+    - I used a gradient effect using the four main sourced colors #44F544, #FFA500, #FFFF00 and #FF0000 on the greeting page and the landing page and on the in game buttons.
     - I used the color #44F544 green on the easy level button and for the background color of the easy level.
     - I used #3BD43B as a variant of #44F544 to indicate the hover effect on the easy level button .
     - I used the color #FFA500 orange on the medium button and for the background color of the medium level.
@@ -194,7 +194,7 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
 - The main theme of the game would be triggered when entering into the entry page wherein you decide which level to play. The music would be lighthearted and fun and would instill a sense of fun to the user and add to their overall enjoyment. Although I anticipate the audio runs for plenty of time for the user to make their decision about which level of gameplay to choose, I chose to loop the audio so in the event of the user becoming distracted with something else, the music will continue to run.
 
-- The gameplay themes would then be triggered upon entering into a game mode. There are three different themes for the three different levels of difficulty. I hoped this might add a bit of variety to the audio elements as well. This set of music will be slightly faster and more concentrated in hurrying the user along. I feel that this is done in a gentle but effective manner. However, as a bit of a 'curveball' in the hard level the music gently increase in tempo which I would hope might instill a sense of panic in the user as if the hard level isn't hard enough! As with the main theme, I chose to loop the audio so that it runs continuously throughout the game, and only ends when the answer is incorrect or the user runs out of time during a question. 
+- The gameplay themes would then be triggered upon entering into a game mode. There are three different themes for the three different levels of difficulty. I hoped this might add a bit of variety to the audio elements as well. This set of music will be slightly faster and more concentrated in hurrying the user along. I feel that this is done in a gentle but effective manner. However, as a bit of a 'curveball' in the hard level the music gently increases in tempo which I would hope might instill a sense of panic in the user as if the hard level isn't hard enough! As with the main theme, I chose to loop the audio so that it runs continuously throughout the game, and only ends when the answer is incorrect or the user runs out of time during a question. 
 
 - If the answer is incorrect or the user runs out of time, then the game over box will arrive to a downward chromatic scale  of music, aurally indicating the end of the game.
 
@@ -211,13 +211,13 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
     - Landing page features the main game title appearing from the back of the screen to the front and a simple "Click to play" message to guide the user into the main menu screen. There is no audio with this aspect.
     <br>
-    - The main menu screen features a brief but concise outline of how to play the game and three brightly coloured buttons indicating the level of difficulty through words, (Easy, Medium and Hard), but also through colours with green indicating the easy level, orange for the medium level, and red for the hard level. In the footer there is links to three social media sites, Facebook, Twitter, and Instagram. In the "real world" environment these would link to the fan based pages on these platforms. The page features a main theme tune, setting the mood of the game.
+    - The main menu screen features a brief but concise outline of how to play the game and three brightly coloured buttons indicating the level of difficulty through words, (Easy, Medium and Hard), but also through colours with green indicating the easy level, orange for the medium level, and red for the hard level. In the footer there are links to three social media sites, Facebook, Twitter, and Instagram. In the "real world" environment these would link to the fan based pages on these platforms. The page features a main theme tune, setting the mood of the game.
     <br>
     - The main game pages on desktop/laptop features the game title, the level difficulty, the countdown timer, the newly generated sum, and the answer-box area. I have chosen to omit the footer social icons element. The reason for this is that as a keen gamer myself I have played many games and would very rarely see such icons during the actual gameplay element. The game pages each feature an individual game theme audio which adds to the enjoyment of the game and again helps to set the feel of the game for the user.
     <br>
     - The main game pages on tablet/mobile view features the same features as the desktop/laptop view but due to these devices lacking a physical keyboard I have included a virtual number pad with the numbers 1 through to 0 and a check button to submit the answer. Alongside the check button I have included a clear button that will clear the answer-box if an answer is inputted incorrectly or if the user should change their mind about the answer. As with the desktop/laptop view the audio is also present throughout.
     <br>
-    - In the event of the time running out or an incorrect answer is given then a game over message will appear over the game elements. This will alert the the user the reason for the game being over, and the option to play again or head back to the main menu. These options will be present in the shape of two brightly coloured buttons clearly marked as "Play again" or "Main Menu". The audio element for this is a very simple chromatic downward run which only fires the once and lasts the approximate duration of the game over element coming to the forefront.
+    - In the event of the time running out or an incorrect answer is given then a game over message will appear over the game elements. This will alert the user the reason for the game being over, and the option to play again or head back to the main menu. These options will be present in the shape of two brightly coloured buttons clearly marked as "Play again" or "Main Menu". The audio element for this is a very simple chromatic downward run which only fires the once and lasts the approximate duration of the game over element coming to the forefront.
    
 - ## <u>Features I would include in the future</u>
 
@@ -231,7 +231,7 @@ To ensure the text is easily readable throughout the game I ran the colors throu
     <br>
     - As issues being highlighted during user testing, I would include an option button wherein the user could disable the timer aspect and to disable the audio.
     <br>
-    - Whilst not actually a feature I would include within this version of the game I could see the potential to develop a "Speedy Spelling" game. This would retain the overall look of the game but instead of the user being confronted with sums the user would hear a word that he/she had to spell with blank lines in the easier levels indicating the number of letters expected and in the harder levels just a space to spell the word. 
+    - Whilst not actually a feature I would include within this version of the game, I could see the potential to develop a "Speedy Spelling" game. This would retain the overall look of the game but instead of the user being confronted with sums the user would hear a word that he/she had to spell with blank lines in the easier levels indicating the number of letters expected and in the harder levels just a space to spell the word. 
     
 
 # User Interaction
@@ -242,14 +242,14 @@ To ensure the text is easily readable throughout the game I ran the colors throu
        
     - The Entry Page:<br>
             Here the user is presented with three buttons, each representing a level of difficulty for the user to choose from.<br>
-            In the footer, there is the standard social icons for Facebook, Twitter, and Instagram which in a real world scenario would link to the relevant Speedy Sums game fan pages.
+            In the footer, there are the standard social icons for Facebook, Twitter, and Instagram which in a real world scenario would link to the relevant Speedy Sums game fan pages.
 
     - The Game Pages Desktop Mode:<br>
-            In desktop mode the user will be relying on the computer keyboard to enter the answers. 
+            In desktop mode the user will be presented with 2 randomly generated numbers and a randomly generated operator as a sum. The user will be relying on the computer keyboard to enter the answers. 
     - The Game Pages Mobile/Tablet Mode:<br>
             As with the desktop mode, the user will be presented with 2 randomly generated numbers and a randomly generated operator as a sum.<br>
             The user will be lead to answer the questions using a virtual number pad consisting of numbers 1 through to 0, and a Check button for submitting the answer.<br>
-            Along side the Check button will be a Skip Sum option where the user can decide to skip a sum if they feel it's too difficult. This will re-generate a new sum and replenish the timer back to its allocated amount of seconds.
+            Along side the Check button will be a clear button where the user can clear the answer-box if a wrong number is inputted or if the user wishes to change their answer.
 
     - The Game Over Feature:<br>
             In the event of the user answering a question wrong or running out of time, they will be presented with a game over modal informing them of their current score and the options to either play again or head back to the main menu.
@@ -315,7 +315,8 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
 ## Summary of User Testing
 
-- User 1: Being the parent!
+- User 1: Being the parent!<br>
+<br>
 As a parent I would want to see a game with this premise to be instantly visually appealing, with little to no distractions on the page. Therefore I would feel comfortable leaving my child to navigate through the app on their own.<br>
 The simplistic look of the pages fit this criteria and even should the child select the social icon links then they will be lead to the relevant "Speedy" pages of each social media platform.
 <br>
@@ -329,7 +330,8 @@ The simplistic look of the pages fit this criteria and even should the child sel
 <br>
 Using the application for the first time I want to be able to navigate quickly through the initial set up to get the game up and running and I feel this is done adequatly with a 2 click navagational system, one to enter the menu and one to select the game level. The visual representation of the high score is important as a constant reminder of what the child needs to acheive to better themselves and to spur them on to do better.
 
-- User 2: Being the child!
+- User 2: Being the child!<br>
+<br>
 As a child I want to be drawn to the game with visually appealing graphics / fonts and be given a game that I can acheive a good score from the start. Also, it's important to be given a challenge so the inclusion of harder levels would keep the interest there for a duration of time.<br>
 It's important to be able to visually differentiate between levels so again the traffic light system implemented acts as a good visual representation of the level of difficulty I have selected.
 <br>
@@ -340,7 +342,8 @@ It's important to be able to visually differentiate between levels so again the 
 <br>
 <br>
 
-- User 3: Being a teenager/adult!
+- User 3: Being a teenager/adult!<br>
+<br>
 As a teenager / adult, I would like to be presented with a challenge in an application that is suited to the pick up and play genre. The game would be one that I can enjoy on my own, with friends, or with a younger sibling/child.
 
 - During the testing process, the game was played by a variety of ages:
@@ -373,7 +376,7 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
 - Problem: Subtitle on easylevel.html stuck to left side of page
     - Fix: Adjusted styling width to 100%
 - Problem: Trying to have timer and first question appear when start button is pressed.
-    - Fix: Moved the timer code inside the function targeted by the onclick function.
+    - Fix: Removed the timer from within it's own dedicated function
 - Problem: Game buttons on entry page had lost their styling elements.
     - Fix: Discovered I had made changes to the Id tag that was overriding the original stylings.
 - Problem: Screen jumping when hovered over answer box
@@ -385,7 +388,7 @@ As a teenager / adult, I would like to be presented with a challenge in an appli
 - Problem: The High Score function was not running in new instances of the game only in existing workspaces.
     - Fix: I started off the function with accessing the local storage and then running the conditions, before I was setting the conditions and then accessing the local storage.
 - Problem: High Score not displaying in the event of the game finishing due to time running out.
-    -Fix: I discovered using the google dev tools for application local storage that the value was being stored so I decided to add a line of code as part of the time running out statement that simply printed out the value stored in the local storage.
+    - Fix: I discovered using the google dev tools for application local storage that the value was being stored so I decided to add a line of code as part of the time running out statement that simply printed out the value stored in the local storage.
 - Problem : Timer not refreshing when correct answer given.
     - Fix : I originally had the timer wrapped inside a function but I removed the "function" casing and in the checkAnswer function I reset the timeleft back to 10.
 - Problem : When playing the game on mobile devices the built in android keyboard keeps showing blocking half of the screen game.
@@ -468,14 +471,19 @@ Links to the full validation pages below:
 - For reference on how to store High Scores within the game I referred to:
 - Credit - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
-
+** Educational Reports:
+<br>
+- Credit - https://www.healthychildren.org/English/ages-stages/toddler/fitness/Pages/Caution-Children-at-Play.aspx
+- Credit - https://www.researchgate.net/publication/242391086_Report_on_the_educational_use_of_games
+- Credit - https://www.teachstarter.com/gb/blog/10-benefits-playing-games-classroom-gb/
 
 ## Throughout the creation of this project I have referred to the following for assistance and guidance:
 
 - https://codeinstitute.net/
-- https://www.w3schools.com
+- https://www.w3schools.com/
 - https://stackoverflow.com/
 - https://css-tricks.com/
+- https://www.tutorialspoint.com/
 
 
 

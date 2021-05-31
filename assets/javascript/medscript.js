@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //This event listener looks for the physical enter button to be pressed and then checks the answer---------------------
     document.getElementById("answer-box").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            //startTimer();
+
             checkAnswer();
         }
     });
@@ -39,18 +39,12 @@ let gameTimer = setInterval(function () {
         document.getElementById("countdown").textContent = "Time's Up!!";
         document.getElementById("timeMessage").textContent = "You ran out of time!!";
         document.getElementById("diffMessage").textContent = "Have to be quicker!!";
-        // document.getElementById("quit").innerHTML = "";
+
     } else {
         document.getElementById("countdown").innerHTML = timeleft;
     }
     timeleft -= 1;
 }, 1000);
-
-
-// function resetTimer() {
-//     startTimer();
-
-// }
 
 //--------------------------------------Generating numbers for the game---------------------------------------------
 function runGame(gameType) {
@@ -58,7 +52,6 @@ function runGame(gameType) {
     document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
-
 
     if (gameType === "easyLevel") {
         let num1 = Math.floor(Math.random() * 100) + 1;
@@ -146,8 +139,6 @@ function clearAnswer() {
     //timeleft = 10
     var del = "";
     document.getElementById('answer-box').value = del;
-
-
 }
 
 //-------------------------------------Calculating the correct answers-----------------------------------------------
@@ -198,11 +189,11 @@ function incrementScore() {
 function logHiScore() {
     if (typeof (Storage) !== "undefined") {
 
-        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore"); //accesses the info from the local storage
-        let currentScore = parseInt(document.getElementById("score").innerText); //accesses the info from the score element
-        if (currentScore >= hiScore) { //if the current score is higher than the hi score
-            localStorage.setItem("storedEasyHiScore", currentScore); // then store the current score in storage
-            document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore"); // display the current score as the new high score 
+        let hiScore = document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
+        let currentScore = parseInt(document.getElementById("score").innerText);
+        if (currentScore >= hiScore) {
+            localStorage.setItem("storedEasyHiScore", currentScore);
+            document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHiScore");
         }
         if (currentScore <= hiScore) {
             document.getElementById("high-score").innerHTML = localStorage.getItem("storedEasyHighScore");

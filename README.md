@@ -315,9 +315,10 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 
 ## Summary of User Testing
 
-- User 1: Being the parent!<br>
+- User 1: Being the parent!
 <br>
-As a parent I would want to see a game with this premise to be instantly visually appealing, with little to no distractions on the page. Therefore I would feel comfortable leaving my child to navigate through the app on their own.<br>
+
+- As a parent I would want to see a game with this premise to be instantly visually appealing, with little to no distractions on the page. Therefore I would feel comfortable leaving my child to navigate through the app on their own.<br>
 The simplistic look of the pages fit this criteria and even should the child select the social icon links then they will be lead to the relevant "Speedy" pages of each social media platform.
 <br>
 <br>
@@ -329,10 +330,12 @@ The simplistic look of the pages fit this criteria and even should the child sel
 <br>
 <br>
 Using the application for the first time I want to be able to navigate quickly through the initial set up to get the game up and running and I feel this is done adequatly with a 2 click navagational system, one to enter the menu and one to select the game level. The visual representation of the high score is important as a constant reminder of what the child needs to acheive to better themselves and to spur them on to do better.
-
-- User 2: Being the child!<br>
 <br>
-As a child I want to be drawn to the game with visually appealing graphics / fonts and be given a game that I can acheive a good score from the start. Also, it's important to be given a challenge so the inclusion of harder levels would keep the interest there for a duration of time.<br>
+
+- User 2: Being the child!
+<br>
+
+- As a child I want to be drawn to the game with visually appealing graphics / fonts and be given a game that I can acheive a good score from the start. Also, it's important to be given a challenge so the inclusion of harder levels would keep the interest there for a duration of time.<br>
 It's important to be able to visually differentiate between levels so again the traffic light system implemented acts as a good visual representation of the level of difficulty I have selected.
 <br>
 <br>
@@ -342,9 +345,10 @@ It's important to be able to visually differentiate between levels so again the 
 <br>
 <br>
 
-- User 3: Being a teenager/adult!<br>
+- User 3: Being a teenager/adult!
 <br>
-As a teenager / adult, I would like to be presented with a challenge in an application that is suited to the pick up and play genre. The game would be one that I can enjoy on my own, with friends, or with a younger sibling/child.
+
+- As a teenager / adult, I would like to be presented with a challenge in an application that is suited to the pick up and play genre. The game would be one that I can enjoy on my own, with friends, or with a younger sibling/child.
 
 - During the testing process, the game was played by a variety of ages:
 - Elderly
@@ -445,17 +449,18 @@ Links to the full validation pages below:
 - I ran the program through the Google Lighthouse test to check the overall results and was delighted by the overall figures. 
 - In desktop mode:
 <br>
-<br>
+
 <img src="assets/images/lighthouseperformancedesktopresults.png" alt="lighthouseresultsdesktop" width="279" height="100">
 <br>
-<br>
+
 - In mobile mode:
 <br>
-<br>
+
 <img src="assets/images/lighthouseperformancemobileresults.png" alt="lighthouseresultsdesktop" width="279" height="100">
 <br>
-<br>
+
 # Credits
+
 - For instruction on how to create the title animation on the landing page I refered to here:
 - Credit - https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/be0e510a3aca4bccb6e0bba4cf7cf06b/83c6c94d55f44c79a3646810d80ce7a3/
 

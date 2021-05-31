@@ -210,27 +210,27 @@ To ensure the text is easily readable throughout the game I ran the colors throu
 - ## <u>As Submitted</u>
 
     - Landing page features the main game title appearing from the back of the screen to the front and a simple "Click to play" message to guide the user into the main menu screen. There is no audio with this aspect.
-    <br>
+    <br><br>
     - The main menu screen features a brief but concise outline of how to play the game and three brightly coloured buttons indicating the level of difficulty through words, (Easy, Medium and Hard), but also through colours with green indicating the easy level, orange for the medium level, and red for the hard level. In the footer there are links to three social media sites, Facebook, Twitter, and Instagram. In the "real world" environment these would link to the fan based pages on these platforms. The page features a main theme tune, setting the mood of the game.
-    <br>
+    <br><br>
     - The main game pages on desktop/laptop features the game title, the level difficulty, the countdown timer, the newly generated sum, and the answer-box area. I have chosen to omit the footer social icons element. The reason for this is that as a keen gamer myself I have played many games and would very rarely see such icons during the actual gameplay element. The game pages each feature an individual game theme audio which adds to the enjoyment of the game and again helps to set the feel of the game for the user.
-    <br>
+    <br><br>
     - The main game pages on tablet/mobile view features the same features as the desktop/laptop view but due to these devices lacking a physical keyboard I have included a virtual number pad with the numbers 1 through to 0 and a check button to submit the answer. Alongside the check button I have included a clear button that will clear the answer-box if an answer is inputted incorrectly or if the user should change their mind about the answer. As with the desktop/laptop view the audio is also present throughout.
-    <br>
+    <br><br>
     - In the event of the time running out or an incorrect answer is given then a game over message will appear over the game elements. This will alert the user the reason for the game being over, and the option to play again or head back to the main menu. These options will be present in the shape of two brightly coloured buttons clearly marked as "Play again" or "Main Menu". The audio element for this is a very simple chromatic downward run which only fires the once and lasts the approximate duration of the game over element coming to the forefront.
    
 - ## <u>Features I would include in the future</u>
 
     - As a game I could envisage more to this 'Speedy' brand than just simple mathematics. 
-    <br>
+    <br><br>
     - In future incarnations of the game I would include fractions, algebra, and other mathematical problems that can feasibly be thought out 'on the fly' against the clock. This would also add to the levels and educational purposes of the game.
-    <br>
+    <br><br>
     - As a future feature I would like to see, as the score increases for the numbers themselves to start rotating and bouncing around their area making it hard to concentrate on working out the answer.
-    <br>
+    <br><br>
     - As a future feature I would like to add a new aspect to the sums wherein new combinations of sums are presented. These would look similar to: 4 + _ = 10,  _ / 3 = 12, 3 _ 3 = 9 and so on. In this mode the user would be filling in the blanks keeping the style of the game familiar but moving things around. Add this to the existing game mode and I feel the user is presented with a very challenging game. 
-    <br>
+    <br><br>
     - As issues being highlighted during user testing, I would include an option button wherein the user could disable the timer aspect and to disable the audio.
-    <br>
+    <br><br>
     - Whilst not actually a feature I would include within this version of the game, I could see the potential to develop a "Speedy Spelling" game. This would retain the overall look of the game but instead of the user being confronted with sums the user would hear a word that he/she had to spell with blank lines in the easier levels indicating the number of letters expected and in the harder levels just a space to spell the word. 
     
 

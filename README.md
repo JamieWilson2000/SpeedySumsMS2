@@ -427,7 +427,7 @@ Links to the full validation pages below:
 
 - Running the style.css code through the CSS Validator showed up only a couple of mistakes which was easy fixed giving me a clean, validated code.
 <br>
-<br>
+
 - [Link to the CSS validation](assets/images/cssvalidated.png)
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -441,7 +441,7 @@ Links to the full validation pages below:
 
 - I have run the four .js files through JSHint and due to the similarities in the files they all return similar results.
 - Of the twenty warnings, seventeen of them are based on my use of 'let'.
-- JSHint has highlighted there are ten unused variables and one undefined variable.
+- JSHint has highlighted there are ten unused variables and one undefined variable. I ran this past my mentor who assured me that this was common enough and not to be too concerned.
 <br>
 <br>
 
